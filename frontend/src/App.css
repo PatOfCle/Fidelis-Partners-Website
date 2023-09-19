@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'Metropolis Semibold';
+  src: url('./assets/Metropolis-SemiBold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --main-font: 'Metropolis Semibold', sans-serif, Times;
+}
+
+* {
+  font-family: var(--main-font);
+}
+
+/* * {
+  font-family: 'metropolis-semi-bold', sans-serif;
+} */
+
 .show-pointer {
   cursor: pointer;
+}
+
+
+.app-container {
+  position: relative;
 }

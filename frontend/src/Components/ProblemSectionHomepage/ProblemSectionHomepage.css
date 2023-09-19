@@ -1,0 +1,29 @@
+.ProblemSectionHomepage-container {
+    /* border: solid; */
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    /* justify-content: center; */
+    /* display: inline-block; */
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.map-image-container {
+    filter: grayscale(100%);
+    opacity: 20%;
+    /* border: solid; */
+}
+
+.static-text-problem {
+    width: 80%;
+    position: absolute;
+    /* border: solid; */
+    /* top: 15%; */
+    top: 50%; /* Move the top of the child div to the middle of the parent */
+    left: 50%; /* Move the left of the child div to the middle of the parent */
+    transform: translate(-50%, -50%);
+}

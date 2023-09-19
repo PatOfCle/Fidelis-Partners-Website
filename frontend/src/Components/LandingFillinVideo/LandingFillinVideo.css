@@ -1,0 +1,65 @@
+/* App.css */
+.LandingFillinVideo-container {
+    position: relative;
+}
+
+
+
+.video-container .video-content {
+    /* border: solid; */
+    width: 100%;
+    /* background-color: blue; */
+}
+
+.text-container {
+    color: white;
+    border: dashed;
+    border-color: black;
+}
+
+.static-text {
+    background-color: transparent;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    width: 75%;
+    font-size: 5vw;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.0);
+    /* background-color: rgba(0, 0, 0, 0.2); */
+}
+
+.dynamic-text-container {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 85%;
+
+    font-size: 6vw;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.0);
+}
+
+
+
+@media (max-width: 760px) {
+    
+
+    /* .menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: inline-block;
+        position: relative;
+        margin-left: auto;
+        margin-right: 20px;
+
+        transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+    } */
+}
