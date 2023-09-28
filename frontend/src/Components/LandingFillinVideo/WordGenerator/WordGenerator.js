@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const words = ["Inventory", "Work Orders", "Sales Orders", "Account Management", "Purchasing", "Order Placement", "EDI", "Multi-Level BOMs", "Capacity Planning", "Materials Resource Planning", "Production", "Business Intelligence", "Timeclocking", "Bar-Coding", ]; // Replace with your list of words
+const words = ["Inventory", "Work Orders", "Sales Orders", "Account Management", "Purchasing", "Order Placement", "EDI", "Multi-Level BOMs", "Capacity Planning", "Materials Resource Planning", "Production", "Business Intelligence", "Timeclocking", "Bar-Coding", "Quality", "Quoting", "Project Management", "Plant Floor Automation"]; // Replace with your list of words
 
 function shuffleArray(array) {
     // Create a copy of the array and shuffle it using Fisher-Yates algorithm
@@ -27,12 +27,12 @@ function WordGenerator() {
                 setCurrentWord('');
                 setCurrentLetterIndex(0);
                 setCurrentWordIndex((currentWordIndex + 1) % shuffledWords.length); // Loop through shuffled words
-            }, 1000); // Delay before moving to the next word
+            }, 1350); // Delay before moving to the next word
         }
     };
 
     useEffect(() => {
-        const timer = setTimeout(generateWord, 100); // Adjust the delay as needed for letter animation
+        const timer = setTimeout(generateWord, 80); // Adjust the delay as needed for letter animation
 
         return () => clearTimeout(timer);
     }, [currentWord, currentLetterIndex, currentWordIndex, shuffledWords]);
@@ -44,8 +44,8 @@ function WordGenerator() {
 
     return (
         <div className="word-container">
-            {/* <div className="word-display">{currentWord}</div> */}
-            <div className="word-display">word</div>
+            <div className="word-display">{currentWord}</div>
+            {/* <div className="word-display">word</div> */}
         </div>
     );
 }

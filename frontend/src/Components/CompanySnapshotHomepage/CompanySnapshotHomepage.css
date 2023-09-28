@@ -1,0 +1,16 @@
+
+.CompanySnapshotHomepage-container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: rgb(230, 230, 230);
+}
+
+.CompanySnapshotHomepage-container h2 {
+    text-align: center;
+    padding: 0px 25px 10px 25px;
+}
+
+.CompanySnapshotHomepage-container .message-text {
+    padding: 0px 15px 0px 15px;
+    font-family: var(--secondary-font);
+}

@@ -2,12 +2,15 @@
     background-color: rgb(230, 230, 230);
     padding-top: 80px;
     padding-bottom: 80px;
+    justify-content: center;
 }
 
 .AboutSectionHomepage-container .customer-text {
-    width: 90%;
-    /* text-align: center; */
-    padding-left: 20px;
+    width: 70%;
+    text-align: center;
+    /* padding-left: 20px; */
+    /* border: solid; */
+    margin: auto;
 }
 
 

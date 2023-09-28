@@ -9,7 +9,7 @@ ul {
     /* justify-content: space-between; */
     align-items: center;
     height: 80px;
-    border: solid;
+    /* border: solid; */
 
     z-index: 3;
 }
@@ -30,14 +30,6 @@ ul {
     height: 10px;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-}
-
-
-.wide-view-menu-container {
-    display: flex;
-    border-style: solid;
-    /* padding: 10px; */
-    color: black;
 }
 
 .dropdown-button {
@@ -158,8 +150,6 @@ ul {
 
 .menu-overlay {
     visibility: hidden;
-    /* display: none; */
-    border-style: solid;
     position: fixed;
     top: 0;
     left: 0;

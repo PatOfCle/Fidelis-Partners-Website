@@ -21,9 +21,9 @@ function LandingFillinVideo() {
 
       <div className="video-container">
         {/* <img className='video-content' src={logo} alt="Background" /> */}
-        {/* <video className='video-content' ref={videoRef} autoPlay loop muted > */}
-        <video onPause className='video-content' ref={videoRef} muted >
-        {/* <source src={vid} type="video/mp4" /> */}
+
+        <video className='video-content' ref={videoRef} autoPlay loop muted >
+        {/* <video onPause className='video-content' ref={videoRef} muted > */}
         <source src={backdropVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>

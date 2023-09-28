@@ -5,6 +5,7 @@ import {GrClose} from 'react-icons/gr'
 import logo from '../../assets/fidelis-logo.png'
 import './Header.css'
 import dropdownArrow from '../../assets/dropdown-arrow_thumbnail.png'
+import { Link } from 'react-router-dom'
 
 function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -19,7 +20,8 @@ function Header() {
     
     <div className='header-container'>
         <div className='image-container'>
-            <a href='#'><img className='fidelis-logo' src={logo}/></a>
+            {/* <a href='#'><img className='fidelis-logo' src={logo}/></a> */}
+            <Link to="/"><img className='fidelis-logo' src={logo}/></Link>
         </div>
 
         <nav className="menu">
@@ -29,9 +31,9 @@ function Header() {
                 <img src={dropdownArrow} className='dropdown-arrow'/>
                 <div className="dropdown">
                     <ul>
-                        <li>Our Values</li>
-                        <li>History</li>
-                        <li>The Team</li>
+                        <Link to="/about/values" className='router-link'><li>Our Values</li></Link>
+                        <Link to="/about/history" className='router-link'><li>History</li></Link>
+                        <Link to="/about/team" className='router-link'><li>The Team</li></Link>
                     </ul>
                 </div>
                 </li>

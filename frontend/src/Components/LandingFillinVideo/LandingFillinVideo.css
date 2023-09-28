@@ -13,8 +13,8 @@
 
 .text-container {
     color: white;
-    border: dashed;
-    border-color: black;
+    /* border: dashed; */
+    /* border-color: black; */
 }
 
 .static-text {

@@ -1,11 +1,13 @@
+import { Routes, Route, Navigate } from "react-router-dom";
 import './App.css';
-import Header from './Components/Header/Header';
-import LandingFillinVideo from './Components/LandingFillinVideo/LandingFillinVideo';
-import {Fade, Reveal} from 'react-awesome-reveal';
 import { keyframes } from "@emotion/react";
-import AboutSectionHomepage from './Components/ProblemSectionHomepage/ProblemSectionHomepage';
 
-import Home from './Pages/Home';
+import Header from "./Components/Header/Header";
+import Footer from "./Components/FooterSection/Footer";
+import Home from './Pages/HomePageFolder/HomePage';
+import HistoryPage from "./Pages/HistoryPageFolder/HistoryPage";
+import ValuesPage from "./Pages/ValuesPageFolder/ValuesPage";
+import TeamPage from "./Pages/TeamPageFolder/TeamPage";
 
 const fadeInUp = keyframes`
   0% {
@@ -32,7 +34,23 @@ const fadeIn = keyframes`
 function App() {
   return (
     <div className="app-container">
-      <Home />
+
+      <Header />
+
+      <Routes>
+        {/* <Route index element={<Home />} /> */}
+        <Route path="/" element={<Home />} />
+        <Route path="about">
+          <Route index element={<Navigate to="history" replace />}/>
+          <Route path="history" element={<HistoryPage />}/>
+          <Route path="values" element={<ValuesPage />}/>
+          <Route path="team" element={<TeamPage />}/>
+          {/* <Route path="*" element={<Navigate to="history" replace />}/> */}
+        </Route >
+      </Routes>
+
+
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,8 @@
+.ValuesPage-container {
+    margin: 100px;
+}
+
+.ValuesPage-container ul li {
+    list-style-type: disc;
+    margin-left: 20px;
+}
