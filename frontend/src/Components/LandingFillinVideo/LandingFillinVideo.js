@@ -20,17 +20,13 @@ function LandingFillinVideo() {
     <div className="LandingFillinVideo-container">
 
       <div className="video-container">
-        {/* <img className='video-content' src={logo} alt="Background" /> */}
-
-        <video className='video-content' ref={videoRef} autoPlay loop muted >
-        {/* <video onPause className='video-content' ref={videoRef} muted > */}
-        <source src={backdropVideo} type="video/mp4" />
+        <video className='video-content' ref={videoRef} autoPlay playsInline loop muted >
+          <source src={backdropVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
 
       <div className="text-container">
-        {/* <p>Your text goes here</p> */}
         <div className='static-text'>
           The scalable, comprehensive ERP provider for 
         </div>
