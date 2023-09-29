@@ -18,6 +18,8 @@ function Header() {
   return (
 
     
+    <div className='header-outer-container'>
+
     <div className='header-container'>
         <div className='image-container'>
             {/* <a href='#'><img className='fidelis-logo' src={logo}/></a> */}
@@ -138,6 +140,8 @@ function Header() {
             {/* </div> */}
             
         </div>
+    </div>
+
     </div>
   )
 }
