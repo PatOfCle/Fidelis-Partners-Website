@@ -66,6 +66,12 @@ ul {
     transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
 }
 
+.book-demo-menu-item-button {
+    color: white;
+    background-color: rgb(176, 176, 134);
+    margin-left: 5px;
+}
+
 .menu-item:hover {
     background-color: rgb(238, 238, 238);
     border-color: rgb(194, 194, 194);

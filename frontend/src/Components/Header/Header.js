@@ -29,43 +29,48 @@ function Header() {
         <nav className="menu">
             <ul>
                 <li className="menu-item">
-                About 
-                <img src={dropdownArrow} className='dropdown-arrow'/>
-                <div className="dropdown">
-                    <ul>
-                        <Link to="/about/values" className='router-link'><li>Our Values</li></Link>
-                        <Link to="/about/history" className='router-link'><li>History</li></Link>
-                        <Link to="/about/team" className='router-link'><li>The Team</li></Link>
-                    </ul>
-                </div>
+                    About 
+                    <img src={dropdownArrow} className='dropdown-arrow'/>
+                    <div className="dropdown">
+                        <ul>
+                            <Link to="/about/values" className='router-link'><li>Our Values</li></Link>
+                            <Link to="/about/history" className='router-link'><li>History</li></Link>
+                            <Link to="/about/team" className='router-link'><li>The Team</li></Link>
+                        </ul>
+                    </div>
                 </li>
 
                 <li className="menu-item">
-                Solutions
-                <img src={dropdownArrow} className='dropdown-arrow'/>
-                <div className="dropdown">
-                    <ul>
-                        <li>Steel Viking ERP</li>
-                        <li>Additional Services</li>
-                    </ul>
-                </div>
+                    Solutions
+                    <img src={dropdownArrow} className='dropdown-arrow'/>
+                    <div className="dropdown">
+                        <ul>
+                            <li>Steel Viking ERP</li>
+                            <li>Additional Services</li>
+                        </ul>
+                    </div>
                 </li>
 
                 <li className="menu-item">
-                Resources
-                <img src={dropdownArrow} className='dropdown-arrow'/>
-                <div className="dropdown">
-                    <ul>
-                        <li>Sample Client Previews</li>
-                        <li>Interactive Needs Assessment</li>
-                        <li>Monthly Reports</li>
-                        <li>Feature Documents</li>
-                    </ul>
-                </div>
+                    Resources
+                    <img src={dropdownArrow} className='dropdown-arrow'/>
+                    <div className="dropdown">
+                        <ul>
+                            <li>Sample Client Previews</li>
+                            <li>Interactive Needs Assessment</li>
+                            <li>Monthly Reports</li>
+                            <li>Feature Documents</li>
+                        </ul>
+                    </div>
                 </li>
 
                 <li className="menu-item">
                     <a>Careers</a>
+                </li>
+
+                <li className="menu-item book-demo-menu-item-button">
+                    <Link to="/contact/book-demo" className='router-link'><li>Book Free Demo</li></Link>
+
                 </li>
             </ul>
         </nav>

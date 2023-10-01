@@ -8,6 +8,7 @@ import Home from './Pages/HomePageFolder/HomePage';
 import HistoryPage from "./Pages/HistoryPageFolder/HistoryPage";
 import ValuesPage from "./Pages/ValuesPageFolder/ValuesPage";
 import TeamPage from "./Pages/TeamPageFolder/TeamPage";
+import BookDemoPage from "./Pages/BookDemoPageFolder/BookDemoPage";
 
 const fadeInUp = keyframes`
   0% {
@@ -47,6 +48,9 @@ function App() {
           <Route path="team" element={<TeamPage />}/>
           {/* <Route path="*" element={<Navigate to="history" replace />}/> */}
         </Route >
+        <Route path="contact">
+          <Route path="book-demo" element={<BookDemoPage />}/>
+        </Route>
       </Routes>
 
 

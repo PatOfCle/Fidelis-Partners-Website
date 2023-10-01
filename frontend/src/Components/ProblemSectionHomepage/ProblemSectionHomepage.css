@@ -16,7 +16,9 @@
     filter: grayscale(100%);
     opacity: 20%;
     /* border: solid; */
-    width: 100%;
+    /* width: 100%; */
+    max-width: 70%;
+    margin: auto;
 }
 
 .map-image-container img {
