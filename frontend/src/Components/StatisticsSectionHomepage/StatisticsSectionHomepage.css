@@ -25,11 +25,13 @@
     /* border: solid; */
     text-align: center;
     padding: 10px;
+    color: var(--theme-color-1);
 }
 
 .stat-description {
     /* border: solid; */
     text-align: center;
     padding: 10px;
-    color: rgb(11, 136, 0);
+    /* color: rgb(11, 136, 0); */
+    color: var(--theme-color-1);
 }

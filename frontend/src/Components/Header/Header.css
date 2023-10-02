@@ -68,7 +68,7 @@ ul {
 
 .book-demo-menu-item-button {
     color: white;
-    background-color: rgb(176, 176, 134);
+    background-color: var(--theme-color-1);
     margin-left: 5px;
 }
 

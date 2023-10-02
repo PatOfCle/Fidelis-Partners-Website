@@ -9,27 +9,7 @@ import HistoryPage from "./Pages/HistoryPageFolder/HistoryPage";
 import ValuesPage from "./Pages/ValuesPageFolder/ValuesPage";
 import TeamPage from "./Pages/TeamPageFolder/TeamPage";
 import BookDemoPage from "./Pages/BookDemoPageFolder/BookDemoPage";
-
-const fadeInUp = keyframes`
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(40px);
-    transform: translateY(40px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-`;
-const fadeIn = keyframes`
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-`;
+import ScrollToTop from "./Components/ScrollToTop";
 
 
 function App() {
@@ -37,7 +17,8 @@ function App() {
     <div className="app-container">
 
       <Header />
-
+      <ScrollToTop />
+      
       <Routes>
         {/* <Route index element={<Home />} /> */}
         <Route path="/" element={<Home />} />

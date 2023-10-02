@@ -37,6 +37,7 @@ function StatisticsSectionHomepage() {
                 Years of Delivering Results
             </div>
         </div>
+        
     </div>
   )
 }

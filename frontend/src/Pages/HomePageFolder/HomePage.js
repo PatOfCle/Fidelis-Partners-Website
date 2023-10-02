@@ -8,26 +8,9 @@ import ProblemSectionHomepage from '../../Components/ProblemSectionHomepage/Prob
 import AboutSectionHomepage from '../../Components/AboutSectionHomepage/AboutSectionHomepage';
 import StatisticsSectionHomepage from '../../Components/StatisticsSectionHomepage/StatisticsSectionHomepage';
 import CompanySnapshotHomepage from '../../Components/CompanySnapshotHomepage/CompanySnapshotHomepage';
+import BookDemoBlock from '../../Components/BookDemoBlock/BookDemoBlock';
 import Footer from '../../Components/FooterSection/Footer';
 
-const fadeInUp = keyframes`
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(40px);
-    transform: translateY(40px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }`;
-const fadeIn = keyframes`
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }`;
 
 function Home() {
   return (
@@ -40,6 +23,10 @@ function Home() {
 
         <Fade delay={500} triggerOnce>
             <StatisticsSectionHomepage />
+        </Fade>
+
+        <Fade delay={500} triggerOnce>
+            <BookDemoBlock />
         </Fade>
 
         <Fade delay={300} triggerOnce>

@@ -92,15 +92,27 @@ function Header() {
                 both pull from the same json file
                 */}
                 <ul className="overlay-menu show-pointer">
+
+                    <li className="menu-item book-demo-menu-item-button" style={{marginBottom: 30}}>
+                        <Link to="/contact/book-demo" className='router-link'><li> Book Free Demo <span className='double-arrow'>&#xbb;</span> </li></Link>
+
+                    </li>
+
                     <li>
                         <div className='overlay-menu-option' onClick={() => toggleSubmenu('about')}>
                             About
                         </div>
                         <div className={`submenu ${activeOption === 'about' ? 'open' : ''}`}>
-                            <ul>
+                            {/* <ul>
                                 <li className='submenu-option'>Our Values</li>
                                 <li className='submenu-option'>History</li>
                                 <li className='submenu-option'>The Team</li>
+                            </ul> */}
+
+                            <ul>
+                                <Link to="/about/values" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('about')}}><li className='submenu-option'>Our Values</li></Link>
+                                <Link to="/about/history" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('about')}}><li className='submenu-option'>History</li></Link>
+                                <Link to="/about/team" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('about')}}><li className='submenu-option'>The Team</li></Link>
                             </ul>
                         </div>
                     </li>
