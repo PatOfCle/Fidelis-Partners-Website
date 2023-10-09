@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const words = ["Inventory", "Work Orders", "Sales Orders", "Account Management", "Purchasing", "Order Placement", "EDI", "Multi-Level BOMs", "Capacity Planning", "Materials Resource Planning", "Production", "Business Intelligence", "Timeclocking", "Bar-Coding", "Quality", "Quoting", "Project Management", "Plant Floor Automation"]; // Replace with your list of words
+const words = ["Inventory", "Scheduling", "Order Management", "Account Management", "Purchasing", "Order Placement", "EDI", "Multi-Level BOMs", "Capacity Planning", "MRP", "Production", "Business Intelligence", "Time and Attendance", "Bar Coding", "Quality", "Quoting", "Project Management", "Plant Floor Automation", "Collaborative Workflows", "Shop Maintenance", "Machine Integration"];
 
 function shuffleArray(array) {
     // Create a copy of the array and shuffle it using Fisher-Yates algorithm
