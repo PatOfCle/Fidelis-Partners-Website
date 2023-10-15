@@ -13,7 +13,9 @@
 }
 
 .teammate-image {
-    width: 250px;
+    /* width: 250px; */
+    height: 200px;
+    /* aspect-ratio: 4/3; */
 }
 
 .name-and-title-container {
