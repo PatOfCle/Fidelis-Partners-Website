@@ -1,9 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './TeamMemberComponent.css'
 
 function TeamMemberComponent(props) {
+
   return (
-    <div className='TeamMemberComponent-container'>
+    <div className='TeamMemberComponent-container' >
         {/* TeamMemberComponent */}
         {/* <br></br> */}
         {/* {props.firstName} */}

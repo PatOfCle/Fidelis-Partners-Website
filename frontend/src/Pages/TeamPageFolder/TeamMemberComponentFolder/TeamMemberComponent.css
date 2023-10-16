@@ -1,15 +1,10 @@
-:root {
-    
-}
-
-
 .TeamMemberComponent-container {
-    display: inline-block;
+    /* display: inline-block;
     margin: 15px;
     height: 350px;
     align-items: center;
 
-    position: relative;
+    position: relative; */
 }
 
 .teammate-image {

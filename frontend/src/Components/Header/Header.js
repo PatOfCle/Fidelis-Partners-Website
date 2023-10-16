@@ -94,7 +94,7 @@ function Header() {
                 <ul className="overlay-menu show-pointer">
 
                     <li className="menu-item book-demo-menu-item-button" style={{marginBottom: 30}}>
-                        <Link to="/contact/book-demo" className='router-link'><li> Book Free Demo <span className='double-arrow'>&#xbb;</span> </li></Link>
+                        <Link to="/contact/book-demo" className='router-link'><li onClick={() => {setMenuOpen(!menuOpen)}}> Book Free Demo <span className='double-arrow'>&#xbb;</span> </li></Link>
 
                     </li>
 
