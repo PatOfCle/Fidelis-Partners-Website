@@ -56,10 +56,10 @@ function Header() {
                     <img src={dropdownArrow} className='dropdown-arrow'/>
                     <div className="dropdown">
                         <ul>
+                            <Link to="/blog" className='router-link'><li>Blog</li></Link>
                             <li>Sample Client Previews</li>
                             <li>Interactive Needs Assessment</li>
-                            <li>Monthly Reports</li>
-                            <li>Feature Documents</li>
+                            {/* <li>Feature Documents</li> */}
                         </ul>
                     </div>
                 </li>
@@ -133,9 +133,9 @@ function Header() {
                         </div>
                         <div className={`submenu ${activeOption === 'resources' ? 'open' : ''}`}>
                             <ul>
+                                <Link to="/blog" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('resources')}}><li className='submenu-option'>Blog</li></Link>
                                 <li className='submenu-option'>Sample Client Previews</li>
                                 <li className='submenu-option'>Interactive Needs Assessment</li>
-                                <li className='submenu-option'>Monthly Reports</li>
                                 <li className='submenu-option'>Feature Documents</li>
                             </ul>
                         </div>

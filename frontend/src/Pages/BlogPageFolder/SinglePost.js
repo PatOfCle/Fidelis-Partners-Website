@@ -9,8 +9,7 @@ function SinglePost() {
     const [singlePost, setSinglePost] = useState([])
     const [isLoading, setIsLoading] = useState(true)
     const { slug } = useParams()
-    const navigate = useNavigate();
-
+    // const navigate = useNavigate();
 
     console.log(isLoading)
     useEffect(() => {
@@ -65,6 +64,8 @@ function SinglePost() {
                             projectId="k6txv6gn"
                             dataset="production"
                         />
+
+                        {console.log(singlePost.body)}
                     </div>
             </section>
         }

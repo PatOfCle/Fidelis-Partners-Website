@@ -21,6 +21,7 @@
 
 * {
   font-family: var(--main-font);
+  /* font-family: var(--secondary-font); */
 }
 
 .show-pointer {

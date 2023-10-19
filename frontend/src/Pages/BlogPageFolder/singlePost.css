@@ -1,20 +1,26 @@
-.SinglePost-container {
+ .SinglePost-container {
     min-height: 100vh;
-    /* text-align: center; */
-    padding: 20px;
-    
+    padding: 20px;    
     position: relative;
 }
 
 .article-title-container {
     text-align: center;
+    padding: 2vh;
 }
+
 .article-image-container {
     text-align: center;
+    padding: 2vh;
+}
+
+.BlockContent-div * {
+    font-family: var(--secondary-font);
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 .BlockContent-div {
-    line-height: 1.6;
     margin-bottom: 80px;
 }
 
