@@ -10,6 +10,10 @@
     padding-left: 20px;
 }
 
+.customer-text {
+    font-size: 2.6vw;
+}
+
 
 
 @keyframes slide {

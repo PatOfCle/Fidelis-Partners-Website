@@ -45,8 +45,8 @@ function Header() {
                     <img src={dropdownArrow} className='dropdown-arrow'/>
                     <div className="dropdown">
                         <ul>
-                            <li>Steel Viking ERP</li>
-                            <li>Additional Services</li>
+                            <Link to="/solutions/steel-viking-erp" className='router-link'><li>Steel Viking ERP</li></Link>
+                            <Link to="/solutions/additional-services" className='router-link'><li>Additional Services</li></Link>
                         </ul>
                     </div>
                 </li>
@@ -122,7 +122,7 @@ function Header() {
                         </div>
                         <div className={`submenu ${activeOption === 'solutions' ? 'open' : ''}`}>
                             <ul>
-                                <li className='submenu-option'>Steel Viking ERP</li>
+                                <Link to="/solutions/steel-viking-erp" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('solutions')}}><li className='submenu-option'>Steel Viking ERP</li></Link>
                                 <li className='submenu-option'>Additional Services</li>
                             </ul>
                         </div>

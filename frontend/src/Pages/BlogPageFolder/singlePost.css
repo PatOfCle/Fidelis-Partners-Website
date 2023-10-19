@@ -1,0 +1,24 @@
+.SinglePost-container {
+    min-height: 100vh;
+    /* text-align: center; */
+    padding: 20px;
+    
+    position: relative;
+}
+
+.article-title-container {
+    text-align: center;
+}
+.article-image-container {
+    text-align: center;
+}
+
+.BlockContent-div {
+    line-height: 1.6;
+    margin-bottom: 80px;
+}
+
+.read-more-articles {
+    position: absolute;
+    bottom: 30px;
+}

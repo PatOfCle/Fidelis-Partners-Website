@@ -1,0 +1,113 @@
+.Blog-container {
+    /* background-color: rgb(233, 233, 233); */
+    background-color: rgb(255, 255, 255);
+    margin-top: 0px;
+}
+
+.blog-page-header {
+    justify-content: center;
+    /* border: solid; */
+    text-align: center;
+    padding-top: 20px;
+}
+
+.blog-page-content {
+    /* border: solid; */
+    /* background-color: rgb(233, 233, 233); */
+}
+
+.blog-articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 50px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+
+    justify-items: center;
+}
+
+@media (min-width: 1300px) {
+    /* when the screen is wider, we want at most 3 columns of articles */
+    .blog-articles {
+        padding-left: 13vw;
+        padding-right: 13vw;
+    }
+}
+
+.blog-articles img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    /* border: solid; */
+}
+
+.single-blog-article {
+    width: 300px;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 10px;
+    background: white;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+.single-blog-article::after,
+.single-blog-article::before {
+    content: " ";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border: 0px solid #fff;
+    transition: all 0.3s;
+}
+
+.single-blog-article::after {
+    top: -5px;
+    left: 0px;
+    border-top: 5px solid var(--theme-color-1);
+    border-left: 5px solid var(--theme-color-1);
+    border-color: transparent;
+}
+
+.single-blog-article::before {
+    bottom: 0px;
+    right: 0px;
+    border-bottom: 5px solid var(--theme-color-1);
+    border-right: 5px solid var(--theme-color-1);
+    border-color: transparent;
+}
+
+.single-blog-article:hover {
+    /* border-top-right-radius: 0px; */
+    /* border-bottom-left-radius: 0px; */
+    border-color: var(--theme-color-1);
+    transition: all 1s;
+}
+
+.single-blog-article:hover::before,
+.single-blog-article:hover::after {
+    border-color: var(--theme-color-1);
+    width: 98%;
+    height: 100%;
+}
+
+
+.blog-post-preview-title {
+    height: 8vh;
+}
+
+.read-now-arrow {
+    /* border: solid; */
+    text-align: right;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.3s ease-in-out;
+
+    transform: translateY(10px);
+}
+
+.single-blog-article:hover .read-now-arrow {
+    opacity: 0.5;
+    transform: translateY(0px);
+}

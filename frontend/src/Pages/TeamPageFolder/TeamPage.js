@@ -14,7 +14,7 @@ const teamMembersData = [
         lastName: 'Sweet',
         title: 'Founder',
         image: 'https://fidelis-website-storage.s3.us-east-2.amazonaws.com/team-content/headshots/Mike_Sweet_Headshot.png',
-        bio: "Mike founded Fidelis in 2002 and has devoted the last 20 years to building and delivering solutions to clients in ERP, plant floor automation, and business intelligence. \n\nBefore starting Fidelis, Mike worked as a Data Architect and Software Consultant for Accenture and other boutique firms.  He wishes he had started Fidelis earlier than he did. \n\nMike graduated from Case Western Reserve University with BS in Industrial Engineering, Magna Cum Laude, with special awards for the top student in Industrial Engineering and French.  Mike also earned a Master’s of Business Administration from Case. \n\nOutside of work, Mike spends time with his family, plays piano, and is involved with charitable organizations within the Catholic Church.  His most recent involvements are related to homelessness and the Pro Life cause.",
+        bio: "Mike founded Fidelis in 2002 and has devoted the last 20 years to building and delivering solutions to clients in ERP, plant floor automation, and business intelligence. \n\nBefore starting Fidelis, Mike worked as a Data Architect and Software Consultant for Accenture and other boutique firms.  He wishes he had started Fidelis earlier than he did. \n\nMike graduated from Case Western Reserve University with BS in Industrial Engineering, Magna Cum Laude, with special awards for the top graduate in Industrial Engineering and French.  Mike also earned a Master's of Business Administration from Case. \n\nOutside of work, Mike spends time with his family, plays piano, and is involved with charitable organizations within the Catholic Church.  His most recent involvements are related to homelessness and the Pro Life cause.",
         linkedIn: 'https://www.linkedin.com/in/mike-sweet-071871/',
     },
     {
@@ -30,7 +30,7 @@ const teamMembersData = [
         lastName: 'Giese',
         title: 'ERP Systems Engineering',
         image: 'https://fidelis-website-storage.s3.us-east-2.amazonaws.com/team-content/headshots/Adam_Giese_Headshot.png',
-        bio: 'Bio...',
+        bio: "Adam has been a versatile resource handling roles of project management, data warehousing, data analysis, web and api development, and custom software solutions for small businesses. Adam spends his free time hiking, biking, and catching the occasional baseball game.",
         linkedIn: '',
     },
     {
@@ -124,8 +124,8 @@ function TeamPage() {
 
         {selectedImage && (
             // <div className="team-member-popup-overlay">
-            <div className={`team-member-popup-overlay ${selectedImage ? 'show-member' : ''}`} >
-                <div className="team-member-popup">
+            <div className={`team-member-popup-overlay ${selectedImage ? 'show-member' : ''}`} onClick={ closeImageDescription }>
+                <div className="team-member-popup" onClick={(event) => {event.stopPropagation()}}>
                     <div className='team-member-popup-column'>
                     {/* <div style={{border: 'solid', display: 'flex', alignItems: 'center'}}> */}
 
@@ -134,6 +134,7 @@ function TeamPage() {
                         <h4 style={{lineHeight: '0'}}>{selectedImage.title}</h4>
 
                     </div>
+                    {/* <hr style={{color: 'lightgray'}}></hr> */}
 
                     <div className='team-member-popup-column'>
                         <pre style={{ whiteSpace: 'pre-wrap', wordWrap: 'break-word', maxWidth: '400px' }}>{selectedImage.bio}</pre>

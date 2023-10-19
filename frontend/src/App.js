@@ -8,9 +8,12 @@ import Home from './Pages/HomePageFolder/HomePage';
 import HistoryPage from "./Pages/HistoryPageFolder/HistoryPage";
 import ValuesPage from "./Pages/ValuesPageFolder/ValuesPage";
 import TeamPage from "./Pages/TeamPageFolder/TeamPage";
+import SteelVikingPage from "./Pages/SteelVikingPageFolder/SteelVikingPage";
 import BookDemoPage from "./Pages/BookDemoPageFolder/BookDemoPage";
 import ScrollToTop from "./Components/ScrollToTop";
-
+import Blog from "./Pages/BlogPageFolder/Blog";
+import SinglePost from "./Pages/BlogPageFolder/SinglePost";
+import Error from "./Pages/BlogPageFolder/Error";
 
 function App() {
   return (
@@ -29,9 +32,19 @@ function App() {
           <Route path="team" element={<TeamPage />}/>
           {/* <Route path="*" element={<Navigate to="history" replace />}/> */}
         </Route >
+
+        <Route path="solutions">
+          <Route index element={<Navigate to="steel-viking-erp" replace />}/>
+          <Route path="steel-viking-erp" element={<SteelVikingPage />}/>
+        </Route >
+
         <Route path="contact">
           <Route path="book-demo" element={<BookDemoPage />}/>
         </Route>
+
+        <Route path="/blog/:slug" element={<SinglePost />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="*" element={<Error />} />
       </Routes>
 
 
