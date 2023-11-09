@@ -1,0 +1,28 @@
+/* Add these styles to your CSS file or style section */
+.navigator {
+    position: fixed;
+    top: 45vh;
+    left: 0;
+    padding: 10px;
+    background-color: #fff; /* Adjust background color as needed */
+    border-right: 1px solid #ccc; /* Add a border for separation, customize as needed */
+  }
+  
+  .content {
+    margin-left: 200px; /* Adjust the margin to leave space for the fixed navigator */
+  }
+  
+  /* Optional: Add some styling to the buttons for better appearance */
+  .navigator button {
+    display: block;
+    margin-bottom: 10px;
+    background-color: #ddd;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .navigator button:hover {
+    background-color: #bbb;
+  }
+  

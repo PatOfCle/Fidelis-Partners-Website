@@ -58,7 +58,7 @@ function Header() {
                         <ul>
                             <Link to="/blog" className='router-link'><li>Blog</li></Link>
                             <li>Sample Client Previews</li>
-                            <li>Interactive Needs Assessment</li>
+                            {/* <li>Interactive Needs Assessment</li> */}
                             {/* <li>Feature Documents</li> */}
                         </ul>
                     </div>
@@ -135,8 +135,8 @@ function Header() {
                             <ul>
                                 <Link to="/blog" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('resources')}}><li className='submenu-option'>Blog</li></Link>
                                 <li className='submenu-option'>Sample Client Previews</li>
-                                <li className='submenu-option'>Interactive Needs Assessment</li>
-                                <li className='submenu-option'>Feature Documents</li>
+                                {/* <li className='submenu-option'>Interactive Needs Assessment</li> */}
+                                {/* <li className='submenu-option'>Feature Documents</li> */}
                             </ul>
                         </div>
                     </li>

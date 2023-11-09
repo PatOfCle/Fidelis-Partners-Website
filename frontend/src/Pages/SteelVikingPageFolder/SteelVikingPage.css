@@ -2,3 +2,84 @@
     margin: 100px;
 
 }
+
+
+.sv-page-section {
+    
+}
+
+
+.erp-page-navbox {
+    border-style: solid;
+    border-width: 2px;
+    border-color: gray;
+    display: inline-block;
+    padding: 10px;
+
+    position: fixed;
+    top: var(--header-height);
+    right: 0;
+    height: 100%;
+
+    width: 20%;
+}
+
+.erp-page-navbox-options {
+    padding-left: 10px;
+}
+
+.erp-page-navbox-options > ul > li {
+    margin-top: 20px;
+}
+
+.erp-page-navbox ul li ul {
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.erp-page-navbox ul li ul li {
+    padding-top: 5px;
+}
+
+
+.erp-page-content {
+    /* border: solid; */
+    width: 80%;
+}
+
+@media (max-width: 800px) {
+    .erp-page-navbox {
+        display: none;
+    }
+
+    .erp-page-content {
+        width: 100%;
+    }
+}
+
+
+.erp-page-content section h3 {
+    font-size: 25px;
+}
+
+
+/* .erp-page-content .checklist li::before {
+    content: '✔';
+    color: green;
+    margin-right: 8px;
+    font-size: 1.2em;
+} */
+
+.erp-page-content > section > section {
+    padding-bottom: 30px;
+}
+
+.erp-page-content .checklist li {
+    background-image: url('../../assets/gc.png'); /* Replace with the path to your checkmark image */
+    background-repeat: no-repeat;
+    background-size: 30px; /* Adjust the size of the image */
+    background-position: left center; /* Position the image to the left of the text */
+    padding-left: 45px;
+    line-height: 50px;
+}
