@@ -10,11 +10,12 @@
 
 
 .erp-page-navbox {
-    border-style: solid;
+    border-left: solid;
     border-width: 2px;
     border-color: gray;
     display: inline-block;
     padding: 10px;
+    padding-top: 20px;
 
     position: fixed;
     top: var(--header-height);
@@ -22,6 +23,8 @@
     height: 100%;
 
     width: 20%;
+
+    z-index: 1;
 }
 
 .erp-page-navbox-options {
@@ -63,23 +66,15 @@
     font-size: 25px;
 }
 
-
-/* .erp-page-content .checklist li::before {
-    content: '✔';
-    color: green;
-    margin-right: 8px;
-    font-size: 1.2em;
-} */
-
 .erp-page-content > section > section {
     padding-bottom: 30px;
 }
 
 .erp-page-content .checklist li {
-    background-image: url('../../assets/gc.png'); /* Replace with the path to your checkmark image */
+    background-image: url('../../assets/gc.png');
     background-repeat: no-repeat;
-    background-size: 30px; /* Adjust the size of the image */
-    background-position: left center; /* Position the image to the left of the text */
+    background-size: 30px;
+    background-position: left center;
     padding-left: 45px;
     line-height: 50px;
 }

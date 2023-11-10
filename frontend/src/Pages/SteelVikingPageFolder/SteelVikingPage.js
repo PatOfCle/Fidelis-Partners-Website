@@ -1,11 +1,8 @@
 import React, { useEffect, useRef } from 'react'
 import './SteelVikingPage.css'
-
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import {Fade, Reveal} from 'react-awesome-reveal';
-
-import MyPage from '../../Components/MyPage/MyPage';
+import {Fade} from 'react-awesome-reveal';
 
 
 function SteelVikingPage() {
@@ -22,33 +19,15 @@ function SteelVikingPage() {
     window.scrollTo({ top: y, behavior: 'smooth' });
   };
 
-  const sectionRefs = {
-    section1: useRef(null),
-    section2: useRef(null),
-    section3: useRef(null),
 
-    quoting: useRef(null),
-    engineerToOrder: useRef(null),
-    salesOrders: useRef(null),
-    scheduling: useRef(null),
-    purchasingAndReceiving: useRef(null),
-    mrpInventory: useRef(null),
-    production: useRef(null),
-    shippingAndInvoicing: useRef(null),
-    timeAndAtttendance: useRef(null),
-    additionalFeaturesAndIntegrations: useRef(null),
-    // Add refs for other sections
-  };
-  
   return (
     <div className='SteelVikingPage-container'>
 
       <div className='software-fit-processes'>
               <h2>
-              <Fade direction='left' triggerOnce duration={1300}><span>Your ERP system should fit your processes. </span></Fade>
-              <br></br>
-              <Fade direction='right' triggerOnce duration={1300} delay={1900}><span>Not vice versa. </span></Fade>
-                  {/* <span>not vice versa. </span> */}
+                <Fade direction='left' triggerOnce duration={1300}><span>Your ERP system should fit your processes. </span></Fade>
+                <br></br>
+                <Fade direction='right' triggerOnce duration={1300} delay={1900}><span>Not vice versa. </span></Fade>
               </h2>
       </div>
 
@@ -60,29 +39,28 @@ function SteelVikingPage() {
 
         <div className='erp-page-navbox-options'>
           <ul>
-          {/* <li><HashLink to="#section1" smooth={true} duration={500} scroll={} offset={300}>Highlighted Modules</HashLink> */}
-          <li><HashLink to="#section1" smooth={true} duration={500} scroll={scrollToWithOffset('section1', -100)} offset={300}>Highlighted Modules</HashLink>
+          <li><HashLink to="#highlightedModules" smooth={true} duration={500} scroll={scrollToWithOffset('highlightedModules', -100)} offset={300}>Highlighted Modules</HashLink>
             <ul>
-            <li><HashLink to="#section1" smooth={true} duration={500} scroll={scrollToWithOffset('section1', -100)} offset={300}>Quoting</HashLink></li>
-              <li><HashLink to="#section1" smooth={true} duration={500} scroll={scrollToWithOffset('section1', -100)} offset={300}>Engineer to Order</HashLink></li>
-              <li><HashLink to="#section1" smooth={true} duration={500} scroll={scrollToWithOffset('section1', -100)} offset={300}>Sales Orders</HashLink></li>
-              <li><HashLink to="#section1" smooth={true} duration={500} scroll={scrollToWithOffset('section1', -100)} offset={300}>Scheduling</HashLink></li>
-              <li><HashLink to="#section1" smooth={true} duration={500} scroll={scrollToWithOffset('section1', -100)} offset={300}>Purchasing and Receiving</HashLink></li>
-              <li><HashLink to="#section1" smooth={true} duration={500} scroll={scrollToWithOffset('section1', -100)} offset={300}>MRP, Inventory</HashLink></li>
-              <li><HashLink to="#section1" smooth={true} duration={500} scroll={scrollToWithOffset('section1', -100)} offset={300}>Production</HashLink></li>
-              <li><HashLink to="#section1" smooth={true} duration={500} scroll={scrollToWithOffset('section1', -100)} offset={300}>Shipping and Invoicing</HashLink></li>
+              <li><HashLink to="#quoting" smooth={true} duration={500} scroll={scrollToWithOffset('quoting', -100)} offset={300}>Quoting</HashLink></li>
+              <li><HashLink to="#engineerToOrder" smooth={true} duration={500} scroll={scrollToWithOffset('engineerToOrder', -100)} offset={300}>Engineer to Order</HashLink></li>
+              <li><HashLink to="#salesOrders" smooth={true} duration={500} scroll={scrollToWithOffset('salesOrders', -100)} offset={300}>Sales Orders</HashLink></li>
+              <li><HashLink to="#scheduling" smooth={true} duration={500} scroll={scrollToWithOffset('scheduling', -100)} offset={300}>Scheduling</HashLink></li>
+              <li><HashLink to="#purchasingAndReceiving" smooth={true} duration={500} scroll={scrollToWithOffset('purchasingAndReceiving', -100)} offset={300}>Purchasing and Receiving</HashLink></li>
+              <li><HashLink to="#mrpInventory" smooth={true} duration={500} scroll={scrollToWithOffset('mrpInventory', -100)} offset={300}>MRP, Inventory</HashLink></li>
+              <li><HashLink to="#production" smooth={true} duration={500} scroll={scrollToWithOffset('production', -100)} offset={300}>Production</HashLink></li>
+              <li><HashLink to="#shippingAndInvoicing" smooth={true} duration={500} scroll={scrollToWithOffset('shippingAndInvoicing', -100)} offset={300}>Shipping and Invoicing</HashLink></li>
               {/* <li>Plant Floor Maintenance</li> */}
-              <li><HashLink to="#section1" smooth={true} duration={500} scroll={scrollToWithOffset('section1', -100)} offset={300}>Time and Attendance</HashLink></li>
+              <li><HashLink to="#" smooth={true} duration={500} scroll={scrollToWithOffset('timeAndAttendance', -100)} offset={300}>Time and Attendance</HashLink></li>
               {/* <li>GL Integration</li> */}
               {/* <li>Tooling</li> */}
               {/* <li>Workflows</li> */}
               {/* <li>Costing</li> */}
-              <li><HashLink to="#section1" smooth={true} duration={500} scroll={scrollToWithOffset('section1', -100)} offset={300}>Additional Features and Integrations</HashLink></li>
+              <li><HashLink to="#" smooth={true} duration={500} scroll={scrollToWithOffset('additionalCustomFeaturesAndIntegrations', -100)} offset={300}>Additional Features and Integrations</HashLink></li>
               {/* <li>CRM Integration</li> */}
             </ul>
           </li>
-          <li>Case Studies</li>
-          <li>Compare</li>
+          <li><HashLink to="#" smooth={true} duration={500} scroll={scrollToWithOffset('caseStudies', -100)} offset={300}>Case Studies</HashLink></li>
+          <li><HashLink to="#" smooth={true} duration={500} scroll={scrollToWithOffset('compare', -100)} offset={300}>Compare</HashLink></li>
           </ul>
         </div>
 
@@ -93,13 +71,13 @@ function SteelVikingPage() {
         
 
       {/* <section ref={sectionRefs.section1}> */}
-      <section id='section1'>
+      <section id='highlightedModules'>
           <h1 className='section-header' style={{fontSize: '40px', paddingTop: '50px', paddingBottom: '30px'}}>
             Highlighted Modules
           </h1>
 
 
-          <section >
+          <section id='quoting'>
             <h3>Quoting</h3>
             <h4> <em> Uses company's preferred Excel-based quoting and integrates within the workflow, sharing data bi-directionally. </em> </h4>
             <div>
@@ -114,7 +92,7 @@ function SteelVikingPage() {
 
           </section>
 
-          <section >
+          <section id='engineerToOrder'>
             <h3>Engineer to Order</h3>
             <h4> <em> Supports many variations of item and tool set up. </em> </h4>
 
@@ -128,7 +106,7 @@ function SteelVikingPage() {
             </div>
           </section>
 
-          <section >
+          <section id='salesOrders'>
             <h3>Sales Orders</h3>
             <h4> <em> Emphasizes efficient order entry, with data controls to ensure accuracy. </em> </h4>
 
@@ -142,7 +120,7 @@ function SteelVikingPage() {
             </div>
           </section>
 
-          <section >
+          <section id='scheduling'>
             <h3>Scheduling</h3>
             <h4> <em>Various scheduling tools to fit an organization. </em> </h4>
 
@@ -156,7 +134,7 @@ function SteelVikingPage() {
             </div>
           </section>
 
-          <section >
+          <section id='purchasingAndReceiving'>
             <h3>Purchasing and Receiving</h3>
             <h4> <em>Supports all types fo raw material, outside process, miscellaneous purchases. </em> </h4>
 
@@ -184,7 +162,7 @@ function SteelVikingPage() {
             </div>
           </section> */}
 
-          <section >
+          <section id='production'>
             <h3>Production</h3>
             <h4> <em>End-to-end production planning and execution.</em> </h4>
 
@@ -199,7 +177,7 @@ function SteelVikingPage() {
             </div>
           </section>
 
-          <section >
+          <section id='shippingAndInvoicing'>
             <h3>Shipping and Invoicing</h3>
             <h4> <em>Standard and distinctive shipping & invoicing functions to always know what is where and when.</em> </h4>
 
@@ -226,7 +204,7 @@ function SteelVikingPage() {
             </div>
           </section> */}
 
-          <section >
+          <section id='timeAndAttendance'>
             <h3>Time and Attendance</h3>
             <h4> <em></em> </h4>
 
@@ -292,7 +270,7 @@ function SteelVikingPage() {
             </div>
           </section> */}
 
-          <section >
+          <section id='additionalCustomFeaturesAndIntegrations'>
             <h3>Additional Custom Features and Integrations</h3>
             <h4> <em></em> </h4>
 
@@ -311,13 +289,13 @@ function SteelVikingPage() {
           
         </section> */}
         
-        <section>
+        <section id='caseStudies'>
           <h1 className='section-header' style={{fontSize: '40px', paddingTop: '50px', paddingBottom: '30px'}}>
             Case Studies
           </h1>
         </section>
 
-        <section>
+        <section id='compare'>
           <h1 className='section-header' style={{fontSize: '40px', paddingTop: '50px', paddingBottom: '30px'}}>
             Compare
           </h1>
