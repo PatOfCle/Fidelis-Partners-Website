@@ -12,6 +12,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Metropolis Extra Bold';
+  src: url('./assets/metropolis.extra-bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --main-font: 'Metropolis Semibold', sans-serif, Times;
   --secondary-font: 'Metropolis Regular', sans-serif, Times;
@@ -22,6 +29,10 @@
 * {
   font-family: var(--main-font);
   /* font-family: var(--secondary-font); */
+}
+
+strong {
+  font-family: 'Metropolis Extra Bold', sans-serif;
 }
 
 .show-pointer {

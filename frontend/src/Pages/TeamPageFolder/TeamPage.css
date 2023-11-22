@@ -3,9 +3,9 @@
 }
 
 .team-intro-outer-container {
-    background-color: rgb(227, 227, 227);
-    padding-top: 100px;
-    padding-bottom: 120px;
+    background-color: rgb(255, 255, 255);
+    padding-top: 60px;
+    /* padding-bottom: 60px; */
 }
 
 .team-intro-container {
@@ -19,7 +19,7 @@
 
     text-align:center;
 
-    margin-top: 100px;
+    margin-top: 60px;
     margin-bottom: 100px;
 }
 

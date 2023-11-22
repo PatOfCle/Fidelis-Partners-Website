@@ -73,7 +73,7 @@ function CompanySnapshotHomepage() {
         <div className='message-text'>
             
         Fidelis has always maintained the same goal: <strong>Not to be the biggest, but to
-        be the best.</strong> While prioritizing the latter, the most significant challenge we&#39;ve
+        be the best.</strong> While prioritizing the latter, the most significant challenge we've
         faced is meeting the immense demand for our solutions.
         <br></br><br></br>
 
@@ -104,11 +104,12 @@ function CompanySnapshotHomepage() {
         for it. Ask our clients why they love our products; our 100% client retention
         rate says it all.
         <br></br><br></br>
-
-        What is your business's current operational trajectory? How many simple (or complex) responsibilities are you falling short on? 
-        
         <br></br><br></br>
-        Book a free 30-minute demo today to find learn what your business can become.
+
+        What is your business's current operational trajectory and do you truly see your current ERP system as a valuable partner in that future?
+        
+        <br></br><br></br><br></br>
+        Book an introduction today to learn how our SV solution and services can help your business move forward.
         <br></br><br></br><br></br><br></br>
         </div>
         

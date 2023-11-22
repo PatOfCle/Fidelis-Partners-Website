@@ -69,7 +69,7 @@ function Header() {
                 </li>
 
                 <li className="menu-item book-demo-menu-item-button">
-                    <Link to="/contact/book-demo" className='router-link'><li>Book Free Demo</li></Link>
+                    <Link to="/contact/book-demo" className='router-link'><li>Book Introduction</li></Link>
 
                 </li>
             </ul>

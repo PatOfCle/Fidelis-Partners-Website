@@ -99,8 +99,9 @@ function TeamPage() {
                     Learn more about the Fidelis Team
                 </h2>
                 <div>
-                    The Fidelis Team's expertise varies widely across Engineering, Product Management, and Consulting. 
-                    Read more about the exceptional talent we've brought onto our team. 
+                    {/* The Fidelis Team's expertise varies widely across Engineering, Product Management, and Consulting. 
+                    Read more about the exceptional talent we've brought onto our team.  */}
+                    The Fidelis Team is defined by versatility, experience, integrity, intelligence, and commitment.
                 </div>
             </div>
         </div>

@@ -7,7 +7,7 @@ function BookDemoBlock() {
     <div className='BookDemoBlock-container'>
         
         <div className="menu-item book-demo-menu-item-button book-demo-block-button">
-            <Link to="/contact/book-demo" className='router-link'><li>Book Free Demo <span className='double-arrow'>&#xbb;</span></li></Link>
+            <Link to="/contact/book-demo" className='router-link'><li>Book Introduction <span className='double-arrow'>&#xbb;</span></li></Link>
 
         </div>
 
