@@ -18,6 +18,22 @@ const teamMembersData = [
         linkedIn: 'https://www.linkedin.com/in/mike-sweet-071871/',
     },
     {
+        firstName: 'Joe',
+        lastName: 'Goletz',
+        title: 'Director of Delivery',
+        image: 'https://fidelis-website-storage.s3.us-east-2.amazonaws.com/team-content/headshots/Joe_Goletz_Headshot.png',
+        bio: 'Bio...',
+        linkedIn: '',
+    },
+    {
+        firstName: 'Matt',
+        lastName: 'Sweet',
+        title: 'Director of Consulting',
+        image: 'https://fidelis-website-storage.s3.us-east-2.amazonaws.com/team-content/headshots/Matt_Sweet_Headshot.png',
+        bio: 'Bio...',
+        linkedIn: 'https://www.linkedin.com/in/matt-sweet-6592189/',
+    },
+    {
         firstName: 'Paul',
         lastName: 'Malhotra',
         title: 'Data Architecture',
@@ -57,22 +73,6 @@ const teamMembersData = [
         image: 'https://fidelis-website-storage.s3.us-east-2.amazonaws.com/team-content/headshots/Patrick_Sweet_Headshot.png',
         bio: "Patrick serves as an ERP System Engineer, committed to enabling new and existing manufacturing clients to integrate and operate on Steel Viking ERP. \n\nPrior to joining Fidelis, Patrick graduated with a B.E. in Computer Science from the University of Notre Dame, with Business and RE minors. Patrick experience in software solutions includes a full stack application used in a dozen locales at Amazon, among others. In college, Patrick started, managed, and scaled a service business, followed by a successful exit.\n\nIn his free time, Patrick enjoys reading, coaching basketball at his local grade school, and building solutions for his most recent enterprising endeavor. ",
         linkedIn: 'https://www.linkedin.com/in/patricksweet3/',
-    },
-    {
-        firstName: 'Joe',
-        lastName: 'Goletz',
-        title: 'Director of Delivery',
-        image: defaultProfileIcon,
-        bio: 'Bio...',
-        linkedIn: '',
-    },
-    {
-        firstName: 'Matt',
-        lastName: 'Sweet',
-        title: 'Director of Consulting',
-        image: defaultProfileIcon,
-        bio: 'Bio...',
-        linkedIn: 'https://www.linkedin.com/in/matt-sweet-6592189/',
     },
     
 ]
