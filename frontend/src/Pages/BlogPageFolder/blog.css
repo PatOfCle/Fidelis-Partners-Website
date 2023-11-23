@@ -36,20 +36,24 @@
 }
 
 .blog-articles img {
-    width: 300px;
-    height: 200px;
+    /* width: 300px;
+    height: 200px; */
+    max-width: 300px;
     object-fit: cover;
     /* border: solid; */
 }
 
 .single-blog-article {
     width: 300px;
+    height: 300px;
     cursor: pointer;
     position: relative;
     padding: 10px 10px;
     background: white;
     font-size: 18px;
     transition: all 0.3s;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Set shadow properties */
 }
 
 .single-blog-article::after,
@@ -94,10 +98,13 @@
 
 
 .blog-post-preview-title {
-    height: 8vh;
+    height: 7vh;
 }
 
 .read-now-arrow {
+    position: absolute;
+    bottom: 15px;
+    right: 18px;
     /* border: solid; */
     text-align: right;
     font-size: 14px;

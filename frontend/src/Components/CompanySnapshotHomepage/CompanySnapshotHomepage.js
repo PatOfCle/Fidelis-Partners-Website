@@ -67,50 +67,67 @@ function CompanySnapshotHomepage() {
     return (
     <div className='CompanySnapshotHomepage-container'>
 
-        <h2 className=''>
+        <h1 className='CompanySnapshotHomepage-container-header'>
             Let the experts handle ERP, so you can do what you're best at. 
-        </h2>
+        </h1>
         <div className='message-text'>
+            <br></br><br></br>
+
+            Fidelis has always maintained the same goal: <strong>Not to be the biggest, but to
+            be the best.</strong> While prioritizing the latter, the most significant challenge we've
+            faced is meeting the immense demand for our solutions.
+            <br></br><br></br>
+
+            {/* Your manufacturing goals are simple: You want to make and sell more stuff
+            and be as profitable as possible doing so. Many manufacturers know of new
+            opportunities that they simply cannot capitalize on because of internal
+            operational bottlenecks. A nimble, comprehensive, data-oriented ERP system
+            can be a key part of changing this. Your greatest financial return will not be
+            actualized throwing more capital at the same generic, large system expecting
+            different results.
+            <br></br><br></br>
+
+            Manufacturing leaders are often forced early on to accept the lie that you will
+            never get what you need from your ERP system. And if you do, it will cost an
+            arm and a leg, months of foregone revenue, and a &quot;fix&quot; that, if they&#39;re lucky,
+            might last a few months.
+            <br></br><br></br> */}
+
+            Many manufacturers know of new opportunities that they cannot capitalize upon, due to internal constraints. 
+            A nimble, comprehensive, data-oriented ERP system can be a key part of identifying, managing, and changing this.
+            <br></br><br></br>
             
-        Fidelis has always maintained the same goal: <strong>Not to be the biggest, but to
-        be the best.</strong> While prioritizing the latter, the most significant challenge we've
-        faced is meeting the immense demand for our solutions.
-        <br></br><br></br>
+            Manufacturing leaders are often forced to accept the lie that they will never get what is needed from their ERP. 
+            Or, to get that, it will cost an arm and a leg, plenty of internal pain changing processes, and a basic certainty 
+            that a required upgrade is in their future.  They can also be guaranteed of increased annual licensing as the industry 
+            consolidates and each licensee becomes more dependent.
 
-        Your manufacturing goals are simple: You want to make and sell more stuff
-        and be as profitable as possible doing so. Many manufacturers know of new
-        opportunities that they simply cannot capitalize on because of internal
-        operational bottlenecks. A nimble, comprehensive, data-oriented ERP system
-        can be a key part of changing this. Your greatest financial return will not be
-        actualized throwing more capital at the same generic, large system expecting
-        different results.
-        <br></br><br></br>
+            <br></br><br></br>
 
-        Manufacturing leaders are often forced early on to accept the lie that you will
-        never get what you need from your ERP system. And if you do, it will cost an
-        arm and a leg, months of foregone revenue, and a &quot;fix&quot; that, if they&#39;re lucky,
-        might last a few months.
-        <br></br><br></br>
+            {/* The solution is not an unaccountable, faceless corporation providing your
+            ERP system, who will likely continue to increase your annual licensing as you
+            become more dependent upon them. And it certainly is not throwing more
+            money at them when your problems aren&#39;t being solved. */}
+            The solution to your ERP needs is not an unaccountable, faceless corporation who will continue to demand more money 
+            and will not actively be involved helping tackle your needs.
+            <br></br><br></br>
 
-        The solution is not an unaccountable, faceless corporation providing your
-        ERP system, who will likely continue to increase your annual licensing as you
-        become more dependent upon them. And it certainly is not throwing more
-        money at them when your problems aren&#39;t being solved.
-        <br></br><br></br>
+            {/* Our Enterprise Resource Planning solutions will give your company what it
+            needs, when it needs it, and provide invaluable insight from decades of
+            experience of solving identical or adjacent problems. But don&#39;t take our word
+            for it. Ask our clients why they love our products; our 100% client retention
+            rate says it all. */}
+            Our SV ERP solution will give your company what it needs, when it needs it, including invaluable insight from decades of 
+            experience solving identical or adjacent problems. But don't take our word for it. Ask our clients why they love us; 
+            our 100% client retention rate says it all.
+            <br></br><br></br>
+            <br></br><br></br>
 
-        Our Enterprise Resource Planning solutions will give your company what it
-        needs, when it needs it, and provide invaluable insight from decades of
-        experience of solving identical or adjacent problems. But don&#39;t take our word
-        for it. Ask our clients why they love our products; our 100% client retention
-        rate says it all.
-        <br></br><br></br>
-        <br></br><br></br>
-
-        What is your business's current operational trajectory and do you truly see your current ERP system as a valuable partner in that future?
-        
-        <br></br><br></br><br></br>
-        Book an introduction today to learn how our SV solution and services can help your business move forward.
-        <br></br><br></br><br></br><br></br>
+            What is your business's current operational trajectory and do you truly see your current ERP system as a valuable partner in that future?
+            
+            <br></br><br></br><br></br>
+            Book an introduction today to learn how our SV solution and services can help your business move forward.
+            <br></br><br></br><br></br><br></br>
         </div>
         
         <BookDemoBlock />

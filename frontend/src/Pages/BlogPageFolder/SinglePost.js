@@ -51,6 +51,7 @@ function SinglePost() {
                             src={singlePost.mainImage.asset.url} 
                             alt={singlePost.title} 
                             title={singlePost.title} 
+                            className='article-image'
                         />
                     )}
                 </div>
@@ -75,6 +76,10 @@ function SinglePost() {
                 &larr; Back to Articles
             </div>
         </Link>
+
+        {/* <div>
+            Articles you might also like:
+        </div> */}
 
         {/* <Link to="/about/values" className='router-link'><li>Our Values</li></Link> */}
 
