@@ -8,6 +8,7 @@ function AboutSectionHomepage() {
     return (
         <div className='AboutSectionHomepage-container'>
             <div className='customer-text'>
+                Proudly Powering
                 {/* For over two decades, Fidelis Partners has been trusted to solve such problems and accelerate growth for dozens of clients, 
                 <br></br>ranging from $10 Million to $30 Billion in size. */}
                 {/* Powering */}

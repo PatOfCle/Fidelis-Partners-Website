@@ -1,19 +1,29 @@
 .AboutSectionHomepage-container{
     background-color: rgb(230, 230, 230);
-    padding-top: 80px;
-    padding-bottom: 80px;
+    /* padding-top: 80px; */
+    padding-bottom: 50px;
 }
 
 .AboutSectionHomepage-container .customer-text {
     width: 90%;
-    /* text-align: center; */
-    padding-left: 20px;
+    text-align: center;
+    /* padding-left: 20px; */
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.customer-text {
-    font-size: 2.6vw;
+
+@media (min-width: 1300px) {
+    .customer-text {
+        font-size: 45px;
+    }
 }
 
+@media (max-width: 1300px) {
+    .customer-text {
+        font-size: 25px;
+    }
+}
 
 
 @keyframes slide {
@@ -62,7 +72,7 @@
 }
 
 .logos-slide img {
-    max-height: 8vw;
+    max-height: 5vw;
     /* max-width: 22vw; */
 
     margin: 0 40px;

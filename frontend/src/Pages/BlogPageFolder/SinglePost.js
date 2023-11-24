@@ -73,7 +73,7 @@ function SinglePost() {
 
         <Link to="/blog">
             <div className='read-more-articles'>
-                &larr; Back to Articles
+                &larr; Back to Knowledge Base
             </div>
         </Link>
 

@@ -45,8 +45,8 @@ function Header() {
                     <img src={dropdownArrow} className='dropdown-arrow'/>
                     <div className="dropdown">
                         <ul>
-                            <Link to="/solutions/steel-viking-erp" className='router-link'><li>Steel Viking ERP</li></Link>
-                            <Link to="/solutions/additional-services" className='router-link'><li>Additional Services</li></Link>
+                            <Link to="/solutions/sv-erp" className='router-link'><li>SV ERP</li></Link>
+                            <Link to="/solutions/consulting-services" className='router-link'><li>Consulting Services</li></Link>
                         </ul>
                     </div>
                 </li>
@@ -56,8 +56,9 @@ function Header() {
                     <img src={dropdownArrow} className='dropdown-arrow'/>
                     <div className="dropdown">
                         <ul>
-                            <Link to="/blog" className='router-link'><li>Blog</li></Link>
-                            <li>Sample Client Previews</li>
+                        <Link to="/blog" className='router-link'><li>Knowledge Base</li></Link>
+                        {/* <Link to="/blog" className='router-link'><li>Customer Wins</li></Link> */}
+                            {/* <li>Sample Client Previews</li> */}
                             {/* <li>Interactive Needs Assessment</li> */}
                             {/* <li>Feature Documents</li> */}
                         </ul>
@@ -94,7 +95,7 @@ function Header() {
                 <ul className="overlay-menu show-pointer">
 
                     <li className="menu-item book-demo-menu-item-button" style={{marginBottom: 30}}>
-                        <Link to="/contact/book-demo" className='router-link'><li onClick={() => {setMenuOpen(!menuOpen)}}> Book Free Demo <span className='double-arrow'>&#xbb;</span> </li></Link>
+                        <Link to="/contact/book-demo" className='router-link'><li onClick={() => {setMenuOpen(!menuOpen)}}> Book Introduction <span className='double-arrow'>&#xbb;</span> </li></Link>
 
                     </li>
 
@@ -122,8 +123,8 @@ function Header() {
                         </div>
                         <div className={`submenu ${activeOption === 'solutions' ? 'open' : ''}`}>
                             <ul>
-                                <Link to="/solutions/steel-viking-erp" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('solutions')}}><li className='submenu-option'>Steel Viking ERP</li></Link>
-                                <li className='submenu-option'>Additional Services</li>
+                                <Link to="/solutions/sv-erp" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('solutions')}}><li className='submenu-option'>SV ERP</li></Link>
+                                <li className='submenu-option'>Consulting Services</li>
                             </ul>
                         </div>
                     </li>
@@ -133,8 +134,8 @@ function Header() {
                         </div>
                         <div className={`submenu ${activeOption === 'resources' ? 'open' : ''}`}>
                             <ul>
-                                <Link to="/blog" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('resources')}}><li className='submenu-option'>Blog</li></Link>
-                                <li className='submenu-option'>Sample Client Previews</li>
+                                <Link to="/blog" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('resources')}}><li className='submenu-option'>Knowledge Base</li></Link>
+                                {/* <li className='submenu-option'>Sample Client Previews</li> */}
                                 {/* <li className='submenu-option'>Interactive Needs Assessment</li> */}
                                 {/* <li className='submenu-option'>Feature Documents</li> */}
                             </ul>

@@ -29,7 +29,7 @@ function Blog() {
         <br></br>
         
         <h1 className='blog-page-header'>
-            ERP System Blog
+            Knowledge Base
         </h1>
 
         <div className='blog-page-content'>

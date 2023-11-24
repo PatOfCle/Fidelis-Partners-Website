@@ -14,7 +14,7 @@ const words = [
     "Machine Integration",
     "Mobile Solutions",
     "MRP",
-    "Multi-Level BOMs",
+    // "Multi-Level BOMs",
     "Order Management",
     "Plant Floor Automation",
     "Production",

@@ -24,8 +24,8 @@ function Footer() {
                     Solutions
                 </h3>
                 <div>
-                    <Link to="/solutions/steel-viking-erp" className='footer-link'><li>Steel Viking ERP</li></Link>
-                    <a href="" class="footer-link"><li>Additional Services</li></a>
+                    <Link to="/solutions/sv-erp" className='footer-link'><li>SV ERP</li></Link>
+                    <a href="" class="footer-link"><li>Consulting Services</li></a>
                 </div>
             </div>
             <div className='bottom-navigation-section'>
@@ -33,9 +33,10 @@ function Footer() {
                     Resources
                 </h3>
                 <div>
-                    <Link to="/blog" className='footer-link'><li>Blog</li></Link>
-                    <a href="" class="footer-link"><li>Sample Client Previews</li></a>
-                    <a href="" class="footer-link"><li>Interactive Needs Assessment</li></a>
+                <Link to="/blog" className='footer-link'><li>Knowledge Base</li></Link>
+                {/* <Link to="/blog" className='footer-link'><li>Client Wins</li></Link> */}
+                    {/* <a href="" class="footer-link"><li>Sample Client Previews</li></a> */}
+                    {/* <a href="" class="footer-link"><li>Interactive Needs Assessment</li></a> */}
                     {/* <a href="" class="footer-link"><li>Monthly Report</li></a> */}
                     {/* <a href="" class="footer-link"><li>Feature Documents</li></a> */}
                 </div>
