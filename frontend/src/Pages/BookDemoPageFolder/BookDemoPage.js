@@ -12,7 +12,8 @@ function BookDemoPage() {
             </h1>
 
             <div>
-                Want to learn more? Fill out this form and leave us a few details at the bottom!
+                {/* Want to learn more? Fill out this form and leave us a few details at the bottom! */}
+                Contact us to book an introduction and schedule an ERP and enterprise data consultation.
                 <br></br>
                 <br></br>
                 Fidelis Partners offers concise demos as well as free ERP and enterprise data consultations.

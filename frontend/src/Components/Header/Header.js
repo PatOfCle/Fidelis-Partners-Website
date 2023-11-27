@@ -33,7 +33,7 @@ function Header() {
                     <img src={dropdownArrow} className='dropdown-arrow'/>
                     <div className="dropdown">
                         <ul>
-                            <Link to="/about/values" className='router-link'><li>Our Values</li></Link>
+                            <Link to="/about/values" className='router-link'><li>Values</li></Link>
                             <Link to="/about/history" className='router-link'><li>History</li></Link>
                             <Link to="/about/team" className='router-link'><li>The Team</li></Link>
                         </ul>
@@ -105,13 +105,13 @@ function Header() {
                         </div>
                         <div className={`submenu ${activeOption === 'about' ? 'open' : ''}`}>
                             {/* <ul>
-                                <li className='submenu-option'>Our Values</li>
+                                <li className='submenu-option'>Values</li>
                                 <li className='submenu-option'>History</li>
                                 <li className='submenu-option'>The Team</li>
                             </ul> */}
 
                             <ul>
-                                <Link to="/about/values" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('about')}}><li className='submenu-option'>Our Values</li></Link>
+                                <Link to="/about/values" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('about')}}><li className='submenu-option'>Values</li></Link>
                                 <Link to="/about/history" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('about')}}><li className='submenu-option'>History</li></Link>
                                 <Link to="/about/team" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('about')}}><li className='submenu-option'>The Team</li></Link>
                             </ul>

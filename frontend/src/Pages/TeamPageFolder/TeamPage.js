@@ -22,7 +22,7 @@ const teamMembersData = [
         lastName: 'Goletz',
         title: 'Director of Delivery',
         image: 'https://fidelis-website-storage.s3.us-east-2.amazonaws.com/team-content/headshots/Joe_Goletz_Headshot.png',
-        bio: 'Bio...',
+        bio: 'Joe is a results-oriented professional with an established record in project management, data analysis, software implementation, data quality/data governance as well as operational and financial management. \n\nIn his free time, Joe enjoys vegetable gardening, hiking, kayaking, baseball, basketball, football, and golf.',
         linkedIn: '',
     },
     {
@@ -30,7 +30,7 @@ const teamMembersData = [
         lastName: 'Sweet',
         title: 'Director of Consulting',
         image: 'https://fidelis-website-storage.s3.us-east-2.amazonaws.com/team-content/headshots/Matt_Sweet_Headshot.png',
-        bio: 'Bio...',
+        bio: 'Matt joined Fidelis Partners in 2013 after working 17 years in banking with time in investment services, finance and risk. Matt has maintained many roles at Fidelis including banking roles of Risk Management CCAR Automation functional lead, Investment Service Enterprise Data business lead, IT Data Governance manager and Data Architecture team lead. He is a graduate of Ohio State University with his undergraduate work completed in accounting and masters work in public policy and natural resources. \n\nOutside of the office, he enjoys the great outdoors in the form of hiking, backpacking, fishing and kayaking as well as woodworking, cooking and spending time with his family.',
         linkedIn: 'https://www.linkedin.com/in/matt-sweet-6592189/',
     },
     {

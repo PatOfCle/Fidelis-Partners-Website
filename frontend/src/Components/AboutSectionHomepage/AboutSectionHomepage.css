@@ -2,7 +2,14 @@
     background-color: rgb(230, 230, 230);
     /* padding-top: 80px; */
     padding-bottom: 50px;
+
+    /* display: grid;
+    place-items: center; */
 }
+
+/* .company-list-sv-logo-instance {
+
+} */
 
 .AboutSectionHomepage-container .customer-text {
     width: 90%;
@@ -10,10 +17,31 @@
     /* padding-left: 20px; */
     padding-top: 50px;
     padding-bottom: 50px;
+    /* display: inline-block; */
+
+    font-size: 38px;
+
+    margin: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 }
 
+.AboutSectionHomepage-container .customer-text * {
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
-@media (min-width: 1300px) {
+.AboutSectionHomepage-container .customer-text img {
+    width: 100px;
+
+    /* position: relative;
+    top: 10px; */
+}
+
+/* @media (min-width: 1300px) {
     .customer-text {
         font-size: 45px;
     }
@@ -23,7 +51,7 @@
     .customer-text {
         font-size: 25px;
     }
-}
+} */
 
 
 @keyframes slide {
@@ -46,7 +74,7 @@
 .logos:before, .logos:after {
     position: absolute;
     top: 0;
-    width: 250px;
+    width: 170px;
     height: 100%;
     content: "";
     z-index: 2;
@@ -72,8 +100,10 @@
 }
 
 .logos-slide img {
-    max-height: 5vw;
-    /* max-width: 22vw; */
+    /* max-height: 5vw; */
+    max-height: 100px;
+    /* max-width: 25vw; */
+    max-width: 200px;
 
     margin: 0 40px;
     vertical-align: middle;

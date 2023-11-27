@@ -1,11 +1,14 @@
 import React from 'react'
-import Header from '../../Components/Header/Header'
 import './HistoryPage.css'
+import Timeline from './Timeline';
 
 function History() {
+
   return (
     <div className='history-container'>
-        
+
+      <Timeline />
+
         <div class="history-container-text">
           <h1>History</h1>
           

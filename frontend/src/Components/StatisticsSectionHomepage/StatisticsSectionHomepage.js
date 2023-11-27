@@ -21,7 +21,7 @@ function StatisticsSectionHomepage() {
         <div className='stat-container' style={{borderLeft: 'solid', borderColor: 'lightgrey'}}>
             <div className='spotlight-stat' style={{fontSize: '8vw', color: 'rgb(11, 136, 0)'}}>
                 {/* 17% */}
-                <CountUp start={0} end={17} suffix="%" enableScrollSpy scrollSpyDelay={1000} scrollSpyOnce duration={2}/>
+                <CountUp start={0} end={14} suffix="%" enableScrollSpy scrollSpyDelay={1000} scrollSpyOnce duration={2}/>
             </div>
             <div className='stat-description'>
                 Average Annual Revenue Increase for Companies Using Steel Viking
