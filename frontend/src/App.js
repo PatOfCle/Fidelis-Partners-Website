@@ -34,8 +34,8 @@ function App() {
         </Route >
 
         <Route path="solutions">
-          <Route index element={<Navigate to="steel-viking-erp" replace />}/>
-          <Route path="steel-viking-erp" element={<SteelVikingPage />}/>
+          <Route index element={<Navigate to="sv-erp" replace />}/>
+          <Route path="sv-erp" element={<SteelVikingPage />}/>
         </Route >
 
         <Route path="contact">

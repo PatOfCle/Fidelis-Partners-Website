@@ -35,7 +35,7 @@ function Header() {
                         <ul>
                             <Link to="/about/values" className='router-link'><li>Values</li></Link>
                             <Link to="/about/history" className='router-link'><li>History</li></Link>
-                            <Link to="/about/team" className='router-link'><li>The Team</li></Link>
+                            <Link to="/about/team" className='router-link'><li>Team</li></Link>
                         </ul>
                     </div>
                 </li>
@@ -113,7 +113,7 @@ function Header() {
                             <ul>
                                 <Link to="/about/values" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('about')}}><li className='submenu-option'>Values</li></Link>
                                 <Link to="/about/history" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('about')}}><li className='submenu-option'>History</li></Link>
-                                <Link to="/about/team" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('about')}}><li className='submenu-option'>The Team</li></Link>
+                                <Link to="/about/team" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('about')}}><li className='submenu-option'>Team</li></Link>
                             </ul>
                         </div>
                     </li>

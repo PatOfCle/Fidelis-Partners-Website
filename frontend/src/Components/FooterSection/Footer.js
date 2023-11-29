@@ -16,7 +16,7 @@ function Footer() {
                 <div>
                     <Link to="/about/values" className='footer-link'><li>Values</li></Link>
                     <Link to="/about/history" className='footer-link'><li>History</li></Link>
-                    <Link to="/about/team" className='footer-link'><li>The Team</li></Link>
+                    <Link to="/about/team" className='footer-link'><li>Team</li></Link>
                 </div>
             </div>
             <div className='bottom-navigation-section'>

@@ -3,6 +3,7 @@ import './SteelVikingPage.css'
 import { useLocation } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import {Fade} from 'react-awesome-reveal';
+import svLogo from '../../assets/sv-logo.png'
 
 
 function SteelVikingPage() {
@@ -29,6 +30,9 @@ function SteelVikingPage() {
                 <br></br>
                 <Fade direction='right' triggerOnce duration={1300} delay={1900}><span>Not vice versa. </span></Fade>
               </h2>
+              <Fade direction='right' triggerOnce duration={1000} delay={2700}>
+                <img src={svLogo} className='sv-page-logo-instance'/> 
+              </Fade>
       </div>
 
 

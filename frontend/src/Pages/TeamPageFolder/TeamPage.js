@@ -30,7 +30,7 @@ const teamMembersData = [
         lastName: 'Sweet',
         title: 'Director of Consulting',
         image: 'https://fidelis-website-storage.s3.us-east-2.amazonaws.com/team-content/headshots/Matt_Sweet_Headshot.png',
-        bio: 'Matt joined Fidelis Partners in 2013 after working 17 years in banking with time in investment services, finance and risk. Matt has maintained many roles at Fidelis including banking roles of Risk Management CCAR Automation functional lead, Investment Service Enterprise Data business lead, IT Data Governance manager and Data Architecture team lead. He is a graduate of Ohio State University with his undergraduate work completed in accounting and masters work in public policy and natural resources. \n\nOutside of the office, he enjoys the great outdoors in the form of hiking, backpacking, fishing and kayaking as well as woodworking, cooking and spending time with his family.',
+        bio: 'Matt joined Fidelis Partners in 2013.\n\nHe is a graduate of the Ohio State University with undergraduate work completed in accounting and masters work in public policy and natural resources.  Matt brings 25+ years of financial services, data architecture, business analysis and risk experience to the team and our clients.   He has supported a breadth of our clients within industries ranging from manufacturing to parts and services distribution to financial services.\n\nOutside of the office, Matt enjoys hiking, backpacking, fishing and kayaking as well as woodworking, cooking and spending time with his family.',
         linkedIn: 'https://www.linkedin.com/in/matt-sweet-6592189/',
     },
     {

@@ -3,11 +3,25 @@
 
 }
 
+.software-fit-processes {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.sv-page-logo-instance {
+    width: 180px;
+}
+
+@media (max-width: 1200px) {
+    .software-fit-processes {
+        display: block;
+    }
+}
 
 .sv-page-section {
     
 }
-
 
 .erp-page-navbox {
     border-left: solid;

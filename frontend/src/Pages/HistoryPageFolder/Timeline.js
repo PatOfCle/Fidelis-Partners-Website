@@ -29,6 +29,10 @@ const timelineData = [
     },
     {
         text: 'Fidelis’ first foray into Machine Integration, Basic Aluminum in Cleveland, OH connects all of its manufacturing equipment – die casting and trim presses – to SV to present real-time dashboard reporting of plant floor activity.',
+        date: '2014',
+    },
+    {
+        text: 'Fidelis purchases, renovates and moves into modern office space in Euclid, Ohio, as business growth requires a place for employee and client collaboration.',
         date: '2015',
     },
     {
