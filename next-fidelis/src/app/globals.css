@@ -1,0 +1,78 @@
+/* minimized are the index.css defaults from react app */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* All the below is from App.css in original react app */
+
+@font-face {
+  font-family: 'Metropolis Semibold';
+  src: url('/assets/Metropolis-SemiBold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Metropolis Regular';
+  src: url('/assets/Metropolis-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Metropolis Extra Bold';
+  src: url('/assets/metropolis.extra-bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --main-font: 'Metropolis Semibold', sans-serif, Times;
+  --secondary-font: 'Metropolis Regular', sans-serif, Times;
+
+  --theme-color-1: rgb(176, 176, 134);
+}
+
+* {
+  font-family: var(--main-font);
+  /* font-family: var(--secondary-font); */
+}
+
+strong {
+  font-family: 'Metropolis Extra Bold', sans-serif;
+}
+
+.show-pointer {
+  cursor: pointer;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.router-link {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.app-container {
+  position: relative;
+  min-height: calc( 100vh - var(--header-height)  - var(--footer-min-height));
+}
+
+li {
+  list-style-type: none;
+  text-decoration: none;
+}

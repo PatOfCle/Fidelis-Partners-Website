@@ -1,0 +1,138 @@
+.TeamPage-container {
+    position: relative;
+}
+
+.team-intro-outer-container {
+    background-color: rgb(255, 255, 255);
+    padding-top: 60px;
+    /* padding-bottom: 60px; */
+}
+
+.team-intro-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.team-members-grid {
+    max-width: 900px;
+    margin: auto;
+
+    text-align:center;
+
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.team-member-component-holder {
+    display: inline-block;
+    margin: 15px;
+    height: 350px;
+    align-items: center;
+
+    position: relative;
+}
+
+
+.team-member-popup-overlay {
+    background-color: rgba(174, 174, 174, 0.9);
+    position: fixed;
+    /* top: var(--header-height); */
+    top: 0;
+    /* left: 50%;
+    transform: translate(-50%); */
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+
+    /* border: solid; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+
+    /* opacity: 0;
+    transition: opacity 0.5s ease-in-out; */
+
+}
+
+/* .team-member-popup-overlay.show-member {
+    opacity: 1;
+} */
+
+.team-member-popup {
+    background-color: white;
+    width: 90vw;
+    height: 80vh;
+
+    /* border: solid; */
+    /* margin: auto; */
+    /* margin-top: 20px; */
+    /* display: inline; */
+
+    padding: 10px;
+
+    display: flex;
+
+    justify-content: space-around;
+    position: relative;
+
+    overflow: auto;
+}
+
+.team-member-popup-column {
+    /* border: solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 10px;
+
+    margin: 10px;
+
+    max-width: 45%;
+}
+
+
+@media (max-width: 768px) {
+    .team-member-popup {
+        flex-direction: column;
+        justify-content:center;
+    }
+
+    .team-member-popup-column img {
+        padding-top: 270px;
+    }
+
+    .team-member-popup-column {
+        max-width: 80%;
+    }
+}
+
+
+/* .team-member-popup-column p {
+    display: block;
+} */
+
+.popup-team-member-image {
+    width: 250px;
+}
+
+
+
+
+.exit-member-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    block-size: fit-content;
+    display: flex;
+    vertical-align: middle;
+    padding: 8px;
+    border-radius: 3px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.exit-member-overlay:hover {
+    background-color: rgb(238, 238, 238);
+}

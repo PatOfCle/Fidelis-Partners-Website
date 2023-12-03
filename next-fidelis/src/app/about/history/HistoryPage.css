@@ -1,0 +1,23 @@
+.history-container-text {
+    margin: 100px;
+
+    font-family: 'Metropolis Regular';
+}
+
+
+.history-intro-outer-container {
+    background-color: rgb(255, 255, 255);
+    padding-top: 60px;
+    /* padding-bottom: 60px; */
+}
+
+.history-intro-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+
+.history-container-text ul li {
+    list-style-type: disc;
+    margin-left: 20px;
+}

@@ -1,0 +1,28 @@
+.TeamMemberComponent-container {
+    /* display: inline-block;
+    margin: 15px;
+    height: 350px;
+    align-items: center;
+
+    position: relative; */
+}
+
+.teammate-image {
+    /* width: 250px; */
+    height: 200px;
+    /* aspect-ratio: 4/3; */
+}
+
+.name-and-title-container {
+    max-width: 180px;
+    position: absolute;
+    height: 90px;
+    text-align: left;
+}
+
+
+.TeamMemberComponent-container:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity .3s;
+}
