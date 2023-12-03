@@ -9,25 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
     "@sanity/block-content-to-react": "^3.0.0",
     "@sanity/client": "^6.9.1",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
     "framer-motion": "^10.16.12",
     "fs": "^0.0.1-security",
-    "next": "14.0.3",
+    "next": "^13.5.6",
     "next-images": "^1.8.5",
     "path": "^0.12.7",
     "react": "^18",
     "react-awesome-reveal": "^4.2.7",
+    "react-countup": "^6.4.2",
     "react-dom": "^18",
+    "react-icons": "^4.11.0",
     "react-router-dom": "^6.20.0",
     "react-router-hash-link": "^2.4.3",
-
-    "@emotion/react": "^11.11.1",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react-countup": "^6.4.2",
-    "react-icons": "^4.11.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   }
