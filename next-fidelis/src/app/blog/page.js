@@ -6,7 +6,6 @@ import client from './client'
 // import { Link } from 'react-router-dom'
 import './blog.css'
 import Link from 'next/link'
-import Homepage from './Homepage'
 
 // import { getAllPosts, getServerSideProps } from '../../../sanity/lib/api.js'
 
