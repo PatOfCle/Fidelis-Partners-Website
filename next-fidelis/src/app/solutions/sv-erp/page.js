@@ -6,7 +6,7 @@ import { useLocation } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import {Fade} from 'react-awesome-reveal';
 // import svLogo from '../../assets/sv-logo.png'
-
+import Link from 'next/link';
 
 function SteelVikingPage() {
   // const location = useLocation();
@@ -86,6 +86,36 @@ function SteelVikingPage() {
           <h1 className='section-header' style={{fontSize: '40px', paddingTop: '50px', paddingBottom: '30px'}}>
             Highlighted Modules
           </h1>
+
+
+        {/* <div className='module-previews-section'>
+
+          <Link href='/solutions/sv-erp/quoting' className='router-link'>
+            <div className='module-preview-link show-pointer'>
+              <h3 className='module-preview-title'>
+                SV Quoting
+              </h3>
+              <div className='module-preview-description'>
+                Seamless, bidirectional quoting, including workflows, quote vs actual cost comparisons, configurable pricing formulas, and more.
+              </div>
+            </div>
+          </Link>
+
+          <Link href='/solutions/sv-erp/engineer-to-order' className='router-link'>
+            <div className='module-preview-link show-pointer'>
+              <h3 className='module-preview-title'>
+                SV Engineer To Order
+              </h3>
+              <div className='module-preview-description'>
+                Enable your production teams to work with any variation of tool setup, 
+                equipped with anything they need, from flexible pricing structures to multi-level BOMs.
+              </div>
+            </div>
+          </Link>
+
+
+        </div> */}
+
 
 
           <section id='quoting'>
@@ -311,6 +341,40 @@ function SteelVikingPage() {
             Compare
           </h1>
         </section>
+
+
+        
+
+        <div className='module-previews-section'>
+
+          <Link href='/solutions/sv-erp/quoting' className='router-link'>
+            <div className='module-preview-link show-pointer'>
+              <h3 className='module-preview-title'>
+                SV Quoting
+              </h3>
+              <div className='module-preview-description'>
+                Seamless, bidirectional quoting, including workflows, quote vs actual cost comparisons, configurable pricing formulas, and more.
+              </div>
+            </div>
+          </Link>
+
+          <Link href='/solutions/sv-erp/engineer-to-order' className='router-link'>
+            <div className='module-preview-link show-pointer'>
+              <h3 className='module-preview-title'>
+                SV Engineer To Order
+              </h3>
+              <div className='module-preview-description'>
+                Enable your production teams to work with any variation of tool setup, 
+                equipped with anything they need, from flexible pricing structures to multi-level BOMs.
+              </div>
+            </div>
+          </Link>
+
+
+        </div>
+
+
+
 
 
       </div>

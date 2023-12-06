@@ -1,5 +1,6 @@
 .SteelVikingPage-container {
-    margin: 100px;
+    /* margin: 100px; */
+    margin: 10vw;
 
 }
 
@@ -62,7 +63,8 @@
 
 .erp-page-content {
     /* border: solid; */
-    width: 80%;
+    /* width: 80%; */
+    width: 100%;
 }
 
 @media (max-width: 800px) {
@@ -92,3 +94,52 @@
     padding-left: 45px;
     line-height: 50px;
 }
+
+
+
+.module-previews-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.module-preview-link {
+    box-sizing: border-box;
+    /* width: calc(50% - 10px); */
+    flex: 0 0 calc(50% - 10px); /* Set the initial width for two items per row */
+    border-radius: 10px;
+    padding: 0 10px;
+    min-height: 130px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease; /* Add a transition effect for the box-shadow property */
+
+
+    margin-bottom: 5vh;
+
+    /* border: solid; */
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.module-preview-link:hover {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  }
+
+@media (max-width: 767px) {
+    .module-preview-link {
+        flex: 0 0 calc(100% - 20px);
+        overflow: hidden;
+
+    }
+}
+
+.module-preview-title {
+    margin: 10px 0px;
+}
+
+.module-preview-description {
+    font-family: 'Metropolis Regular';
+    color: rgb(117, 117, 117);
+    margin-top: 20px;
+}
+
+
