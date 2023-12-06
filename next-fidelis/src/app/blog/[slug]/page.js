@@ -1,6 +1,7 @@
 "use client"
 
 import React, {useState, useEffect} from 'react'
+// import React from 'react'
 // import {Link, useParams, useNavigate} from "react-router-dom"
 // import {useParams} from "react-router-dom"
 import { useParams } from 'next/navigation'
@@ -10,7 +11,36 @@ import BlockContent from "@sanity/block-content-to-react"
 import Link from 'next/link'
 
 
-function SinglePost() {
+
+
+// async function getData(slug) {
+//     console.log('in first func')
+//     // const res = await fetch('https://api.example.com/...')
+
+//     const res = client.fetch(
+//         `*[slug.current == "${slug}"] {
+//             title,
+//             body,
+//             "name": author->name,
+//             "authorImage": author->image,
+//             mainImage {
+//                 asset -> {
+//                     _id,
+//                     url
+//                 },
+//                 alt
+//             }
+//         }`
+//     ).catch(console.error)
+
+//     return res
+// }
+
+
+
+
+// export default async function SinglePost() {
+export default function SinglePost() {
     const [singlePost, setSinglePost] = useState([])
     const [isLoading, setIsLoading] = useState(true)
     const { slug } = useParams()
@@ -40,6 +70,15 @@ function SinglePost() {
         
         setIsLoading(false)
     }, [slug])
+
+
+    // console.log('before call')
+    // const singlePost = await getData(slug)[0]
+
+    // console.log('herenow')
+    // console.log(singlePost)
+    // console.log('past it')
+    
 
   return (
     <div className='SinglePost-container'>
@@ -96,4 +135,4 @@ function SinglePost() {
   )
 }
 
-export default SinglePost
+// export default SinglePost
