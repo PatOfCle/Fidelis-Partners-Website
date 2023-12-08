@@ -1,0 +1,57 @@
+
+
+.ERPModuleContent-container {
+    margin: 0 70px;
+    margin-bottom: 40px;
+}
+
+.module-page-header {
+    margin: 40px 0px;
+    text-align: center;
+}
+
+.module-bullets {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+
+@media (min-width: 1000px) {
+    .ERPModuleContent-container {
+        margin: 0 30px;
+    }
+    
+    .module-bullets {
+        max-height: 900px;
+    }
+}
+
+
+
+.module-bullets .checklist {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.module-bullets .checklist li {
+    background-image: url('/assets/gc.png');
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: left center;
+    padding-left: 60px;
+    line-height: 30px;
+    margin: 10px 20px;
+    max-width: 320px;
+
+    display: flex;
+    align-items: center;
+    flex-basis: 100%;
+}

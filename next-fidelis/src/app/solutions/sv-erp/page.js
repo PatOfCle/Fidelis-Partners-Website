@@ -83,20 +83,22 @@ function SteelVikingPage() {
 
       {/* <section ref={sectionRefs.section1}> */}
       <section id='highlightedModules'>
-          <h1 className='section-header' style={{fontSize: '40px', paddingTop: '50px', paddingBottom: '30px'}}>
+          <h1 className='sv-home-header'>
             Highlighted Modules
           </h1>
 
 
-        {/* <div className='module-previews-section'>
+
+
+        <div className='module-previews-section'>
 
           <Link href='/solutions/sv-erp/quoting' className='router-link'>
             <div className='module-preview-link show-pointer'>
               <h3 className='module-preview-title'>
-                SV Quoting
+                Quoting
               </h3>
               <div className='module-preview-description'>
-                Seamless, bidirectional quoting, including workflows, quote vs actual cost comparisons, configurable pricing formulas, and more.
+                Deliver and win professional, team approved, competitive quotes based on actual costs.
               </div>
             </div>
           </Link>
@@ -104,21 +106,89 @@ function SteelVikingPage() {
           <Link href='/solutions/sv-erp/engineer-to-order' className='router-link'>
             <div className='module-preview-link show-pointer'>
               <h3 className='module-preview-title'>
-                SV Engineer To Order
+                Engineer To Order
               </h3>
               <div className='module-preview-description'>
-                Enable your production teams to work with any variation of tool setup, 
-                equipped with anything they need, from flexible pricing structures to multi-level BOMs.
+                {/* Enable your production teams to work with any variation of tool setup, 
+                equipped with anything they need, from flexible pricing structures to multi-level BOMs. */}
+              </div>
+            </div>
+          </Link>
+
+          <Link href='/solutions/sv-erp/sales-orders' className='router-link'>
+            <div className='module-preview-link show-pointer'>
+              <h3 className='module-preview-title'>
+                Sales Orders
+              </h3>
+              <div className='module-preview-description'>
+
+              </div>
+            </div>
+          </Link>
+
+          <Link href='/solutions/sv-erp/scheduling' className='router-link'>
+            <div className='module-preview-link show-pointer'>
+              <h3 className='module-preview-title'>
+                Scheduling
+              </h3>
+              <div className='module-preview-description'>
+
+              </div>
+            </div>
+          </Link>
+
+          <Link href='/solutions/sv-erp/purchasing-and-receiving' className='router-link'>
+            <div className='module-preview-link show-pointer'>
+              <h3 className='module-preview-title'>
+                Purchasing and Receiving
+              </h3>
+              <div className='module-preview-description'>
+
+              </div>
+            </div>
+          </Link>
+
+          <Link href='/solutions/sv-erp/production' className='router-link'>
+            <div className='module-preview-link show-pointer'>
+              <h3 className='module-preview-title'>
+                Production
+              </h3>
+              <div className='module-preview-description'>
+
+              </div>
+            </div>
+          </Link>
+
+          <Link href='/solutions/sv-erp/shipping-and-invoicing' className='router-link'>
+            <div className='module-preview-link show-pointer'>
+              <h3 className='module-preview-title'>
+                Shipping and Invoicing
+              </h3>
+              <div className='module-preview-description'>
+
+              </div>
+            </div>
+          </Link>
+
+          <Link href='/solutions/sv-erp/time-and-attendance' className='router-link'>
+            <div className='module-preview-link show-pointer'>
+              <h3 className='module-preview-title'>
+                Time And Attendance
+              </h3>
+              <div className='module-preview-description'>
+
               </div>
             </div>
           </Link>
 
 
-        </div> */}
+          </div>
 
 
 
-          <section id='quoting'>
+
+
+          {/* <section id='quoting'>
             <h3>Quoting</h3>
             <h4> <em> Uses company's preferred Excel-based quoting and integrates within the workflow, sharing data bi-directionally. </em> </h4>
             <div>
@@ -192,17 +262,6 @@ function SteelVikingPage() {
             </div>
           </section>
 
-          {/* <section >
-            <h3>MRP, Inventory</h3>
-            <h4> <em></em> </h4>
-            
-            <div>
-              <ul className="checklist">
-                <li></li>
-              </ul>
-            </div>
-          </section> */}
-
           <section id='production'>
             <h3>Production</h3>
             <h4> <em>End-to-end production planning and execution.</em> </h4>
@@ -234,6 +293,18 @@ function SteelVikingPage() {
             </div>
           </section>
 
+          <section id='timeAndAttendance'>
+            <h3>Time and Attendance</h3>
+            <h4> <em></em> </h4>
+
+            <div>
+              <ul className="checklist">
+                <li></li>
+              </ul>
+            </div>
+          </section> */}
+
+
           {/* <section >
             <h3>Plant Floor Maintenance</h3>
             <h4> <em></em> </h4>
@@ -244,17 +315,16 @@ function SteelVikingPage() {
               </ul>
             </div>
           </section> */}
-
-          <section id='timeAndAttendance'>
-            <h3>Time and Attendance</h3>
+          {/* <section >
+            <h3>MRP, Inventory</h3>
             <h4> <em></em> </h4>
-
+            
             <div>
               <ul className="checklist">
                 <li></li>
               </ul>
             </div>
-          </section>
+          </section> */}
 
           {/* <section >
             <h3>GL Integration</h3>
@@ -344,16 +414,16 @@ function SteelVikingPage() {
 
 
         
-
+{/* 
         <div className='module-previews-section'>
 
           <Link href='/solutions/sv-erp/quoting' className='router-link'>
             <div className='module-preview-link show-pointer'>
               <h3 className='module-preview-title'>
-                SV Quoting
+                Quoting
               </h3>
               <div className='module-preview-description'>
-                Seamless, bidirectional quoting, including workflows, quote vs actual cost comparisons, configurable pricing formulas, and more.
+                Deliver and win professional, team approved, competitive quotes based on actual costs.
               </div>
             </div>
           </Link>
@@ -361,7 +431,7 @@ function SteelVikingPage() {
           <Link href='/solutions/sv-erp/engineer-to-order' className='router-link'>
             <div className='module-preview-link show-pointer'>
               <h3 className='module-preview-title'>
-                SV Engineer To Order
+                Engineer To Order
               </h3>
               <div className='module-preview-description'>
                 Enable your production teams to work with any variation of tool setup, 
@@ -370,8 +440,74 @@ function SteelVikingPage() {
             </div>
           </Link>
 
+          <Link href='/solutions/sv-erp/sales-orders' className='router-link'>
+            <div className='module-preview-link show-pointer'>
+              <h3 className='module-preview-title'>
+                Sales Orders
+              </h3>
+              <div className='module-preview-description'>
 
-        </div>
+              </div>
+            </div>
+          </Link>
+
+          <Link href='/solutions/sv-erp/scheduling' className='router-link'>
+            <div className='module-preview-link show-pointer'>
+              <h3 className='module-preview-title'>
+                Scheduling
+              </h3>
+              <div className='module-preview-description'>
+
+              </div>
+            </div>
+          </Link>
+
+          <Link href='/solutions/sv-erp/purchasing-and-receiving' className='router-link'>
+            <div className='module-preview-link show-pointer'>
+              <h3 className='module-preview-title'>
+                Purchasing and Receiving
+              </h3>
+              <div className='module-preview-description'>
+
+              </div>
+            </div>
+          </Link>
+
+          <Link href='/solutions/sv-erp/production' className='router-link'>
+            <div className='module-preview-link show-pointer'>
+              <h3 className='module-preview-title'>
+                Production
+              </h3>
+              <div className='module-preview-description'>
+
+              </div>
+            </div>
+          </Link>
+
+          <Link href='/solutions/sv-erp/shipping-and-invoicing' className='router-link'>
+            <div className='module-preview-link show-pointer'>
+              <h3 className='module-preview-title'>
+                Shipping and Invoicing
+              </h3>
+              <div className='module-preview-description'>
+
+              </div>
+            </div>
+          </Link>
+
+          <Link href='/solutions/sv-erp/time-and-attendance' className='router-link'>
+            <div className='module-preview-link show-pointer'>
+              <h3 className='module-preview-title'>
+                Time And Attendance
+              </h3>
+              <div className='module-preview-description'>
+
+              </div>
+            </div>
+          </Link>
+
+
+        </div> */}
 
 
 
