@@ -11,6 +11,18 @@
     padding-top: 20px;
 }
 
+.blog-page-header select {
+    border: solid;
+    border-color: yellow;
+}
+
+
+.filter-posts-container {
+    /* border: solid; */
+    text-align: center;
+}
+
+
 .blog-page-content {
     /* border: solid; */
     /* background-color: rgb(233, 233, 233); */
@@ -118,3 +130,4 @@
     opacity: 0.5;
     transform: translateY(0px);
 }
+

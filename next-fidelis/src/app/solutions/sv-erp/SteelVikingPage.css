@@ -142,7 +142,7 @@
     .module-preview-link {
         flex: 0 0 calc(100% - 20px);
         overflow: hidden;
-
+        width: 300px;
     }
 }
 

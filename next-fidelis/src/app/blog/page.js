@@ -1,107 +1,133 @@
-// "use client"
+"use client"
 
-// import React, {useState, useEffect} from 'react'
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import client from './client'
-// import { Link } from 'react-router-dom'
 import './blog.css'
 import Link from 'next/link'
 
-// import { getAllPosts, getServerSideProps } from '../../../sanity/lib/api.js'
+function Blog() {
+
+    const [jsonData, setJsonData] = useState([]);
+    const [filteredData, setFilteredData] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [dropdownValue, setDropdownValue] = useState('');
+
+    
 
 
-async function getData() {
-    console.log('in first func')
-    // const res = await fetch('https://api.example.com/...')
+    const fetchData = async () => {
+        try {
+            const response = await client.fetch(
+                `*[_type == "post"] | order(_createdAt desc) {
+                    title,
+                    slug,
+                    body,
+                    mainImage {
+                        asset -> {
+                            _id,
+                            url
+                        },
+                        alt
+                    },
+                    "categories": categories[]->title
+                }`
+            );
+            // const data = await response.json();
+            // setJsonData(data);
+            setJsonData(response);
+            setFilteredData(response);
+            setLoading(false); // Update loading state when the data is fetched
+            console.log(jsonData)
+            
+        } catch (error) {
+            console.error('Error fetching data:', error);
+            setLoading(false); // Update loading state in case of an error
+        }
+    };
 
-    const res = client.fetch(
-        `*[_type == "post"] | order(_createdAt desc) {
-            title,
-            slug,
-            body,
-            mainImage {
-                asset -> {
-                    _id,
-                    url
-                },
-                alt
-            }
-        }`
-    ).catch(console.error)
+    useEffect(() => {
+        fetchData();
+        console.log('jsonData')
+    }, []);
 
-    // The return value is *not* serialized
-    // You can return Date, Map, Set, etc.
-   
-    // if (!res.ok) {
-    //   // This will activate the closest `error.js` Error Boundary
-    //   throw new Error('Failed to fetch data')
-    // }
-   
-    // return res.json()
-    return res
-  }
+    // log the response data
+    console.log(jsonData)
+    const extractedNames = Array.from(new Set(jsonData.flatMap(item => item.categories).filter(Boolean)));
+    console.log(extractedNames)
 
+    // const filterData = (categoryName) => {
+    const filterData = (event) => {
+        const newValue = event.target.value;
 
+        setDropdownValue(event.target.value)
+        // Example: Filtering based on age > 25
+        console.log('-----------------')
+        console.log('before')
 
-export default async function Blog() {
+        if (newValue == "") {
+            setFilteredData(jsonData)
+            return
+        }
 
-    console.log('sup')
-
-    const posts = await getData()
-    console.log('data')
-    console.log(posts)
-
-
-    // const [posts, setPosts] = useState([])
-
-    // useEffect(() => {
-    //     client.fetch(
-    //         `*[_type == "post"] | order(_createdAt desc) {
-    //             title,
-    //             slug,
-    //             body,
-    //             mainImage {
-    //                 asset -> {
-    //                     _id,
-    //                     url
-    //                 },
-    //                 alt
-    //             }
-    //         }`
-    //     ).then((data) => setPosts(data)).catch(console.error)
-    // }, [])
-
+        const filtered = jsonData.filter(item => (item.categories !== null && item.categories.includes(newValue)));
+        // const filteredData = jsonData.filter(item => (item.categories !== null && item.categories.includes(categoryName)));
+        // const filteredData = jsonData.filter(item => item.categories.includes(categoryName));
+        
+        console.log('herenow')
+        console.log(filtered)
+        setFilteredData(filtered);
+        console.log(filtered)
+        console.log('----')
+    };
 
   return (
-    <div className='Blog-container'>
-        <br></br>
-        
-        <h1 className='blog-page-header'>
-            Knowledge Base
-        </h1>
+    <div>
 
-        {/* <p>{data[0].title}</p> */}
+    {loading ? (
+        <p>Loading...</p>
+      ) : (
+        // Display the fetched data when available
+        // <pre>{JSON.stringify(jsonData, null, 2)}</pre>
+            <div className='Blog-container'>
+                <br></br>
+                
+                <h1 className='blog-page-header'>
+                    Knowledge Base
+                </h1>
 
-        {/* <Homepage /> */}
+                <div className='filter-posts-container'>
+                    {/* <label htmlFor="nameDropdown">Select a name:</label> */}
+                    <select id="nameDropdown" onChange={filterData} value={dropdownValue}>
+                        <option value="">All Resources</option>
+                        
+                        {extractedNames.map((name, index) => (
+                        <option key={index} value={name}>
+                            {name}
+                        </option>
+                        ))}
+                    </select>
+                </div>
 
-        <div className='blog-page-content'>
+                <div className='blog-page-content'>
 
-            <div className='blog-articles'>
-                {posts.map((post) => (
-                    <Link href={`/blog/${post.slug.current}`} style={{color: 'inherit'}}>
-                        <article key={post.slug.current} className='single-blog-article'>
-                            <img src={post.mainImage.asset.url} alt={post.title}/>
-                            <h3 className='blog-post-preview-title'>{post.title}</h3>
-                            <div className='read-now-arrow'>Read Now &rarr;</div>
-                        </article>
-                    </Link>
-                ))}
+                    <div className='blog-articles'>
+                        {filteredData.map((post) => (
+                            <Link href={`/blog/${post.slug.current}`} style={{color: 'inherit'}}>
+                                <article key={post.slug.current} className='single-blog-article'>
+                                    <img src={post.mainImage.asset.url} alt={post.title}/>
+                                    <h3 className='blog-post-preview-title'>{post.title}</h3>
+                                    <div className='read-now-arrow'>Read Now &rarr;</div>
+                                </article>
+                            </Link>
+                        ))}
+                    </div>
+
+                </div>
+
             </div>
-
-        </div>
-
+      )}
     </div>
   )
 }
 
-// export default Blog
+export default Blog

@@ -2,7 +2,7 @@
 
 .ERPModuleContent-container {
     margin: 0 70px;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
 }
 
 .module-page-header {
@@ -10,26 +10,9 @@
     text-align: center;
 }
 
-.module-bullets {
-    display: flex;
-    flex-wrap: wrap;
-
-    justify-content: center;
-}
 
 
-@media (min-width: 1000px) {
-    .ERPModuleContent-container {
-        margin: 0 30px;
-    }
-    
-    .module-bullets {
-        max-height: 900px;
-    }
-}
-
-
-
+/* 
 .module-bullets .checklist {
     list-style-type: none;
     padding: 0;
@@ -54,4 +37,59 @@
     display: flex;
     align-items: center;
     flex-basis: 100%;
+} */
+
+
+
+
+
+.module-bullets {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.module-bullets div {
+    /* border: solid; */
+
+    width: 33%;
+
+    min-width: 300px;
+}
+
+.module-col-header {
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+.module-bullets div ul li {
+    background-image: url('/assets/gc.png');
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: left center;
+    padding-left: 60px;
+    line-height: 25px;
+    margin: 10px 20px;
+    max-width: 320px;
+
+    display: flex;
+    align-items: center;
+    flex-basis: 100%;
+}
+
+
+
+
+
+
+@media (min-width: 1000px) {
+    .ERPModuleContent-container {
+        margin: 0 30px;
+    }
+    
+    .module-bullets {
+        max-height: 900px;
+    }
 }
