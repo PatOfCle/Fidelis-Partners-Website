@@ -1,19 +1,33 @@
 
 
 .ERPModuleContent-container {
-    margin: 0 70px;
+    /* margin: 0 70px; */
     padding-bottom: 40px;
-}
-
-.module-page-header {
-    margin: 40px 0px;
     text-align: center;
 }
 
+.module-page-header {
+    /* padding: 0px 0px;
+    margin: 0px; */
+    text-align: center;
+}
+
+.module-page-preview {
+    font-family: 'Metropolis Regular';
+    text-align: center;
+
+    max-width: 800px;
+    width: 80%;
+    min-width: 210px;
+
+    margin: 0 auto;
+
+    padding-bottom: 30px;
+}
 
 
 /* 
-.module-bullets .checklist {
+.module-columns .checklist {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -24,7 +38,7 @@
 }
 
 
-.module-bullets .checklist li {
+.module-columns .checklist li {
     background-image: url('/assets/gc.png');
     background-repeat: no-repeat;
     background-size: 40px;
@@ -43,19 +57,17 @@
 
 
 
-.module-bullets {
+.module-columns {
     display: flex;
     flex-wrap: wrap;
 
     justify-content: center;
 }
 
-.module-bullets div {
-    /* border: solid; */
-
-    width: 33%;
-
-    min-width: 300px;
+.module-columns div {
+    width: 30%;
+    min-width: 320px;
+    margin: 0 auto;
 }
 
 .module-col-header {
@@ -63,15 +75,19 @@
     text-decoration: underline;
 }
 
+.module-columns div ul {
+    text-align: center;
+}
 
-.module-bullets div ul li {
+.module-columns div ul li {
     background-image: url('/assets/gc.png');
     background-repeat: no-repeat;
     background-size: 40px;
     background-position: left center;
-    padding-left: 60px;
+    padding-left: 53px;
     line-height: 25px;
-    margin: 10px 20px;
+    min-height: 50px;
+    margin: 10px auto;
     max-width: 320px;
 
     display: flex;
@@ -84,12 +100,22 @@
 
 
 
-@media (min-width: 1000px) {
+/* @media (min-width: 1000px) {
     .ERPModuleContent-container {
         margin: 0 30px;
     }
     
-    .module-bullets {
+    .module-columns {
         max-height: 900px;
     }
+} */
+
+.erp-module-sv-logo-container {
+    margin-top: 500px;
+}
+
+.erp-module-sv-logo {
+    width: 100px;
+
+    margin-top: 50px;
 }

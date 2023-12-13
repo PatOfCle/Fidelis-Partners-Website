@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import client from './client'
 import './blog.css'
 import Link from 'next/link'
+import LoadingComponent from '@/components/FetchBlog/LoadingComponent/LoadingComponent';
 
 function Blog() {
 
@@ -84,7 +85,9 @@ function Blog() {
     <div>
 
     {loading ? (
-        <p>Loading...</p>
+        <div className='Blog-container'>
+            <LoadingComponent />
+        </div>
       ) : (
         // Display the fetched data when available
         // <pre>{JSON.stringify(jsonData, null, 2)}</pre>

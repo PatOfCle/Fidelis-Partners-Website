@@ -111,17 +111,29 @@ function SteelVikingPage() {
               <div className='module-preview-description'>
                 {/* Enable your production teams to work with any variation of tool setup, 
                 equipped with anything they need, from flexible pricing structures to multi-level BOMs. */}
+                Plan and execute product onboarding and engineering processes with resource planning, workflows, documentation, and signoffs.
               </div>
             </div>
           </Link>
 
-          <Link href='/solutions/sv-erp/sales-orders' className='router-link'>
+          <Link href='/solutions/sv-erp/order-management' className='router-link'>
             <div className='module-preview-link show-pointer'>
               <h3 className='module-preview-title'>
-                Sales Orders
+                Order Management
               </h3>
               <div className='module-preview-description'>
+                Efficiently enter, commit to, manage, and deliver upon customer orders.
+              </div>
+            </div>
+          </Link>
 
+          <Link href='/solutions/sv-erp/mrp' className='router-link'>
+            <div className='module-preview-link show-pointer'>
+              <h3 className='module-preview-title'>
+                MRP
+              </h3>
+              <div className='module-preview-description'>
+                Take command of material planning and purchasing using interactive and intuitive tools.
               </div>
             </div>
           </Link>

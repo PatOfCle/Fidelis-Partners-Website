@@ -1,8 +1,9 @@
 import React from 'react'
 import ERPModuleContent from '../ERPModuleContent'
 
-const bullets = {
+const moduleData = {
   module : 'Engineer to Order',
+  preview: 'Plan and execute product onboarding and engineering processes with resource planning, workflows, documentation, and signoffs.',
   initiate : [
     "Autdesk-CAD integration to load routings and bills of materials from drawings.",
     "Carry forward to item setup and engineering on awarded quotes.",
@@ -26,7 +27,7 @@ const bullets = {
 function engineerToOrderPage() {
   return (
     <div>
-      <ERPModuleContent bullets={bullets} />
+      <ERPModuleContent moduleData={moduleData} />
     </div>
   )
 }
