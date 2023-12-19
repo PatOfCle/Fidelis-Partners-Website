@@ -7,12 +7,57 @@ import { HashLink } from 'react-router-hash-link';
 import {Fade} from 'react-awesome-reveal';
 // import svLogo from '../../assets/sv-logo.png'
 import Link from 'next/link';
+import { svModules } from './ERPModulesData';
+
+
+// const svModules = [
+//   {
+//     moduleName : "Quoting",
+//     modulePreview : "Deliver and win professional, team approved, competitive quotes based on actual costs.",
+//     moduleStageDescriptions : {
+//       initiate : [
+//         "Integration and connection with online quoting and Customer Relationship Management (CRM) applications.",
+//         "Support for customer specific pricing and costing models.",
+//         "Support for customer-specific RFQ templates.",
+//         "Autdesk-CAD integration with options for configurable quote adds.",
+//         "Configurable pricing formulas based on nature, dimension, and process of product or item quoted.",
+//       ],
+//       progress : [
+//         "Managed quoting workflows, including communication with suppliers.",
+//         "Departmental quote approvals with inbox processing and email alerts.",
+//         "Managed document sharing and handholding through the quoting process.",
+//         "Reminders and alerts upon outdated quoted pricing windows.",
+//         "What-if margin analysis.",
+//       ],
+//       deliver : [
+//         "Electronic customer touch points, including formal quote, follow up, and no quote",
+//         "Carry forward to item setup and engineering on awarded quotes.",
+//         "Managed quote follow ups and success metrics.",
+//         "Repricing on customer, categorical, or aggregate scales, based on system captured actual costs.",
+//         "Quote vs. actual cost comparisons for material, labor, outside processing, and burden.",
+//       ]
+//     }
+//   },
+  
+//   {
+//     moduleName : "",
+//     modulePreview : "",
+//     moduleStageDescriptions : {
+//       initiate : [
+        
+//       ],
+//       progress : [
+        
+//       ],
+//       deliver : [
+        
+//       ]
+//     }
+//   },
+// ]
+
 
 function SteelVikingPage() {
-  // const location = useLocation();
-  // useEffect(() => {
-  //   console.log(location)
-  // }, [])
 
   const scrollToWithOffset = (id, offset) => () => {
     const element = document.getElementById(id);
@@ -92,7 +137,32 @@ function SteelVikingPage() {
 
         <div className='module-previews-section'>
 
-          <Link href='/solutions/sv-erp/quoting' className='router-link'>
+        {svModules.map(svModule => (
+          // <Link href='/solutions/sv-erp/engineer-to-order' className='router-link'  key={svModule.id} >
+          <Link href={`/solutions/sv-erp/${svModule.moduleSlug}`} className='router-link'  key={svModule.id} >
+            <div className='module-preview-link show-pointer'>
+              <h3 className='module-preview-title'>
+                {svModule.moduleName}
+              </h3>
+              <div className='module-preview-description'>
+                {svModule.modulePreview}
+              </div>
+            </div>
+          </Link>
+        ))}
+
+          {/* <Link href='/solutions/sv-erp/engineer-to-order' className='router-link'>
+            <div className='module-preview-link show-pointer'>
+              <h3 className='module-preview-title'>
+                Engineer To Order
+              </h3>
+              <div className='module-preview-description'>
+                Plan and execute product onboarding and engineering processes with resource planning, workflows, documentation, and signoffs.
+              </div>
+            </div>
+          </Link> */}
+
+          {/* <Link href='/solutions/sv-erp/quoting' className='router-link'>
             <div className='module-preview-link show-pointer'>
               <h3 className='module-preview-title'>
                 Quoting
@@ -109,8 +179,6 @@ function SteelVikingPage() {
                 Engineer To Order
               </h3>
               <div className='module-preview-description'>
-                {/* Enable your production teams to work with any variation of tool setup, 
-                equipped with anything they need, from flexible pricing structures to multi-level BOMs. */}
                 Plan and execute product onboarding and engineering processes with resource planning, workflows, documentation, and signoffs.
               </div>
             </div>
@@ -191,7 +259,7 @@ function SteelVikingPage() {
 
               </div>
             </div>
-          </Link>
+          </Link> */}
 
 
           </div>

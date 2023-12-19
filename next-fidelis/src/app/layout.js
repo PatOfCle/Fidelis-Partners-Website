@@ -6,7 +6,8 @@ import Footer from '@/components/Footer/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Fidelis Partners ERP',
+  // title: 'Fidelis Partners ERP',
+  title: 'Fidelis Partners',
   description: "Your ERP system should fit your processes. Not vice versa. Take control of your manufacturing today with the premier unified, flexible, comprehensive ERP system.",
 }
 

@@ -1,22 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
 
-import './ERPModuleContent.css'
+import './ERPModuleDetail.css'
 
-function ERPModuleContent(props) {
+function ERPModuleDetail(props) {
   return (
-    <div className='ERPModuleContent-container'>
-      <h1 className='module-page-header'>{props.moduleData.module}</h1>
-      <div className='module-page-preview'><em>{props.moduleData.preview}</em></div>
-      {/* <div className='module-moduleData'>
-        <ul className="checklist">
-        {props.moduleData.map((bullet) => (
-            <li>
-              {bullet}
-            </li>
-        ))}
-        </ul>
-      </div> */}
+    <div className='ERPModuleDetail-container'>
+      <h1 className='module-page-header'>{props.moduleData.moduleName}</h1>
+      <div className='module-page-preview'><em>{props.moduleData.modulePreview}</em></div>
 
       <div className='module-columns'>
 
@@ -25,7 +16,7 @@ function ERPModuleContent(props) {
             Initiate
           </h2>
           <ul>
-            {props.moduleData.initiate.map((bullet) => (
+            {props.moduleData.moduleStageDescriptions.initiate.map((bullet) => (
               <li>
                 {bullet}
               </li>
@@ -37,9 +28,12 @@ function ERPModuleContent(props) {
             Progress
           </h2>
           <ul>
-            {props.moduleData.progress.map((bullet) => (
-              <li>
-                {bullet}
+            {props.moduleData.moduleStageDescriptions.progress.map((bullet) => (
+              // <li>
+              //   {bullet}
+              // </li>
+              <li dangerouslySetInnerHTML={{ __html: bullet }}>
+                {/* {bullet} */}
               </li>
             ))}
           </ul>
@@ -49,7 +43,7 @@ function ERPModuleContent(props) {
             Deliver
           </h2>
           <ul>
-            {props.moduleData.deliver.map((bullet) => (
+            {props.moduleData.moduleStageDescriptions.deliver.map((bullet) => (
               <li>
                 {bullet}
               </li>
@@ -58,8 +52,6 @@ function ERPModuleContent(props) {
         </div>
 
       </div>
-
-      {/* <Link href="/solutions/sv-erp" className='router-link'><li>SV ERP</li></Link> */}
 
       <Link href="/solutions/sv-erp" className='router-link erp-module-sv-logo-container' >
         <img src='/assets/sv-logo.png' className='erp-module-sv-logo'/>
@@ -73,4 +65,4 @@ function ERPModuleContent(props) {
   )
 }
 
-export default ERPModuleContent
+export default ERPModuleDetail

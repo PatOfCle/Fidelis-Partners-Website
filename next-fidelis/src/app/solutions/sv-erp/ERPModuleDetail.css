@@ -1,6 +1,6 @@
 
 
-.ERPModuleContent-container {
+.ERPModuleDetail-container {
     /* margin: 0 70px; */
     padding-bottom: 40px;
     text-align: center;
@@ -101,7 +101,7 @@
 
 
 /* @media (min-width: 1000px) {
-    .ERPModuleContent-container {
+    .ERPModuleDetail-container {
         margin: 0 30px;
     }
     
