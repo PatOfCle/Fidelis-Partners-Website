@@ -10,53 +10,6 @@ import Link from 'next/link';
 import { svModules } from './ERPModulesData';
 
 
-// const svModules = [
-//   {
-//     moduleName : "Quoting",
-//     modulePreview : "Deliver and win professional, team approved, competitive quotes based on actual costs.",
-//     moduleStageDescriptions : {
-//       initiate : [
-//         "Integration and connection with online quoting and Customer Relationship Management (CRM) applications.",
-//         "Support for customer specific pricing and costing models.",
-//         "Support for customer-specific RFQ templates.",
-//         "Autdesk-CAD integration with options for configurable quote adds.",
-//         "Configurable pricing formulas based on nature, dimension, and process of product or item quoted.",
-//       ],
-//       progress : [
-//         "Managed quoting workflows, including communication with suppliers.",
-//         "Departmental quote approvals with inbox processing and email alerts.",
-//         "Managed document sharing and handholding through the quoting process.",
-//         "Reminders and alerts upon outdated quoted pricing windows.",
-//         "What-if margin analysis.",
-//       ],
-//       deliver : [
-//         "Electronic customer touch points, including formal quote, follow up, and no quote",
-//         "Carry forward to item setup and engineering on awarded quotes.",
-//         "Managed quote follow ups and success metrics.",
-//         "Repricing on customer, categorical, or aggregate scales, based on system captured actual costs.",
-//         "Quote vs. actual cost comparisons for material, labor, outside processing, and burden.",
-//       ]
-//     }
-//   },
-  
-//   {
-//     moduleName : "",
-//     modulePreview : "",
-//     moduleStageDescriptions : {
-//       initiate : [
-        
-//       ],
-//       progress : [
-        
-//       ],
-//       deliver : [
-        
-//       ]
-//     }
-//   },
-// ]
-
-
 function SteelVikingPage() {
 
   const scrollToWithOffset = (id, offset) => () => {
@@ -129,7 +82,7 @@ function SteelVikingPage() {
       {/* <section ref={sectionRefs.section1}> */}
       <section id='highlightedModules'>
           <h1 className='sv-home-header'>
-            Highlighted Modules
+            Capabilities
           </h1>
 
 
@@ -138,7 +91,6 @@ function SteelVikingPage() {
         <div className='module-previews-section'>
 
         {svModules.map(svModule => (
-          // <Link href='/solutions/sv-erp/engineer-to-order' className='router-link'  key={svModule.id} >
           <Link href={`/solutions/sv-erp/${svModule.moduleSlug}`} className='router-link'  key={svModule.id} >
             <div className='module-preview-link show-pointer'>
               <h3 className='module-preview-title'>
@@ -151,16 +103,7 @@ function SteelVikingPage() {
           </Link>
         ))}
 
-          {/* <Link href='/solutions/sv-erp/engineer-to-order' className='router-link'>
-            <div className='module-preview-link show-pointer'>
-              <h3 className='module-preview-title'>
-                Engineer To Order
-              </h3>
-              <div className='module-preview-description'>
-                Plan and execute product onboarding and engineering processes with resource planning, workflows, documentation, and signoffs.
-              </div>
-            </div>
-          </Link> */}
+
 
           {/* <Link href='/solutions/sv-erp/quoting' className='router-link'>
             <div className='module-preview-link show-pointer'>
@@ -461,7 +404,7 @@ function SteelVikingPage() {
             </div>
           </section> */}
 
-          <section id='additionalCustomFeaturesAndIntegrations'>
+          {/* <section id='additionalCustomFeaturesAndIntegrations'>
             <h3>Additional Custom Features and Integrations</h3>
             <h4> <em></em> </h4>
 
@@ -470,7 +413,7 @@ function SteelVikingPage() {
                 <li></li>
               </ul>
             </div>
-          </section>
+          </section> */}
 
 
         </section>
@@ -480,17 +423,17 @@ function SteelVikingPage() {
           
         </section> */}
         
-        <section id='caseStudies'>
+        {/* <section id='caseStudies'>
           <h1 className='section-header' style={{fontSize: '40px', paddingTop: '50px', paddingBottom: '30px'}}>
             Case Studies
           </h1>
-        </section>
+        </section> */}
 
-        <section id='compare'>
+        {/* <section id='compare'>
           <h1 className='section-header' style={{fontSize: '40px', paddingTop: '50px', paddingBottom: '30px'}}>
             Compare
           </h1>
-        </section>
+        </section> */}
 
 
         

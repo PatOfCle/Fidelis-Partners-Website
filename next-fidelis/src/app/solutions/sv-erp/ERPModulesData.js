@@ -194,175 +194,21 @@ export const svModules = [
     },
 
 
-    {
-        moduleName : "",
-        moduleSlug : "",
-        modulePreview : "",
-        moduleStageDescriptions : {
-            initiate : [
+    // {
+    //     moduleName : "",
+    //     moduleSlug : "",        
+    //     modulePreview : "",
+    //     moduleStageDescriptions : {
+    //         initiate : [
                 
-            ],
-            progress : [
+    //         ],
+    //         progress : [
                 
-            ],
-            deliver : [
+    //         ],
+    //         deliver : [
                 
-            ]
-      }
-    },
+    //         ]
+    //   }
+    // },
 
-    {
-        moduleName : "",
-        moduleSlug : "",        
-        modulePreview : "",
-        moduleStageDescriptions : {
-            initiate : [
-                
-            ],
-            progress : [
-                
-            ],
-            deliver : [
-                
-            ]
-      }
-    },
-
-    {
-        moduleName : "",
-        moduleSlug : "",        
-        modulePreview : "",
-        moduleStageDescriptions : {
-            initiate : [
-                
-            ],
-            progress : [
-                
-            ],
-            deliver : [
-                
-            ]
-      }
-    },
-
-    {
-        moduleName : "",
-        moduleSlug : "",        
-        modulePreview : "",
-        moduleStageDescriptions : {
-            initiate : [
-                
-            ],
-            progress : [
-                
-            ],
-            deliver : [
-                
-            ]
-      }
-    },
-
-    {
-        moduleName : "",
-        moduleSlug : "",        
-        modulePreview : "",
-        moduleStageDescriptions : {
-            initiate : [
-                
-            ],
-            progress : [
-                
-            ],
-            deliver : [
-                
-            ]
-      }
-    },
-
-    {
-        moduleName : "",
-        moduleSlug : "",        
-        modulePreview : "",
-        moduleStageDescriptions : {
-            initiate : [
-                
-            ],
-            progress : [
-                
-            ],
-            deliver : [
-                
-            ]
-      }
-    },
-
-    {
-        moduleName : "",
-        moduleSlug : "",        
-        modulePreview : "",
-        moduleStageDescriptions : {
-            initiate : [
-                
-            ],
-            progress : [
-                
-            ],
-            deliver : [
-                
-            ]
-      }
-    },
-
-    {
-        moduleName : "",
-        moduleSlug : "",        
-        modulePreview : "",
-        moduleStageDescriptions : {
-            initiate : [
-                
-            ],
-            progress : [
-                
-            ],
-            deliver : [
-                
-            ]
-      }
-    },
-
-    {
-        moduleName : "",
-        moduleSlug : "",        
-        modulePreview : "",
-        moduleStageDescriptions : {
-            initiate : [
-                
-            ],
-            progress : [
-                
-            ],
-            deliver : [
-                
-            ]
-      }
-    },
-
-    {
-        moduleName : "",
-        moduleSlug : "",        
-        modulePreview : "",
-        moduleStageDescriptions : {
-            initiate : [
-                
-            ],
-            progress : [
-                
-            ],
-            deliver : [
-                
-            ]
-      }
-    },
-
-    
-  ]
+]
