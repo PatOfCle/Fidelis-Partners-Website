@@ -15,6 +15,10 @@ function ERPModuleDetail(props) {
           <h2 className='module-col-header'>
             Initiate
           </h2>
+          {props.moduleData.moduleStageDescriptions.initiateDescription ?
+            <div className='stage-header-description'><em>{props.moduleData.moduleStageDescriptions.initiateDescription}</em></div> :
+            <div></div>
+          }
           <ul>
             {props.moduleData.moduleStageDescriptions.initiate.map((bullet) => (
               <li>
@@ -27,6 +31,10 @@ function ERPModuleDetail(props) {
           <h2 className='module-col-header'>
             Progress
           </h2>
+          {props.moduleData.moduleStageDescriptions.progressDescription ?
+            <div className='stage-header-description'><em>{props.moduleData.moduleStageDescriptions.progressDescription}</em></div> :
+            <div></div>
+          }
           <ul>
             {props.moduleData.moduleStageDescriptions.progress.map((bullet) => (
               // <li>
@@ -42,6 +50,10 @@ function ERPModuleDetail(props) {
           <h2 className='module-col-header'>
             Deliver
           </h2>
+          {props.moduleData.moduleStageDescriptions.deliverDescription ?
+            <div className='stage-header-description'><em>{props.moduleData.moduleStageDescriptions.deliverDescription}</em></div> :
+            <div></div>
+          }
           <ul>
             {props.moduleData.moduleStageDescriptions.deliver.map((bullet) => (
               <li>

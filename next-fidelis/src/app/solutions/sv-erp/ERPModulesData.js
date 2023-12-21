@@ -194,6 +194,70 @@ export const svModules = [
     },
 
 
+    {
+        moduleName : "Scheduling",
+        moduleSlug : "scheduling",        
+        modulePreview : "Plan shop floor production proactively, with continual review and update based on changing realities.",
+        moduleStageDescriptions : {
+            initiate : [
+                "Tailorable to the particulars of a company’s scheduling environment.",
+                "Generation of automatic schedules by plant, customer, product family, or workcenter.",
+                "Initial schedule outlay based on standard set up and piece rates, outplant lead times, and inter-operation buffer times.",
+                "Ability to drive plant scheduling by prioritized criteria, including common setups, customer preferences, employee and workcenter capacity.",
+                "Automated workflows with ability to establish production commitment dates based on lead times and capacity before confirming to customers.",
+            ],
+            progress : [
+                "Interactive scheduling dashboard that generates planned orders, factoring current inventory, stocking requirements, delivery requirements, order policies, and production in flight.  Instant visualization to production needs by line item with proposed planned order insertion.",
+                "Continued alerts to customer order changes (pull ins, quantity changes, drop ins, cancellations), with the ability to layer those into the schedule.",
+                "Interactive shop floor release management from the scheduling window.",
+                "Movement of production orders to available workcenters.",
+                "Near term look at planned overproduction and shortages based on committed ship dates.",
+                "Ongoing access to loads and past due by workcenter and department.",
+            ],
+            deliver : [
+                "Production dashboard drag and drop by plant supervisors.",
+                "Display of schedules on plant floor dashboards for clocking by employees.",
+                "Integrated schedule deliveries via emails or software folders.",
+                "Generation of Excel schedules, as an option, with upload back into the software based on scheduler changes.",
+                "Full plant visual of planned production by department with visual drill into each workcenter.",
+            ]
+      }
+    },
+
+    {
+        moduleName : "Inventory",
+        moduleSlug : "inventory",
+        modulePreview : "Take full command of raw material, work in process, and finished goods inventory by lot and location, driving next operations and vendor management.",
+        moduleStageDescriptions : {
+            initiate : [
+                "Receive raw material at the lot and container levels with full labeling and traceability.",
+                "Manage raw material inventory by location.",
+                "Issue specific raw material lots to production activity using bar coding, tablet computers, or by office.",
+                "As an option, auto deplete (backflush) material in FIFO order based on production reported and bill of materials.",
+                "Segregate raw material into various buckets.",
+                "Special coil slitting features to specify, slit, and track mother and child coils through the process.",
+                "Drive MRP processes based on current raw material inventory.",
+            ],
+            initiateDescription: "Raw Material",
+            progress : [
+                "Track quantities real time by shop order, operation, and workcenter across internal processes based on plant floor production.",
+                "Track quantities real time by shop order, operation, and vendor across outside processes based on outside process shipping and receiving.",
+                "Manage WIP inventory by location, including driving plant floor scheduling and vendor management.",
+                "Inform operators and materials handlers of next destination using ‘NEXT’ bar code labeling.",
+            ],
+            progressDescription: "WIP",
+            deliver : [
+                "Fully trace finished goods product by work order back to source work orders and raw material lots.",
+                "Manage finished goods inventory by location.",
+                "Use a variety of tools, including FIFO pick lists, safety stock reminders, excess inventory that customers are required to take.",
+                "Label finished goods easily with integrated, serialized labels.  Includes standard and customer required formats.",
+                "Supports a host of customer finished goods inventory consignment requirements.",
+                "Report on raw material, WIP, and finished goods at many levels, measuring turns, valuation, obsolescence.",
+            ],
+            deliverDescription: "Finished Goods",
+        }
+    },
+
     // {
     //     moduleName : "",
     //     moduleSlug : "",        
