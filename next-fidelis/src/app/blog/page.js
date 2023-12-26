@@ -15,13 +15,13 @@ function Blog() {
 
     
 
-
     const fetchData = async () => {
         try {
             const response = await client.fetch(
-                `*[_type == "post"] | order(_createdAt desc) {
+                `*[_type == "post"] | order(publishedAt desc) {
                     title,
                     slug,
+                    publishedAt,
                     body,
                     mainImage {
                         asset -> {

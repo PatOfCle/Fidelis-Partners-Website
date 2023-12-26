@@ -1,11 +1,21 @@
 "use client"
 
-import React from 'react'
+// import React from 'react'
+import { useState, useEffect } from 'react';
+
 import './HistoryPage.css'
 import Timeline from './Timeline';
 import {Fade, Reveal} from 'react-awesome-reveal';
 
+// var topVar = '1234'
+
 function History() {
+
+  // var sup = 'adf';
+  // const [myVariable, setMyVariable] = useState('Hello, Next.js!');
+
+  // console.log(window)
+  // console.log('halloooo')
 
   return (
     <div className='history-container'>

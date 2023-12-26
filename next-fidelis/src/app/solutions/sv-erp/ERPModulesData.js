@@ -258,9 +258,73 @@ export const svModules = [
         }
     },
 
+
+    {
+        moduleName : "Shipping and Logistics",
+        moduleSlug : "shipping-and-logistics",        
+        modulePreview : "Proactively push shipping instructions, drive pick lists, increase on time delivery, and generate precise customer labeling and paperwork.",
+        moduleStageDescriptions : {
+            initiate : [
+                "Run shipping area using assigned queues, various pick lists and open order report options.",
+                "Satisfy open sales orders and relieve appropriate shop order and location inventory with a few clicks.",
+                "Launch shipping with a multitude of bar code options, including tablet-based pick lists, bar coding of finished goods serialized stock, and advanced shipment building from staged pallet scans.",
+                "Support advanced shipping scenarios such as vendor drop ships, warehouse consignment pulls, and RMAs.",
+                "Generate advanced shipping paperwork and labels, where applicable, from upstream in the production process.",
+            ],
+            progress : [
+                "Utilize ‘pending’ shipment features to prepare shipping paperwork days in advance.",
+                "Coordinate logistics, with shipment plan RFQs, multi stop planning, and 3rd party logistics integrations.",
+                "Build pallets interactively from plant floor workcenters or staged shipping areas.",
+                "Build, label, and get electronic signoff on part, pallet, and truckload shipments before departure.",
+                "Keep customers informed with email or EDI based advanced shipping notices (ASNs) and internally coordinated notification queues.",
+                "Alert or stop shipping based on a variety of options, including PPAP signoff, open NCMR or quality issues, credit holds, and certification requirements.",
+            ],
+            deliver : [
+                "Automatically generate standard and unique paperwork: Bill of Lading, Packing List, Internal Certification (at high levels of complexity), and trace based raw material certifications.",
+                "Affix any type of label to the shipment; standard or customer specific, master label or child label, with full trace to packing list and EDI transactions.",
+                "For one customer, 75 different customer required label formats are generated directly from the software.",
+                "Integrate easily with 3rd party platforms: UPS Worldship, FedEx, UPS, and higher end logistics platforms.",
+                "Report on advanced and historical On Time Delivery and other shipping metrics.",
+            ]
+      }
+    },
+    
+
+    {
+        moduleName : "Accounting",
+        moduleSlug : "accounting",
+        modulePreview : "Implement financial controls, track inventory, and manage profitability at multiple levels.",
+        moduleStageDescriptions : {
+            initiate : [
+                "Simple and advanced tools to proactively manage pricing.",
+                "Supplier purchase order approvals and confirmations by department, account category, and level of spend.",
+                "Secured invoicing queues generated from shipments, services, projects, and special pricing setups across the company.",
+                "Multitude of costing options with update management and rollup functions, including standard, actual, and average actual options",
+                "Tools to perform credit approvals and holds at key intervals in the sales cycle.",
+                "Support for Intercompany transactions.",
+            ],
+            progress : [
+                "Generation and management of open accounts receivables from invoicing.",
+                "Generation and management of open accounts payables, including PO and receiver variance tracking and PPV variance from standard cost.",
+                "Availability of open accounts receivable, including past due and credit limit checking, to drive collections and sales order processing.",
+                "Dynamic inventory revaluation tools based on purchasing, labor, and outplant price fluctuations.",
+                "Integrated commission expected and earned calculations and reporting.",
+                "Detailed workflows for exception management, including credit memos and RMAs.",
+            ],
+            deliver : [
+                "Time sensitive and aggregate costing alerts and reporting tools, analyzing material, labor, burden, and outplant spend by company, customer, job, and more.",
+                "Full EDI support of 810 outbound invoices.",
+                "Fully integrated reporting: Projected and Historical Sales, Cost of Goods Sold, Inventory Turns, Quote vs Actual, Inventory Valuation, etc.",
+                "Delivery of reported data in a variety of modes: Standard Reports, Excel extracts, Power BI, Delivered Pivots.",
+                "Fully integrated GL under development for those seeking.",
+            ]
+      }
+    },
+
+
     // {
     //     moduleName : "",
-    //     moduleSlug : "",        
+    //     moduleSlug : "",
     //     modulePreview : "",
     //     moduleStageDescriptions : {
     //         initiate : [
@@ -274,5 +338,6 @@ export const svModules = [
     //         ]
     //   }
     // },
+
 
 ]
