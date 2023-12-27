@@ -1,0 +1,30 @@
+.PrinciplesPage-container {
+    margin: 60px;
+
+    font-family: 'Metropolis Regular';
+
+    
+}
+
+.principles-description {
+    font-family: 'Metropolis Regular';
+}
+
+.principles-list-div {
+    margin-top: 50px;
+
+    font-family: 'Metropolis Regular';
+}
+
+.message-from-the-president * {
+    font-family: 'Metropolis Regular';
+}
+/* 
+.ValuesPage-container ul li {
+    list-style-type: disc;
+    margin-left: 20px;
+} */
+
+.principleDescription-div {
+    font-family: 'Metropolis Regular';
+}

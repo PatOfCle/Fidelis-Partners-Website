@@ -15,7 +15,8 @@ function Footer() {
                     About
                 </h3>
                 <div>
-                    <Link href="/about/values" className='footer-link'><li>Values</li></Link>
+                    {/* <Link href="/about/values" className='footer-link'><li>Values</li></Link> */}
+                    <Link href="/about/principles" className='footer-link'><li>Principles</li></Link>
                     <Link href="/about/history" className='footer-link'><li>History</li></Link>
                     <Link href="/about/team" className='footer-link'><li>Team</li></Link>
                 </div>

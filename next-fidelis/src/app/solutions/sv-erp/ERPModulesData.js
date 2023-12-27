@@ -322,6 +322,29 @@ export const svModules = [
     },
 
 
+    {
+        moduleName : "CRM",
+        moduleSlug : "crm",
+        modulePreview : "Connect SV with state of the market CRM software and leverage data across two platforms.",
+        moduleStageDescriptions : {
+            initiate : [
+                "Interface with CRM of choice bi-directionally, including Hubspot and SalesForce.com.",
+                "Manage and share contacts centrally across the company.",
+                "Track opportunities through the sales lifecycle – call reports to leads to quotes to purchase orders.",
+            ],
+            progress : [
+                "Carry opportunities forward to SV quotes.",
+                "Interface to email platform of choice, maintaining centralized record of prospect and customer outreach.",
+                "Take advantage of SV alert features, triggering, assigning, and managing customer follow up activity.",
+            ],
+            deliver : [
+                "Enable customer, order, invoice, and commission date to sales reps.",
+                "Report on Pipeline, Quote Activity by Rep, Win Ratios, etc.",
+            ]
+      }
+    },
+
+
     // {
     //     moduleName : "",
     //     moduleSlug : "",
@@ -338,6 +361,5 @@ export const svModules = [
     //         ]
     //   }
     // },
-
 
 ]

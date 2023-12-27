@@ -1,6 +1,6 @@
 .SteelVikingPage-container {
     /* margin: 100px; */
-    margin: 20px 8vw;
+    margin: 20px 6vw;
 
 }
 
@@ -138,11 +138,13 @@
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
     .module-preview-link {
         flex: 0 0 calc(100% - 20px);
         overflow: hidden;
-        width: 35vw;
+
+        min-height: 190px;
+        width: 25vw;
     }
 }
 
@@ -150,6 +152,8 @@
     .module-preview-link {
         flex: 0 0 calc(100% - 20px);
         overflow: hidden;
+
+        min-height: 130px;
         width: 320px;
     }
 }

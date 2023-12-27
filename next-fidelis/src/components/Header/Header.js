@@ -40,7 +40,8 @@ function Header() {
                     <img src={"/assets/dropdown-arrow_thumbnail.png"} className='dropdown-arrow'/>
                     <div className="dropdown">
                         <ul>
-                            <Link href="/about/values" className='router-link'><li>Values</li></Link>
+                            {/* <Link href="/about/values" className='router-link'><li>Values</li></Link> */}
+                            <Link href="/about/principles" className='router-link'><li>Principles</li></Link>
                             <Link href="/about/history" className='router-link'><li>History</li></Link>
                             <Link href="/about/team" className='router-link'><li>Team</li></Link>
                         </ul>
@@ -104,7 +105,8 @@ function Header() {
                         <div className={`submenu ${activeOption === 'about' ? 'open' : ''}`}>
                             
                             <ul>
-                                <Link href="/about/values" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('about')}}><li className='submenu-option'>Values</li></Link>
+                                {/* <Link href="/about/values" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('about')}}><li className='submenu-option'>Values</li></Link> */}
+                                <Link href="/about/principles" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('about')}}><li className='submenu-option'>Principles</li></Link>
                                 <Link href="/about/history" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('about')}}><li className='submenu-option'>History</li></Link>
                                 <Link href="/about/team" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('about')}}><li className='submenu-option'>Team</li></Link>
                             </ul>
