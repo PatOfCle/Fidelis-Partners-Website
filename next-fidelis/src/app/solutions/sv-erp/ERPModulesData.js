@@ -345,6 +345,201 @@ export const svModules = [
     },
 
 
+    {
+        moduleName : "Quality",
+        moduleSlug : "quality",
+        modulePreview : "Locate, contain, communicate upon, segregate, and disposition inventory with quality issues, whether identified internally or by customer.",
+        moduleStageDescriptions : {
+            initiate : [
+                "Identify, categorize, assign, and champion quality items at any level of categorization, including NCMR, alert, CAR, and customer notification.",
+                "Manage inspection instructions, steps, dimensions, and frequencies at the item or routing step levels, generating for plant floor production use.",
+                "Full NCMR functionality for more rigorous implementations, including segregated material identification and labeling by lot, and full disposition processing via MRB.",
+                "Plant floor inspection data capture, both wirelessly and directly into SV, with exception notifications and alerts.",
+            ],
+            progress : [
+                "Configurable workflow and email communication throughout the process, internally and with customers.",
+                "Suspect or NCMR’d inventory segregated, sorted-reworked, and dispositioned via hold quantities, scrap quantities, and MRB.",
+                "Maintenance of employee training records and history.",
+                "Full customer return (RMA and credit memo), vendor return (debit memo), and rework functionality with segregation and measurement.",
+            ],
+            deliver : [
+                "Support for any customer required NCR or CAR formats with a single template.",
+                "Quality alerts throughout the system for vision by employees – plant dashboard, email, and via paperwork reminders.",
+                "Ability to warn or stop key events, including production start or shipping, based on quality item or NCMR statuses for the item(s).",
+                "Support for disposition of quality items and NCMRs to full completion.",
+                "Plentiful reporting of open quality items, assignments, trends, customer required metrics, through core SV reports of Power BI.",
+            ]
+      }
+    },
+
+    {
+        moduleName : "Capacity Planning",
+        moduleSlug : "capacity-planning",
+        modulePreview : "Visually inform and act upon on plant capacity utilization constraints and outcomes.",
+        moduleStageDescriptions : {
+            initiate : [
+                "Maintain and utilize resource capacity information: By employee, skill set, workgroup, work center, shift, and calendar day-week.",
+                "Support prioritized alternate resources designations for item routing steps.",
+                "Easily create alternate outside process shop orders or alternate internal routings based on capacity shortages.",
+            ],
+            progress : [
+                "Highlight overbooked departments and work centers, with what if analysis for user specified reassignments.",
+                "Easily allow work center reassignments of open jobs.",
+                "For multi-warehouse companies, recommend warehouse source based on available inventory and prior commitments.",
+            ],
+            deliver : [
+                "Workflow tools for capacity-based analysis and order commitments to customers.",
+                "Pivot table outputs to make the management case for capacity changes at work center, departmental, customer, and plant levels.",
+                "Report current and future loads based on released, planned, or forecasted orders and standard or actual hours required.",
+            ]
+      }
+    },
+
+    {
+        moduleName : "Collaborative Workflows",
+        moduleSlug : "collaborative-workflows",
+        modulePreview : "Implement automation to shepherd module-level workstreams with accuracy, approval, and accountability.",
+        moduleStageDescriptions : {
+            initiate : [
+                "Set up configurable workflows with rules for assignment, timing, and dependencies.",
+                "Visually track workflow through its dependent steps.",
+                "Remind employees of workflow responsibilities with emails, inbox processing, and reports.",
+                "Provide quick access to supporting data to effect workflow decisions.",
+                "Complete workflow steps on individual or team levels.",
+                "Bypass workflow steps for simplicity, based on threshold criteria.",
+                "Link and share developing and collaborative documentation through the workflow process.",
+            ],
+            progress : [
+                "Set up configurable workflows with rules for assignment, timing, and dependencies.",
+                "Visually track workflow through its dependent steps.",
+                "Remind employees of workflow responsibilities with emails, inbox processing, and reports.",
+                "Provide quick access to supporting data to effect workflow decisions.",
+                "Complete workflow steps on individual or team levels.",
+                "Bypass workflow steps for simplicity, based on threshold criteria.",
+                "Link and share developing and collaborative documentation through the workflow process.",
+            ],
+            deliver : [
+                "Quoting: Move a new quote or requote through sales, engineering, purchasing, and production departments to ensure accuracy and margin.",
+                "Sales Order Approval: Approve customers based on credit-worthiness and completion of sufficient order detail.",
+                "Sales Order Release Workflow: Commit to delivery dates with additive input from engineering, materials, production, and shipping personnel.",
+                "Purchasing Approval Workflow: Approve purchase requisitions and advance to PO, based on account category, purchase type, department, and level of spend.",
+                "Receiving Workflow: Review and approve incoming material against purchasing requirements, tolerances, and chemistries before proceeding with production.",
+                "Quality Workflow: Manage a quality item through the segregation, sort-rework, accounting, and disposition processes.",
+                "Credit Memo Workflow: Confirm credit memo details, reasoning, and pricing across the company before advancing to the accounting process.",
+            ]
+      }
+    },
+
+    {
+        moduleName : "Project Management",
+        moduleSlug : "project-management",
+        modulePreview : "Not available in most ERPs, plan and execute projects of all levels across the company to understand utilization of and manage valuable resources.",
+        moduleStageDescriptions : {
+            initiate : [
+                "Supports any type of project, including new products, engineering, quality, human resources, CapEx, and  continuous improvement.",
+                "Setup templates by project type, with the ability to tailor for individual projects.",
+                "Utilize flex fields to maintain key data particular to a project type.",
+                "Establish employee assignments, due dates, milestones and dependencies by phase and task.",
+            ],
+            progress : [
+                "Remind employees of their upcoming tasks through Inbox processing.",
+                "Link to other data within the ERP to avoid redundancy.",
+                "Collaborate with email, including templatized email options and reminders of newly assigned or upcoming tasks.",
+                "View open and historical project tasks by any combination of criteria – project, employee, timeframe, type of work.",
+                "Quickly mark items complete and/or comment upon project tasks for general viewing.",
+            ],
+            deliver : [
+                "Report upon past due, employee tasks/accountability, and resource loads, by company, customer, project, employee, or overall.",
+                "Options for bar coding of paperwork through the plant to move projects through the process.",
+                "Utilize Power BI for visual Gantt charts of project progress.",
+                "Option to track and potentially bill hours by project, phase, and task.",
+            ]
+      }
+    },
+
+    {
+        moduleName : "Time and Attendance",
+        moduleSlug : "time-and-attendance",
+        modulePreview : "Timeclock, payroll, and various HR features.",
+        moduleStageDescriptions : {
+            initiate : [
+                "Manage shifts, breaks, lunches centrally.",
+                "Track desired human resource fields by employee, with security.",
+                "Clock in and out easily, with configurable options for grace periods, early or late arrival, early or late departure.",
+                "Provide access to other employee data from the timeclock, including production efficiency, scrap rates, and pay period hour tracking.",
+            ],
+            progress : [
+                "Enable options to clock in and out at departmental levels over the course of the shift.",
+                "Utilize ‘trusted’ employee options for those who work extra hours outside of shift to complete important work.",
+                "Modify erroneous or missing time and attendance entries at supervisory or administrative levels.",
+                "Submit, approve and track PTO requests and YTD time.",
+                "Implement Points system, motivating good attendance and disincenting poor attendance.",
+            ],
+            deliver : [
+                "Who is Here view, including production assignments on which they are currently working.",
+                "Approve time and attendance entries at supervisory, department, or HR levels.",
+                "Generate payroll interface to payroll system of choice (e.g. Paychex, Paycor, ADP, etc).",
+                "Report on paid vs earned, productivity, and attendance history.",
+            ]
+      }
+    },
+
+    {
+        moduleName : "Vendor Management",
+        moduleSlug : "vendor-management",
+        modulePreview : "Hold suppliers accountable on dates, commitments, pricing, and quality.",
+        moduleStageDescriptions : {
+            initiate : [
+                "Fluid RFQ to PO options to support pricing and purchasing alternatives.",
+                "Maintenance of lead times by vendor and/or item to set reasonable expectations for all parties.",
+                "Confirmation of delivery date vs request date and tracking against.",
+                "Authorized confirmation of PO pricing and account before proceeding internally.",
+            ],
+            progress : [
+                "Price control options, including material pricing vs index and historical cost fluctuations by material item or type.",
+                "Vendor ISO certification tracking by function and date.",
+                "Vendor certification workflow processing.",
+                "Detailed quality metrics by vendor.",
+                "Alternative vendor options on MRP.",
+            ],
+            deliver : [
+                "Advanced return to vendor and debit memo processing.",
+                "Timed, emailed PO reports by vendor, denoting upcoming and past due.",
+                "On Time Delivery and Quality/NCMR reporting by vendor.",
+                "Power BI vendor performance metrics.",
+                "Standard vs actual costing queues to alert to price swings and impact on inventory value.",
+            ]
+      }
+    },
+
+    {
+        moduleName : "Shop Maintenance",
+        moduleSlug : "shop-maintenance",
+        modulePreview : "Proactively manage machine and tool maintenance, controlling resource costs, meeting audit requirements and protecting company assets.",
+        moduleStageDescriptions : {
+            initiate : [
+                "Support for maintenance tracking by machine/equipment, tooling, and gauge.",
+                "Preventive Maintenance setups by activity type and frequency or number of pieces made.",
+                "Schedule tool repairs, machine maintenance, and gauge calibration from one point.",
+                "Alert Maintenance department to critical or incident needs from plant production workstations.",
+                "Maintenance work order forms designed to specification with instructions.",
+            ],
+            progress : [
+                "Generate upcoming preventive maintenance activities upon completion of prior activities or from the SV Preventive Maintenance engine.",
+                "Inbox processing for maintenance employees to drive next items needing attention.",
+                "Purchase order assignments to equipment or tooling, to",
+                "Service part assignment to machines and inventory maintenance.",
+                "Rapid bar coding features, to facilitate employee clock-ins to maintenance work and indirect activity.",
+            ],
+            deliver : [
+                "Current open maintenance item reporting.",
+                "Historical reporting of maintenance by equipment or tool, meeting audit requirements.",
+                "Post-production run evaluation capture, generating real time instructions for tool and machine maintenance.",
+                "Ability for maintenance employees to clock work on plant tablet computers.",
+            ]
+      }
+    },
+
     // {
     //     moduleName : "",
     //     moduleSlug : "",
