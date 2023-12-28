@@ -38,7 +38,7 @@ function Blog() {
             setJsonData(response);
             setFilteredData(response);
             setLoading(false); // Update loading state when the data is fetched
-            console.log(jsonData)
+            // console.log(jsonData)
             
         } catch (error) {
             console.error('Error fetching data:', error);
@@ -48,13 +48,13 @@ function Blog() {
 
     useEffect(() => {
         fetchData();
-        console.log('jsonData')
+        // console.log('jsonData')
     }, []);
 
     // log the response data
-    console.log(jsonData)
+    // console.log(jsonData)
     const extractedNames = Array.from(new Set(jsonData.flatMap(item => item.categories).filter(Boolean)));
-    console.log(extractedNames)
+    // console.log(extractedNames)
 
     // const filterData = (categoryName) => {
     const filterData = (event) => {
@@ -62,8 +62,8 @@ function Blog() {
 
         setDropdownValue(event.target.value)
         // Example: Filtering based on age > 25
-        console.log('-----------------')
-        console.log('before')
+        // console.log('-----------------')
+        // console.log('before')
 
         if (newValue == "") {
             setFilteredData(jsonData)
@@ -74,11 +74,11 @@ function Blog() {
         // const filteredData = jsonData.filter(item => (item.categories !== null && item.categories.includes(categoryName)));
         // const filteredData = jsonData.filter(item => item.categories.includes(categoryName));
         
-        console.log('herenow')
-        console.log(filtered)
+        // console.log('herenow')
+        // console.log(filtered)
         setFilteredData(filtered);
-        console.log(filtered)
-        console.log('----')
+        // console.log(filtered)
+        // console.log('----')
     };
 
   return (
@@ -114,8 +114,8 @@ function Blog() {
                 <div className='blog-page-content'>
 
                     <div className='blog-articles'>
-                        {filteredData.map((post) => (
-                            <Link href={`/blog/${post.slug.current}`} style={{color: 'inherit'}}>
+                        {filteredData.map((post, index) => (
+                            <Link href={`/blog/${post.slug.current}`} style={{color: 'inherit'}} key={index}>
                                 <article key={post.slug.current} className='single-blog-article'>
                                     <img src={post.mainImage.asset.url} alt={post.title}/>
                                     <h3 className='blog-post-preview-title'>{post.title}</h3>

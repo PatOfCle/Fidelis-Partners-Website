@@ -113,10 +113,9 @@ function TeamPage() {
             <div className='team-members-grid'>
                 {teamMembersData.map((teamMember, index) => (
 
-                <div className='team-member-component-holder' onClick={ () => openImageDescription(teamMember) }>
+                <div className='team-member-component-holder' onClick={ () => openImageDescription(teamMember) } key={index} >
                     
                     <TeamMemberComponent
-                        key={index}
                         teamMemberData={teamMember}
                     />
 

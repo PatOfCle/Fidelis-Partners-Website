@@ -36,8 +36,8 @@ function PrinciplesPage() {
 
           <ul>
             {
-              principles.map( item => (
-                <li>
+              principles.map( (item, index) => (
+                <li key={index}>
                   <h4>
                     {item.principle}
                   </h4>

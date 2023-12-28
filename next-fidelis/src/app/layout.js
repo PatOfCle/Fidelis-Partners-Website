@@ -4,10 +4,11 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header/Header'
 import Footer from '@/components/Footer/Footer'
+import HubspotTracker from '@/components/HubspotStuff/HubspotTracker'
 
 import { useTrackingCode } from 'react-hubspot-tracking-code-hook'
 
-import Hubspot from './Hubspot'
+// import Hubspot from './Hubspot'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -41,6 +42,7 @@ export default function RootLayout({ children }) {
       {/* <Head>
         <Script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/40200420.js" />
       </Head> */}
+      {/* DOES NOT WORK PUTTING SCRIPT IN HEAD TAG */}
 
       <body className={inter.className}>
         <Header />
@@ -57,8 +59,12 @@ export default function RootLayout({ children }) {
         </script> */}
         {/* <Hubspot /> */}
         {/* <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/40200420.js"></script> */}
-        {/* <Script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/40200420.js" /> */}
-
+        
+        {/* Script needs to be loaded here, right before the HubspotTracker component */}
+        <Script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/40200420.js" />
+        
+        <HubspotTracker topLevelChildren={children}/>
+        
       </body>
     </html>
   )

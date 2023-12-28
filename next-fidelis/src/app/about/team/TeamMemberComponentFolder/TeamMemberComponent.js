@@ -14,7 +14,7 @@ function TeamMemberComponent(props) {
         />
         {/* {props.image}
         {props.bio} */}
-        <div class="name-and-title-container">
+        <div className="name-and-title-container">
             <h4>
                 {props.teamMemberData.firstName} {props.teamMemberData.lastName}
             </h4>

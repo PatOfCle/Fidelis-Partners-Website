@@ -90,8 +90,8 @@ function SteelVikingPage() {
 
         <div className='module-previews-section'>
 
-        {svModules.map(svModule => (
-          <Link href={`/solutions/sv-erp/${svModule.moduleSlug}`} className='router-link'  key={svModule.id} >
+        {svModules.map((svModule, index) => (
+          <Link href={`/solutions/sv-erp/${svModule.moduleSlug}`} className='router-link'  key={index} >
             <div className='module-preview-link show-pointer'>
               <h3 className='module-preview-title'>
                 {svModule.moduleName}

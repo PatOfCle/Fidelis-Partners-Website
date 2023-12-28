@@ -20,8 +20,8 @@ function ERPModuleDetail(props) {
             <div></div>
           }
           <ul>
-            {props.moduleData.moduleStageDescriptions.initiate.map((bullet) => (
-              <li>
+            {props.moduleData.moduleStageDescriptions.initiate.map((bullet, index) => (
+              <li key={index}>
                 {bullet}
               </li>
             ))}
@@ -36,11 +36,11 @@ function ERPModuleDetail(props) {
             <div></div>
           }
           <ul>
-            {props.moduleData.moduleStageDescriptions.progress.map((bullet) => (
+            {props.moduleData.moduleStageDescriptions.progress.map((bullet, index) => (
               // <li>
               //   {bullet}
               // </li>
-              <li dangerouslySetInnerHTML={{ __html: bullet }}>
+              <li dangerouslySetInnerHTML={{ __html: bullet }} key={index}>
                 {/* {bullet} */}
               </li>
             ))}
@@ -55,8 +55,8 @@ function ERPModuleDetail(props) {
             <div></div>
           }
           <ul>
-            {props.moduleData.moduleStageDescriptions.deliver.map((bullet) => (
-              <li>
+            {props.moduleData.moduleStageDescriptions.deliver.map((bullet, index) => (
+              <li key={index}>
                 {bullet}
               </li>
             ))}
