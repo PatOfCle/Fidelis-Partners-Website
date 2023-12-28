@@ -62,37 +62,6 @@ export const svModules = [
       }
     },
 
-
-    {
-        moduleName : "MRP",
-        moduleSlug : "mrp",        
-        modulePreview : "Take command of material planning and purchasing using interactive and intuitive tools.",
-        moduleStageDescriptions : {
-            initiate : [
-                "One stop MRP window with full set of tools to drive planning and purchasing.",
-                "Factor current inventory, future purchases, future production or sales demand.",
-                "Base planning on either future or historic orders, both sales and production.",
-                "Filter to show only items needed or entire look.",
-                "Segment MRP look by planner, customer, vendor, part family, warehouse or facility.",
-                "Identify future shortages at the line item and date levels.",
-            ],
-            progress : [
-                "Factor for safety stock levels.",
-                "Filter for outplant vendors and/or different production facilities.",
-                "Factor preferred vendor data, including lead times",
-                "Plan using partially processed material, assigning existing inventory to orders, with special emphasis on coil slitting.",
-            ],
-            deliver : [
-                "Create and deliver purchase orders directly from the MRP tool.",
-                "Add to blankets, based on needed material, dates, and minimum order quantities, if needed.",
-                "Formulate complete material purchasing vendor release plans, and issue to suppliers.",
-                "Schedule open PO and past due reports to be sent to vendors on timed bases.",
-                "Several MRP options, outside of the interactive tool.",
-            ]
-      }
-    },
-
-
     {
         moduleName : "Order Management",
         moduleSlug : "order-management",
@@ -131,6 +100,36 @@ export const svModules = [
 
 
     {
+        moduleName : "MRP",
+        moduleSlug : "mrp",        
+        modulePreview : "Take command of material planning and purchasing using interactive and intuitive tools.",
+        moduleStageDescriptions : {
+            initiate : [
+                "One stop MRP window with full set of tools to drive planning and purchasing.",
+                "Factor current inventory, future purchases, future production or sales demand.",
+                "Base planning on either future or historic orders, both sales and production.",
+                "Filter to show only items needed or entire look.",
+                "Segment MRP look by planner, customer, vendor, part family, warehouse or facility.",
+                "Identify future shortages at the line item and date levels.",
+            ],
+            progress : [
+                "Factor for safety stock levels.",
+                "Filter for outplant vendors and/or different production facilities.",
+                "Factor preferred vendor data, including lead times",
+                "Plan using partially processed material, assigning existing inventory to orders, with special emphasis on coil slitting.",
+            ],
+            deliver : [
+                "Create and deliver purchase orders directly from the MRP tool.",
+                "Add to blankets, based on needed material, dates, and minimum order quantities, if needed.",
+                "Formulate complete material purchasing vendor release plans, and issue to suppliers.",
+                "Schedule open PO and past due reports to be sent to vendors on timed bases.",
+                "Several MRP options, outside of the interactive tool.",
+            ]
+      }
+    },
+
+
+    {
         moduleName : "Purchasing",
         moduleSlug : "purchasing",
         modulePreview : "Plan, enter, manage, and receive supplier purchase orders with full control.",
@@ -155,6 +154,37 @@ export const svModules = [
                 "Documentation links to receipts (certifications, packing lists) and automatic forwarding and generation of those documents when required by customers.",
                 "Forward link into Accounts Payable with price and quantity variance approvals.",
                 "Open and historical purchase reporting and metrics.",
+            ]
+      }
+    },
+
+
+    {
+        moduleName : "Scheduling",
+        moduleSlug : "scheduling",        
+        modulePreview : "Plan shop floor production proactively, with continual review and update based on changing realities.",
+        moduleStageDescriptions : {
+            initiate : [
+                "Tailorable to the particulars of a company’s scheduling environment.",
+                "Generation of automatic schedules by plant, customer, product family, or workcenter.",
+                "Initial schedule outlay based on standard set up and piece rates, outplant lead times, and inter-operation buffer times.",
+                "Ability to drive plant scheduling by prioritized criteria, including common setups, customer preferences, employee and workcenter capacity.",
+                "Automated workflows with ability to establish production commitment dates based on lead times and capacity before confirming to customers.",
+            ],
+            progress : [
+                "Interactive scheduling dashboard that generates planned orders, factoring current inventory, stocking requirements, delivery requirements, order policies, and production in flight.  Instant visualization to production needs by line item with proposed planned order insertion.",
+                "Continued alerts to customer order changes (pull ins, quantity changes, drop ins, cancellations), with the ability to layer those into the schedule.",
+                "Interactive shop floor release management from the scheduling window.",
+                "Movement of production orders to available workcenters.",
+                "Near term look at planned overproduction and shortages based on committed ship dates.",
+                "Ongoing access to loads and past due by workcenter and department.",
+            ],
+            deliver : [
+                "Production dashboard drag and drop by plant supervisors.",
+                "Display of schedules on plant floor dashboards for clocking by employees.",
+                "Integrated schedule deliveries via emails or software folders.",
+                "Generation of Excel schedules, as an option, with upload back into the software based on scheduler changes.",
+                "Full plant visual of planned production by department with visual drill into each workcenter.",
             ]
       }
     },
@@ -193,36 +223,6 @@ export const svModules = [
       }
     },
 
-
-    {
-        moduleName : "Scheduling",
-        moduleSlug : "scheduling",        
-        modulePreview : "Plan shop floor production proactively, with continual review and update based on changing realities.",
-        moduleStageDescriptions : {
-            initiate : [
-                "Tailorable to the particulars of a company’s scheduling environment.",
-                "Generation of automatic schedules by plant, customer, product family, or workcenter.",
-                "Initial schedule outlay based on standard set up and piece rates, outplant lead times, and inter-operation buffer times.",
-                "Ability to drive plant scheduling by prioritized criteria, including common setups, customer preferences, employee and workcenter capacity.",
-                "Automated workflows with ability to establish production commitment dates based on lead times and capacity before confirming to customers.",
-            ],
-            progress : [
-                "Interactive scheduling dashboard that generates planned orders, factoring current inventory, stocking requirements, delivery requirements, order policies, and production in flight.  Instant visualization to production needs by line item with proposed planned order insertion.",
-                "Continued alerts to customer order changes (pull ins, quantity changes, drop ins, cancellations), with the ability to layer those into the schedule.",
-                "Interactive shop floor release management from the scheduling window.",
-                "Movement of production orders to available workcenters.",
-                "Near term look at planned overproduction and shortages based on committed ship dates.",
-                "Ongoing access to loads and past due by workcenter and department.",
-            ],
-            deliver : [
-                "Production dashboard drag and drop by plant supervisors.",
-                "Display of schedules on plant floor dashboards for clocking by employees.",
-                "Integrated schedule deliveries via emails or software folders.",
-                "Generation of Excel schedules, as an option, with upload back into the software based on scheduler changes.",
-                "Full plant visual of planned production by department with visual drill into each workcenter.",
-            ]
-      }
-    },
 
     {
         moduleName : "Inventory",
@@ -541,7 +541,97 @@ export const svModules = [
     },
 
     // {
-    //     moduleName : "",
+    //     moduleName : "Tool Room",
+    //     moduleSlug : "tool-room",
+    //     modulePreview : "",
+    //     moduleStageDescriptions : {
+    //         initiate : [
+                
+    //         ],
+    //         progress : [
+                
+    //         ],
+    //         deliver : [
+                
+    //         ]
+    //   }
+    // },
+
+
+    // {
+    //     moduleName : "Mobile Solutions",
+    //     moduleSlug : "mobile-solutions",
+    //     modulePreview : "",
+    //     moduleStageDescriptions : {
+    //         initiate : [
+                
+    //         ],
+    //         progress : [
+                
+    //         ],
+    //         deliver : [
+                
+    //         ]
+    //   }
+    // },
+
+
+    // {
+    //     moduleName : "Bar Coding",
+    //     moduleSlug : "bar-coding",
+    //     modulePreview : "",
+    //     moduleStageDescriptions : {
+    //         initiate : [
+                
+    //         ],
+    //         progress : [
+                
+    //         ],
+    //         deliver : [
+                
+    //         ]
+    //   }
+    // },
+
+
+    // {
+    //     moduleName : "EDI",
+    //     moduleSlug : "edi",
+    //     modulePreview : "",
+    //     moduleStageDescriptions : {
+    //         initiate : [
+                
+    //         ],
+    //         progress : [
+                
+    //         ],
+    //         deliver : [
+                
+    //         ]
+    //   }
+    // },
+
+
+    // {
+    //     moduleName : "Business Intelligence",
+    //     moduleSlug : "business-intelligence",
+    //     modulePreview : "",
+    //     moduleStageDescriptions : {
+    //         initiate : [
+                
+    //         ],
+    //         progress : [
+                
+    //         ],
+    //         deliver : [
+                
+    //         ]
+    //   }
+    // },
+
+
+    // {
+    //     moduleName : "Machine Integration",
     //     moduleSlug : "",
     //     modulePreview : "",
     //     moduleStageDescriptions : {
@@ -557,4 +647,24 @@ export const svModules = [
     //   }
     // },
 
+
+    // // {
+    // //     moduleName : "",
+    // //     moduleSlug : "",
+    // //     modulePreview : "",
+    // //     moduleStageDescriptions : {
+    // //         initiate : [
+                
+    // //         ],
+    // //         progress : [
+                
+    // //         ],
+    // //         deliver : [
+                
+    // //         ]
+    // //   }
+    // // },
+    
 ]
+
+
