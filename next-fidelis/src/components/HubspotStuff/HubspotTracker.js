@@ -38,11 +38,12 @@ const HubspotTracker = () => {
                 _hsq.push(['setPath', pathname]);
                 _hsq.push(['trackPageView']);
 
-                // _hsq.push(["identify",{
-                //     // email: getParameterByName("email")
-                //     // email: 'patofcle@gmail.com'
-                //     email: '16Test@gmail.com'
-                // }]);
+                _hsq.push(["identify",{
+                    email: 'Test5678@gmail.com'
+                }]);
+
+                _hsq.push(['setPath', pathname]);
+                _hsq.push(['trackPageView']);
 
                 firstLoad.current = false
             } else {

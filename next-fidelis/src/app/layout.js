@@ -58,12 +58,12 @@ export default function RootLayout({ children }) {
           _hsq.push(["setPath", "/home"]);
         </script> */}
         {/* <Hubspot /> */}
-        {/* <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/40200420.js"></script> */}
+        <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/40200420.js"></script>
         
         {/* Script needs to be loaded here, right before the HubspotTracker component */}
-        <Script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/40200420.js" />
+        <Script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/40200420.js" strategy="beforeInteractive" />
         
-        <HubspotTracker topLevelChildren={children}/>
+        <HubspotTracker />
         
       </body>
     </html>

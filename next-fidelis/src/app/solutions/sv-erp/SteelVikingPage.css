@@ -122,7 +122,7 @@
     flex: 0 0 calc(50% - 10px); /* Set the initial width for two items per row */
     border-radius: 10px;
     padding: 0 10px;
-    min-height: 120px;
+    min-height: 130px;
     overflow: hidden;
     transition: box-shadow 0.3s ease; /* Add a transition effect for the box-shadow property */
     margin: 0 20px;

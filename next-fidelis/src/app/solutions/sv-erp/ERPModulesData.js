@@ -540,112 +540,162 @@ export const svModules = [
       }
     },
 
-    // {
-    //     moduleName : "Tool Room",
-    //     moduleSlug : "tool-room",
-    //     modulePreview : "",
-    //     moduleStageDescriptions : {
-    //         initiate : [
-                
-    //         ],
-    //         progress : [
-                
-    //         ],
-    //         deliver : [
-                
-    //         ]
-    //   }
-    // },
+    {
+        moduleName : "Tool Room",
+        moduleSlug : "tool-room",
+        modulePreview : "Master the scheduling, inventory, labor, and purchasing costs of tools (dies) and components.",
+        moduleStageDescriptions : {
+            initiate : [
+                "Master list of dies and tool components, including job cross references.",
+                "Oversight of tool builds using a bill of materials, including option to import from CAD.",
+                "Capture of tool build and repair costs through detailed labor tracking and purchasing links.",
+                "Tool repair schedule integrated and timed with production needs.",
+            ],
+            progress : [
+                "Full tool crib inventory, including purchases, receipts, issues, with bar code options.",
+                "Die location tracking and detailed field maintenance for OSHAA.",
+                "Maintenance and forwarding of die setup parameters for production use at the press.",
+                "Full integration with preventive maintenance (link here Patrick to shop maintenance) and incident tracking.",
+            ],
+            deliver : [
+                "Post production run tool evaluation using wireless tablets, forwarding maintenance and repair instructions to the tool room.",
+                "Shop drawing to open order import functions to facilitate order management.",
+                "Reporting on purchasing and labor costs, including customer billing and historical tracking for future quotes.",
+            ]
+      }
+    },
 
 
-    // {
-    //     moduleName : "Mobile Solutions",
-    //     moduleSlug : "mobile-solutions",
-    //     modulePreview : "",
-    //     moduleStageDescriptions : {
-    //         initiate : [
-                
-    //         ],
-    //         progress : [
-                
-    //         ],
-    //         deliver : [
-                
-    //         ]
-    //   }
-    // },
+    {
+        moduleName : "Mobile Solutions",
+        moduleSlug : "mobile-solutions",
+        modulePreview : "Mobilize employees, customers, and partners by securely connecting SV to the shop and beyond.",
+        moduleStageDescriptions : {
+            initiate : [
+                "Online quoting and budgeting extension, enabling full project cycle collaboration with customers.",
+                "Integration with third party IPad-based order submission and management systems.",
+                "Full plant floor tablet device support within the core software: production, inventory, shipping — including bar coding.",
+            ],
+            progress : [
+                "Materials handler inventory picks, moves, and labeling using mounted tow motor devices.",
+                "Elaborate plant floor solutions for unique material processing requirements, e.g. slitting.",
+                "Full physical inventory capture with mobile tablets, reducing physical inventory time by orders of magnitude.",
+            ],
+            deliver : [
+                "Post production evaluation and preventive maintenance tablet based solutions.",
+                "Full shipment-level bill of lading signoff by serialized, bar coded container.",
+                "3rd party logistics integration.",
+                "Emailed executive reports and dashboards to digital devices.",
+            ]
+      }
+    },
 
 
-    // {
-    //     moduleName : "Bar Coding",
-    //     moduleSlug : "bar-coding",
-    //     modulePreview : "",
-    //     moduleStageDescriptions : {
-    //         initiate : [
-                
-    //         ],
-    //         progress : [
-                
-    //         ],
-    //         deliver : [
-                
-    //         ]
-    //   }
-    // },
+    {
+        moduleName : "Bar Coding",
+        moduleSlug : "bar-coding",
+        modulePreview : "Unlike most ERP solutions requiring bolt-ons or extensions, SV is bar code enabledin with the core software -- across the entire shop.",
+        moduleStageDescriptions : {
+            initiate : [
+                "Scan to receive raw material against open purchase orders.",
+                "Scan to kit materials by lot to production work orders.",
+                "Generate lot level labels for raw material with full trace backward.",
+                "Scan to issue and return material lots to and from production work orders.",
+                "Scan routing tickets or container labels to move claim and move inventory through the production value add process.",
+            ],
+            progress : [
+                "Scan to build and send outplant shippers by lot.",
+                "Scan to receive outplant work by lot.",
+                "Scan to perform full physical inventory",
+                "Scan to move material lots across WIP and finished goods locations.",
+            ],
+            deliver : [
+                "Scan pick lists to generate shipments.",
+                "Scan pallet labels in staging area to build shipments from immediately available product.",
+                "Scan maintenance and indirect work order documents to clock non production and tooling work.",
+                "Generate standard or customer-specified bar code labels from the integrated solution.",
+            ]
+      }
+    },
 
 
-    // {
-    //     moduleName : "EDI",
-    //     moduleSlug : "edi",
-    //     modulePreview : "",
-    //     moduleStageDescriptions : {
-    //         initiate : [
-                
-    //         ],
-    //         progress : [
-                
-    //         ],
-    //         deliver : [
-                
-    //         ]
-    //   }
-    // },
+    {
+        moduleName : "EDI",
+        moduleSlug : "edi",
+        modulePreview : "Unlike most ERPs, full onboarding and support of Electronic Data Interchange (EDI) without the need for  additional mapping software and third party expertise.",
+        moduleStageDescriptions : {
+            initiate : [
+                "Central control of all EDI using the SV EDI Integrator, resident in the software.",
+                "Full customer translation and mapping setups, including parts, locations, unit of measure translations.",
+                "Configuration and enforcement of EDI outbound data validation rules by customer.",
+                "Full transaction and audit logging, with powerful user review tools.",
+                "Rapid onboarding of new trading partners or mapping types.",
+            ],
+            progress : [
+                "Full 830 (sales order blanket) support.",
+                "Full 862 (daily release, demand) support.",
+                "Full 850 (purchase order) support.",
+                "Full customer portal/demand download support for those choosing not to use EDI.",
+            ],
+            deliver : [
+                "Full 856 (advanced shipping notice) support.",
+                "Full 810 (outbound invoice) support.",
+                "Full 753 (request for routing instructions) support.",
+                "Detailed alignment with master and child serialized labels, for advanced customer requirements.",
+            ]
+      }
+    },
 
 
-    // {
-    //     moduleName : "Business Intelligence",
-    //     moduleSlug : "business-intelligence",
-    //     modulePreview : "",
-    //     moduleStageDescriptions : {
-    //         initiate : [
-                
-    //         ],
-    //         progress : [
-                
-    //         ],
-    //         deliver : [
-                
-    //         ]
-    //   }
-    // },
+    {
+        moduleName : "Business Intelligence",
+        moduleSlug : "business-intelligence",
+        modulePreview : "Leverage data as an asset, using many SV tools to access, share, and analyze information, effecting company performance, strategy and decisions.",
+        moduleStageDescriptions : {
+            initiate : [
+                "SV ‘flex field’ constructs, allowing rapid add and maintenance of tracking data on demand.",
+                "SV ‘Data Grabs’, enabling user addition, use, and sharing of quick access to information without IT support.",
+                "SV ‘User Queries’, giving instant access to more complex data needs on demand from the SV support team.",
+                "Specific pricing and costing drill tools, commissioned by customers over the years.",
+            ],
+            progress : [
+                "Production Dashboard and Command Center, providing visualization to open and in process work across the company.",
+                "SV Data Manager, providing secured access for mass maintenance of data.",
+                "Custom folders as requested, calling out data or action needing follow up.",
+                "Alert engines connected to both workflow and dashboard tools.",
+            ],
+            deliver : [
+                "Hundreds of canned and commissioned reports.",
+                "Daily emailed executive reports as specified.",
+                "Excel pivot table extracts.",
+                "SV QuickDash tool to distribute dashboards to the shop floor.",
+                "Power BI visualizations and dashboards around sales, quality metrics, productivity, project management, and commissions, to name a few.",
+            ]
+      }
+    },
 
 
-    // {
-    //     moduleName : "Machine Integration",
-    //     moduleSlug : "",
-    //     modulePreview : "",
-    //     moduleStageDescriptions : {
-    //         initiate : [
-                
-    //         ],
-    //         progress : [
-                
-    //         ],
-    //         deliver : [
-                
-    //         ]
-    //   }
-    // },
+    {
+        moduleName : "Machine Integration",
+        moduleSlug : "machine-integration",
+        modulePreview : "Seamlessly connect SV with shop equipment, controls, wireless devices, and third party software for real time data sharing and visualization.",
+        moduleStageDescriptions : {
+            initiate : [
+                "Feed and enter press machine control inputs based on approved settings for the job run.",
+                "Drive material fabrication nesting priorities based on common material, date, and program.",
+                "Capture inspection results directly into the software from wireless devices (e.g. calipers).",
+            ],
+            progress : [
+                "Collect real time production hits centrally, from all machines within the company, providing dashboard views of productivity, up time, and down time.",
+                "Collect machine measurement results for temperature and chemistries, alerting management to variances from part standard for immediate approval or override.",
+                "Receive material fabrication nesting output by lot and work order, consuming material, measuring yield variance, and costing jobs.",
+            ],
+            deliver : [
+                "Add to inventory based on third party machine bundling output, scanning labels and moving inventory immediately.",
+                "Generate bar code labels at part, work order/lot, and serialized levels from the software, guiding inventory through the process.",
+            ]
+      }
+    },
 
 
     // // {
