@@ -34,7 +34,7 @@ function ValuesPage() {
           Thank you for taking a moment to visit Fidelis,
           <br></br>
           <br></br>
-          I started Fidelis in 2002 because I saw the market need for results-based ERP, data, and consulting services for mid-sized manufacturers. Since its founding, Fidelis has strived to address this need and has grown steadily as a result. We do this by concentrating on certain principles:
+          I started Fidelis in 2002 because I saw the market need for results-based ERP, data, and consulting for mid-sized manufacturers. Since its founding, Fidelis has strived to address this need and has grown steadily as a result. We do this by concentrating on certain principles:
           <br></br>
           <br></br>
 

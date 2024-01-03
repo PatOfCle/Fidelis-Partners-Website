@@ -99,6 +99,8 @@ function SteelVikingPage() {
               <div className='module-preview-description'>
                 {svModule.modulePreview}
               </div>
+
+              <div className='read-now-arrow'>Read Now &rarr;</div>
             </div>
           </Link>
         ))}

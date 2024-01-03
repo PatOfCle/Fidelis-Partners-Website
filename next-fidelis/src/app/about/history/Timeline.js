@@ -16,7 +16,7 @@ const timelineData = [
         date: '2005',
     },
     {
-        text: 'Fidelis launches its Consulting Services practice, offering advisory, project management, data analysis, process mapping, software development, and testing services to clients in multiple industries.',
+        text: 'Fidelis launches its Consulting practice, offering advisory, project management, data analysis, process mapping, software development, and testing services to clients in multiple industries.',
         date: '2008',
     },
     {

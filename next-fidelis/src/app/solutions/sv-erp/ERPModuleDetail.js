@@ -6,8 +6,19 @@ import './ERPModuleDetail.css'
 function ERPModuleDetail(props) {
   return (
     <div className='ERPModuleDetail-container'>
+
+      <Link href="/solutions/sv-erp" className='router-link erp-module-sv-logo-container' >
+        <img src='/assets/sv-logo.png' className='erp-module-sv-logo'/>
+      </Link>
+
       <h1 className='module-page-header'>{props.moduleData.moduleName}</h1>
-      <div className='module-page-preview'><em>{props.moduleData.modulePreview}</em></div>
+      <div className='module-page-preview'>
+        <em>
+          <div className='module-page-preview-text'>
+            {props.moduleData.modulePreview}
+          </div>
+        </em>
+      </div>
 
       <div className='module-columns'>
 

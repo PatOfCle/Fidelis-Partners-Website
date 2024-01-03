@@ -25,6 +25,10 @@
     padding-bottom: 30px;
 }
 
+.module-page-preview-text {
+    font-family: 'Metropolis Regular';
+}
+
 .module-columns {
     display: flex;
     flex-wrap: wrap;
@@ -93,5 +97,5 @@
 .erp-module-sv-logo {
     width: 100px;
 
-    margin-top: 50px;
+    margin-top: 25px;
 }

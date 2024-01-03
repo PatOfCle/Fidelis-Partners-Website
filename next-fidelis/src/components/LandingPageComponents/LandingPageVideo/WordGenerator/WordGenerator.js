@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 const words = [
-    "Account Management",
+    // "Account Management",
     "Accounting",
     "Bar Coding",
     "Business Intelligence",

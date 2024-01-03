@@ -1,0 +1,109 @@
+.ConsultingPage-container {
+    margin: 40px 60px;
+
+    font-family: 'Metropolis Regular';
+
+    /* border: solid; */
+}
+
+.consulting-description {
+    font-family: 'Metropolis Regular';
+}
+
+
+.consultingDescription-div {
+    font-family: 'Metropolis Regular';
+}
+
+
+
+.service-previews-section {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    justify-content: center;
+
+
+}
+
+.service-preview-link {
+    box-sizing: border-box;
+    /* width: calc(50% - 10px); */
+    flex: 0 0 calc(50% - 10px); /* Set the initial width for two items per row */
+    border-radius: 10px;
+    padding: 0 10px;
+    min-height: 130px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease; /* Add a transition effect for the box-shadow property */
+    margin: 0 20px;
+    margin-bottom: 8vh;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+
+    width: 25vw;
+
+    max-width: 320px;
+}
+
+.service-preview-link:hover {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+
+    color: var(--theme-color-1);
+}
+
+/* @media (max-width: 1200px) {
+    .service-preview-link {
+        flex: 0 0 calc(100% - 20px);
+        overflow: hidden;
+
+        min-height: 160px;
+        width: 25vw;
+    }
+} */
+
+@media (max-width: 767px) {
+    .service-preview-link {
+        flex: 0 0 calc(100% - 20px);
+        overflow: hidden;
+
+        min-height: 130px;
+        width: 320px;
+    }
+}
+
+.service-preview-title {
+    margin: 10px 0px;
+    padding-top: 10px;
+}
+
+.service-preview-description {
+    font-family: 'Metropolis Regular';
+    color: rgb(117, 117, 117);
+    /* margin-top: 20px; */
+
+    /* border: solid; */
+
+    flex-grow: 1;
+    /* vertical-align: middle; */
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.consulting-read-more-section {
+    text-align: center;
+}
+
+
+.consulting-detail-link {
+    /* border: solid; */
+
+    color: black;
+}
+
+.consulting-detail-link:hover {
+    color: var(--theme-color-1)
+}

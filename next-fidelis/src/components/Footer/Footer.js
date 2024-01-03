@@ -27,7 +27,7 @@ function Footer() {
                 </h3>
                 <div>
                     <Link href="/solutions/sv-erp" className='footer-link'><li>SV ERP</li></Link>
-                    <a href="" className="footer-link"><li>Consulting Services</li></a>
+                    <Link href="/solutions/consulting" className='footer-link'><li>Consulting</li></Link>
                 </div>
             </div>
             <div className='bottom-navigation-section'>

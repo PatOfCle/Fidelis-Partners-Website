@@ -138,6 +138,24 @@
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
+
+/* .read-now-arrow {
+    position: absolute;
+    bottom: 15px;
+    right: 18px;
+    text-align: right;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.3s ease-in-out;
+
+    transform: translateY(10px);
+}
+
+.module-preview-link:hover .read-now-arrow {
+    opacity: 0.5;
+    transform: translateY(0px);
+} */
+
 @media (max-width: 1200px) {
     .module-preview-link {
         flex: 0 0 calc(100% - 20px);

@@ -54,7 +54,7 @@ function Header() {
                     <div className="dropdown">
                         <ul>
                             <Link href="/solutions/sv-erp" className='router-link'><li>SV ERP</li></Link>
-                            <Link href="/solutions/consulting-services" className='router-link'><li>Consulting Services</li></Link>
+                            <Link href="/solutions/consulting" className='router-link'><li>Consulting</li></Link>
                         </ul>
                     </div>
                 </li>
@@ -119,7 +119,8 @@ function Header() {
                         <div className={`submenu ${activeOption === 'solutions' ? 'open' : ''}`}>
                             <ul>
                                 <Link href="/solutions/sv-erp" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('solutions')}}><li className='submenu-option'>SV ERP</li></Link>
-                                <li className='submenu-option'>Consulting Services</li>
+                                <Link href="/solutions/consulting" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('solutions')}}><li className='submenu-option'>Consulting</li></Link>
+                                {/* <li className='submenu-option'>Consulting Services</li> */}
                             </ul>
                         </div>
                     </li>
