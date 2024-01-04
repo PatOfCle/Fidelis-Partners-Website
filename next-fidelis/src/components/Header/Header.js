@@ -141,7 +141,7 @@ function Header() {
                         <div className={`submenu ${activeOption === 'careers' ? 'open' : ''}`}>
                             <ul>
                                 <li className='submenu-option'>Open Roles</li>
-                                <li className='submenu-option'>Life at Fidelis</li>
+                                {/* <li className='submenu-option'>Life at Fidelis</li> */}
                             </ul>
                         </div>
                     </li>

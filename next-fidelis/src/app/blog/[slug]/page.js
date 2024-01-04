@@ -119,11 +119,36 @@ export default function SinglePost() {
             </section>
         }
 
-        <Link href="/blog">
-            <div className='read-more-articles'>
-                &larr; Back to Knowledge Base
+        <div className='article-bottom-links-container'>
+
+            <div className="blog-post-footer-button">
+                <Link href="/blog" className='router-link'>
+                    <li>
+                        &larr; Back to Knowledge Base
+                    </li>
+                </Link>
             </div>
-        </Link>
+
+            <div className="blog-post-footer-button">
+                <Link href="/solutions/sv-erp" className='router-link'>
+                    <li style={{display: "flex", alignItems: "center"}}>
+                        <span>Explore&nbsp;</span>
+                        <img src='/assets/sv-logo.png' style={{height: "20px"}}/>
+                        <span>&nbsp;ERP</span>
+                        <span className='double-arrow'>&nbsp;&#xbb;</span>
+                    </li>
+                </Link>
+            </div>
+
+            <div className="blog-post-footer-button">
+                <Link href="/contact/book-introduction" className='router-link'>
+                    <li>Book Introduction 
+                        <span className='double-arrow'> &#xbb;</span>
+                    </li>
+                </Link>
+            </div>
+
+        </div>
 
         {/* <div>
             Articles you might also like:

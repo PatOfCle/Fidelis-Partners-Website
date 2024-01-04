@@ -49,7 +49,7 @@ function Footer() {
                 </h3>
                 <div>
                     <a href="" className="footer-link"><li>Open Roles</li></a>
-                    <a href="" className="footer-link"><li>Life at Fidelis</li></a>
+                    {/* <a href="" className="footer-link"><li>Life at Fidelis</li></a> */}
                 </div>
             </div>
 

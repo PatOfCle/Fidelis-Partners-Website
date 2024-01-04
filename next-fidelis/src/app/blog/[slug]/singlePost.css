@@ -47,7 +47,58 @@
 }
 
 
-.read-more-articles {
-    position: absolute;
-    bottom: 30px;
+
+
+.article-bottom-links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+}
+
+
+.blog-post-footer-button {
+    border-radius: 5px;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1px;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+
+    background-color: var(--theme-color-1);
+
+    height: 20px;
+
+    display: flex;
+    align-items: center;
+
+    vertical-align:middle;
+
+    margin: 0px 5px;
+}
+
+
+.blog-post-footer-button:hover {
+    background-color: rgb(238, 238, 238);
+    border-color: rgb(194, 194, 194);
+    border-width: 1px;
+}
+
+
+
+@media (max-width: 1000px) {
+    .article-bottom-links-container {
+        /* display: inline-block; */
+        flex-direction: column;
+    }
+
+    .blog-post-footer-button {
+        width: auto;
+
+        margin: 15px 10px;
+    }
 }
