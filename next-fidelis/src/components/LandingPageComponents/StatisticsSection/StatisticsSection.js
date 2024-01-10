@@ -15,8 +15,9 @@ function StatisticsSection() {
                 <CountUp 
                     start={0} 
                     end={100} 
+                    duration={2.5}
                     suffix="%" 
-                    // enableScrollSpy 
+                    enableScrollSpy 
                     scrollSpyDelay={1000} 
                     scrollSpyOnce 
                 />
@@ -30,9 +31,9 @@ function StatisticsSection() {
                 {/* 17% */}
                 <CountUp 
                     start={0} 
-                    end={14} 
+                    end={14}
                     suffix="%" 
-                    // enableScrollSpy 
+                    enableScrollSpy 
                     scrollSpyDelay={1000} 
                     scrollSpyOnce 
                     duration={2}
@@ -49,10 +50,10 @@ function StatisticsSection() {
                     start={0} 
                     end={(new Date().getFullYear())-2001} 
                     suffix="" 
-                    // enableScrollSpy 
+                    enableScrollSpy 
                     scrollSpyDelay={1000} 
                     scrollSpyOnce 
-                    duration={2.5}
+                    duration={2.2}
                 />
 
             </div>

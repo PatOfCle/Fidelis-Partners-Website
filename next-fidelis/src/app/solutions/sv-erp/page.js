@@ -103,7 +103,7 @@ function SteelVikingPage() {
 
 
           <div className='filter-capabilities-container'>
-              <select id="nameDropdown" onChange={filterData} value={'dropdownValue'}>
+              <select id="nameDropdown" onChange={filterData} value={dropdownValue}>
                   <option value="">All Capabilities</option>
                   
                   {allModuleCategories.map((name, index) => (

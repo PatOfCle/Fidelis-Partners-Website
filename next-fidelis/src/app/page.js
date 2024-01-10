@@ -10,27 +10,41 @@ import ClientSlider from '@/components/LandingPageComponents/ClientSlider/Client
 import StatisticsSection from '@/components/LandingPageComponents/StatisticsSection/StatisticsSection';
 import BookDemoBlock from '@/components/LandingPageComponents/BookDemoBlock/BookDemoBlock';
 import CompanySnapshotHomepage from '@/components/LandingPageComponents/FidelisOverview/FidelisOverview';
+import SVButtonsSection from '@/components/LandingPageComponents/SVButtonsSection/SVButtonsSection';
 
 export default function Home() {
   return (      
     <div className='Home-container'>
       <LandingPageVideo />
 
-      <Fade delay={500} triggerOnce>
+      {/* <Fade delay={500} triggerOnce>
         <ProblemSectionHomepage />
+      </Fade> */}
+      <Fade delay={300} triggerOnce>
+          <StatisticsSection />
+      </Fade>
+      <Fade delay={500} triggerOnce>
+          <SVButtonsSection />
       </Fade>
 
       <Fade delay={500} triggerOnce>
         <ClientSlider />
       </Fade>
 
-      <Fade delay={500} triggerOnce>
+      {/* <Fade delay={500} triggerOnce>
           <StatisticsSection />
-      </Fade>
+      </Fade> */}
 
       <Fade delay={500} triggerOnce>
-          <BookDemoBlock />
+        <ProblemSectionHomepage />
       </Fade>
+
+      {/* <Fade delay={500} triggerOnce>
+          <SVButtonsSection />
+      </Fade> */}
+      {/* <Fade delay={500} triggerOnce>
+          <BookDemoBlock />
+      </Fade> */}
 
       <Fade delay={300} triggerOnce>
           <CompanySnapshotHomepage />

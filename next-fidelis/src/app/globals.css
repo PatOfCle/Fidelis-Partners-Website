@@ -41,6 +41,7 @@ code {
   --secondary-font: 'Metropolis Regular', sans-serif, Times;
 
   --theme-color-1: rgb(176, 176, 134);
+  --theme-color-1-lighter: rgb(195, 195, 154);
 }
 
 * {

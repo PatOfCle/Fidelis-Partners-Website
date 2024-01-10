@@ -129,11 +129,11 @@
     flex: 0 0 calc(50% - 10px); /* Set the initial width for two items per row */
     border-radius: 10px;
     padding: 0 10px;
-    min-height: 130px;
+    min-height: 140px;
     overflow: hidden;
     transition: box-shadow 0.3s ease, color 0.3s ease; /* Add a transition effect for the box-shadow property */
     margin: 0 20px;
-    margin-bottom: 8vh;
+    margin-bottom: 6vh;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -152,7 +152,7 @@
 
 .read-now-arrow {
     position: absolute;
-    bottom: 10px;
+    bottom: 8px;
     right: 14px;
     /* top: 13px;
     right: 15px; */
@@ -205,6 +205,10 @@
     /* vertical-align: middle; */
     display: flex;
     align-items: center;
+
+    position: relative;
+
+    top: -5px;
 }
 
 

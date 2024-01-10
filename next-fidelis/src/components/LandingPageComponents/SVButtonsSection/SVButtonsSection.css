@@ -1,0 +1,35 @@
+
+
+.SVButtonsSection-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* border: solid; */
+
+    min-height: 100px;
+
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+
+.sv-buttons-section-button {
+    border: solid;
+    border-width: 1px;
+    border-color: lightgrey;
+
+    background-color: rgba(176, 176, 134, 0.8);
+
+    margin: 5px;
+    
+    /* background-color: rgba(var(--theme-color-1), 0.5); */
+
+
+}
+
+
+.sv-buttons-section-button:hover {
+    background-color: rgb(227, 227, 227);
+    
+}

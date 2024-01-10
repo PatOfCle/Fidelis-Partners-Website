@@ -13,10 +13,7 @@ function ConsultingServicesMatrixPage() {
             </h1>
             <em>
                 <div className='consulting-description'>
-                    Fidelis offers the full range of consulting services to inform, plan, and execute strategic software and data initiatives.
-                    <br></br>
-                    <br></br>
-                    Our team is distinguished by versatility, experience, integrity, capability, and commitment.                        <br></br><br></br>
+                    Look to Fidelis for any or all pieces of the full software implementation life cycle,
                 </div>
             </em>
         </div>
@@ -25,6 +22,12 @@ function ConsultingServicesMatrixPage() {
             <h2>
             Read More:
             </h2>
+            <Link href='/about/team' className=' show-pointer'>
+                <div className='consulting-detail-link'>
+                    The Team &rarr;
+                </div>
+            </Link>
+            <br></br>
             <Link href='/solutions/consulting' className=' show-pointer'>
                 <div className='consulting-detail-link'>
                     Consulting Home &rarr;

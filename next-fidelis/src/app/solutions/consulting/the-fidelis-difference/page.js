@@ -13,6 +13,11 @@ function TheFidelisDifferencePage() {
                 <h2>
                     Read More:
                 </h2>
+                <Link href='/about/team' className=' show-pointer'>
+                    <div className='consulting-detail-link'>
+                        The Team &rarr;
+                    </div>
+                </Link>
                 <Link href='/solutions/consulting' className=' show-pointer'>
                     <div className='consulting-detail-link'>
                         Consulting Home &rarr;
@@ -33,7 +38,18 @@ function TheFidelisDifferencePage() {
             Consulting: Our Differentiators
         </h1>
 
+        <em>
+            <div style={{fontFamily: 'Metropolis Regular'}}>
+                Fidelis is different.  We bring capable, experienced, yet grounded consultants to organizations to partner on, own, and solve challenges together.
+            </div>
+        </em>
 
+
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         <br></br>
         <div>
             <h2 style={{textAlign: "center"}}>

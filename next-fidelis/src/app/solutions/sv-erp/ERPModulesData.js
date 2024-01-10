@@ -53,7 +53,7 @@ export const svModules = [
             "What-if margin analysis.",
             ],
             deliver : [
-            "Electronic customer touch points, including formal quote, follow up, and no quote",
+            "Electronic customer touch points, including formal quote, follow up, and no quote.",
             "Carry forward to item setup and engineering on awarded quotes.",
             "Managed quote follow ups and success metrics.",
             "Repricing on customer, categorical, or aggregate scales, based on system captured actual costs.",
@@ -164,7 +164,7 @@ export const svModules = [
             progress : [
                 "Factor for safety stock levels.",
                 "Filter for outplant vendors and/or different production facilities.",
-                "Factor preferred vendor data, including lead times",
+                "Factor preferred vendor data, including lead times.",
                 "Plan using partially processed material, assigning existing inventory to orders, with special emphasis on coil slitting.",
             ],
             deliver : [
@@ -287,7 +287,7 @@ export const svModules = [
                 "Full productivity and scrap reporting.",
                 "Plant dashboards by employee to motivate productivity, efficiency, and scrap rates.",
                 "Shop order and lot traceability based on material and subs issued upstream in the process.",
-                "Post run evaluation tablet processes, driving post production tooling repair schedule,",
+                "Post run evaluation tablet processes, driving post production tooling repair schedule.",
                 "Paid versus earned reporting.",
                 "Visual trail of a part and shop order through the entire production process, including employees, dates, and pieces.",
             ]
@@ -345,7 +345,7 @@ export const svModules = [
             "Shipping and Logistics",
             "Customer Service",
         ],
-        modulePreview : "Proactively push shipping instructions, drive pick lists, increase on time delivery, and generate precise customer labeling and paperwork.",
+        modulePreview : "Proactively push instructions, drive pick lists, manage freight costs, generate precise paperwork, and increase on time delivery.",
         moduleStageDescriptions : {
             initiate : [
                 "Run shipping area using assigned queues, various pick lists and open order report options.",
@@ -432,6 +432,7 @@ export const svModules = [
             deliver : [
                 "Enable customer, order, invoice, and commission date to sales reps.",
                 "Report on Pipeline, Quote Activity by Rep, Win Ratios, etc.",
+                "Communicate effectively with customers and partners on progress and delivery.",
             ]
       }
     },
@@ -466,7 +467,7 @@ export const svModules = [
                 "Quality alerts throughout the system for vision by employees – plant dashboard, email, and via paperwork reminders.",
                 "Ability to warn or stop key events, including production start or shipping, based on quality item or NCMR statuses for the item(s).",
                 "Support for disposition of quality items and NCMRs to full completion.",
-                "Plentiful reporting of open quality items, assignments, trends, customer required metrics, through core SV reports of Power BI.",
+                "Full reporting of open quality items, assignments, trends, customer required metrics, through core SV reports of Power BI.",
             ]
       }
     },
@@ -513,15 +514,8 @@ export const svModules = [
                 "Set up configurable workflows with rules for assignment, timing, and dependencies.",
                 "Visually track workflow through its dependent steps.",
                 "Remind employees of workflow responsibilities with emails, inbox processing, and reports.",
-                "Provide quick access to supporting data to effect workflow decisions.",
-                "Complete workflow steps on individual or team levels.",
-                "Bypass workflow steps for simplicity, based on threshold criteria.",
-                "Link and share developing and collaborative documentation through the workflow process.",
             ],
             progress : [
-                "Set up configurable workflows with rules for assignment, timing, and dependencies.",
-                "Visually track workflow through its dependent steps.",
-                "Remind employees of workflow responsibilities with emails, inbox processing, and reports.",
                 "Provide quick access to supporting data to effect workflow decisions.",
                 "Complete workflow steps on individual or team levels.",
                 "Bypass workflow steps for simplicity, based on threshold criteria.",
@@ -735,7 +729,7 @@ export const svModules = [
         moduleCategories: [
             "ALL",
         ],
-        modulePreview : "Unlike most ERP solutions requiring bolt-ons or extensions, SV is bar code enabledin with the core software -- across the entire shop.",
+        modulePreview : "Unlike most ERP solutions requiring bolt-ons or extensions, SV is bar code enabled within the core software -- across the entire shop.",
         moduleStageDescriptions : {
             initiate : [
                 "Scan to receive raw material against open purchase orders.",
