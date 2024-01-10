@@ -28,12 +28,12 @@ const HubspotTracker = () => {
         // }
         
         if (typeof window !== 'undefined') {
-            console.log(window);
+            // console.log(window);
             var _hsq = window._hsq = window._hsq || [];
-            console.log(_hsq)
+            // console.log(_hsq)
 
             if (firstLoad.current === true) {
-                console.log('in first load')
+                // console.log('in first load')
 
                 _hsq.push(['setPath', pathname]);
                 _hsq.push(['trackPageView']);
@@ -48,7 +48,7 @@ const HubspotTracker = () => {
                 firstLoad.current = false
             } else {
 
-                console.log('now past it')
+                // console.log('now past it')
                 _hsq.push(['setPath', pathname]);
                 _hsq.push(['trackPageView']);
 

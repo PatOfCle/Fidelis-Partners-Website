@@ -1,25 +1,41 @@
 "use client"
 
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import './SteelVikingPage.css'
-import { useLocation } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
+// import { useLocation } from 'react-router-dom';
+// import { HashLink } from 'react-router-hash-link';
 import {Fade} from 'react-awesome-reveal';
 // import svLogo from '../../assets/sv-logo.png'
 import Link from 'next/link';
-import { svModules } from './ERPModulesData';
+import { svModules, allModuleCategories } from './ERPModulesData';
 
 
 function SteelVikingPage() {
 
-  const scrollToWithOffset = (id, offset) => () => {
-    const element = document.getElementById(id);
-    const yOffset = offset || 0;
-    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+  const [jsonData, setJsonData] = useState([]);
+  const [filteredData, setFilteredData] = useState([]);
+  const [dropdownValue, setDropdownValue] = useState('');
 
-    window.scrollTo({ top: y, behavior: 'smooth' });
+  const filterData = (event) => {
+    const selectedValue = event.target.value;
+    setDropdownValue(selectedValue); // Update the state with the selected value
+    
+    const filteredModules = svModules.filter(module => {
+      return selectedValue === '' || (module.moduleCategories.includes(selectedValue) || module.moduleCategories.includes('ALL') );
+    });
+
+    setFilteredData(filteredModules); // Update the state with the filtered data
+  
+    // console.log('Selected Capability:', selectedValue);
   };
+  
 
+
+
+  useEffect(() => {
+    setJsonData(svModules)
+    setFilteredData(svModules)
+  }, []);
 
   return (
     <div className='SteelVikingPage-container'>
@@ -86,128 +102,37 @@ function SteelVikingPage() {
           </h1>
 
 
+          <div className='filter-capabilities-container'>
+              <select id="nameDropdown" onChange={filterData} value={'dropdownValue'}>
+                  <option value="">All Capabilities</option>
+                  
+                  {allModuleCategories.map((name, index) => (
+                  <option key={index} value={name}>
+                      {name}
+                  </option>
+                  ))}
+              </select>
+          </div>
 
 
         <div className='module-previews-section'>
 
-        {svModules.map((svModule, index) => (
-          <Link href={`/solutions/sv-erp/${svModule.moduleSlug}`} className='router-link'  key={index} >
-            <div className='module-preview-link show-pointer'>
-              <h3 className='module-preview-title'>
-                {svModule.moduleName}
-              </h3>
-              <div className='module-preview-description'>
-                {svModule.modulePreview}
+          {filteredData.map((svModule, index) => (
+            <Link href={`/solutions/sv-erp/${svModule.moduleSlug}`} className='router-link'  key={index} >
+              <div className='module-preview-link show-pointer'>
+                <h3 className='module-preview-title'>
+                  {svModule.moduleName}
+                </h3>
+                <div className='module-preview-description'>
+                  {svModule.modulePreview}
+                </div>
+
+                <div className='read-now-arrow'>Read Now &rarr;</div>
               </div>
+            </Link>
+          ))}
 
-              <div className='read-now-arrow'>Read Now &rarr;</div>
-            </div>
-          </Link>
-        ))}
-
-
-
-          {/* <Link href='/solutions/sv-erp/quoting' className='router-link'>
-            <div className='module-preview-link show-pointer'>
-              <h3 className='module-preview-title'>
-                Quoting
-              </h3>
-              <div className='module-preview-description'>
-                Deliver and win professional, team approved, competitive quotes based on actual costs.
-              </div>
-            </div>
-          </Link>
-
-          <Link href='/solutions/sv-erp/engineer-to-order' className='router-link'>
-            <div className='module-preview-link show-pointer'>
-              <h3 className='module-preview-title'>
-                Engineer To Order
-              </h3>
-              <div className='module-preview-description'>
-                Plan and execute product onboarding and engineering processes with resource planning, workflows, documentation, and signoffs.
-              </div>
-            </div>
-          </Link>
-
-          <Link href='/solutions/sv-erp/order-management' className='router-link'>
-            <div className='module-preview-link show-pointer'>
-              <h3 className='module-preview-title'>
-                Order Management
-              </h3>
-              <div className='module-preview-description'>
-                Efficiently enter, commit to, manage, and deliver upon customer orders.
-              </div>
-            </div>
-          </Link>
-
-          <Link href='/solutions/sv-erp/mrp' className='router-link'>
-            <div className='module-preview-link show-pointer'>
-              <h3 className='module-preview-title'>
-                MRP
-              </h3>
-              <div className='module-preview-description'>
-                Take command of material planning and purchasing using interactive and intuitive tools.
-              </div>
-            </div>
-          </Link>
-
-          <Link href='/solutions/sv-erp/scheduling' className='router-link'>
-            <div className='module-preview-link show-pointer'>
-              <h3 className='module-preview-title'>
-                Scheduling
-              </h3>
-              <div className='module-preview-description'>
-
-              </div>
-            </div>
-          </Link>
-
-          <Link href='/solutions/sv-erp/purchasing-and-receiving' className='router-link'>
-            <div className='module-preview-link show-pointer'>
-              <h3 className='module-preview-title'>
-                Purchasing and Receiving
-              </h3>
-              <div className='module-preview-description'>
-
-              </div>
-            </div>
-          </Link>
-
-          <Link href='/solutions/sv-erp/production' className='router-link'>
-            <div className='module-preview-link show-pointer'>
-              <h3 className='module-preview-title'>
-                Production
-              </h3>
-              <div className='module-preview-description'>
-
-              </div>
-            </div>
-          </Link>
-
-          <Link href='/solutions/sv-erp/shipping-and-invoicing' className='router-link'>
-            <div className='module-preview-link show-pointer'>
-              <h3 className='module-preview-title'>
-                Shipping and Invoicing
-              </h3>
-              <div className='module-preview-description'>
-
-              </div>
-            </div>
-          </Link>
-
-          <Link href='/solutions/sv-erp/time-and-attendance' className='router-link'>
-            <div className='module-preview-link show-pointer'>
-              <h3 className='module-preview-title'>
-                Time And Attendance
-              </h3>
-              <div className='module-preview-description'>
-
-              </div>
-            </div>
-          </Link> */}
-
-
-          </div>
+        </div>
 
 
 

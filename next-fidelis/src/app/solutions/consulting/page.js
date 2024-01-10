@@ -28,14 +28,33 @@ function ConsultingPage() {
                         </div>
                     </em>
                 </div>
+
+                <div className='consulting-read-more-section'>
+                  <h2>
+                    Read More:
+                  </h2>
+                  <Link href='/solutions/consulting/consulting-offerings-matrix' className=' show-pointer'>
+                    <div className='consulting-detail-link'>
+                      Consulting Offerings &rarr;
+                    </div>
+                  </Link>
+                  <br></br>
+                  <Link href='/solutions/consulting/the-fidelis-difference' className=' show-pointer'>
+                    <div className='consulting-detail-link'>
+                      The Fidelis Difference &rarr;
+                    </div>
+                  </Link>
+
+                </div>
             </div>
       </Fade>
 
-        <br></br>
+      <br></br>
+      <br></br>
 
         <Fade delay={1000} triggerOnce>
           <h2 style={{textAlign: "center"}}>
-              Services
+              Offerings
           </h2>
 
           <br></br>
@@ -59,11 +78,11 @@ function ConsultingPage() {
           </div>
 
           
-          <div className='consulting-read-more-section'>
+          {/* <div className='consulting-read-more-section'>
             <h2>
               Read More:
             </h2>
-            <Link href='/solutions/consulting/consulting-services-matrix' className=' show-pointer'>
+            <Link href='/solutions/consulting/consulting-offerings-matrix' className=' show-pointer'>
               <div className='consulting-detail-link'>
                 Consulting Services &rarr;
               </div>
@@ -71,12 +90,11 @@ function ConsultingPage() {
             <br></br>
             <Link href='/solutions/consulting/the-fidelis-difference' className=' show-pointer'>
               <div className='consulting-detail-link'>
-                {/* Data Consulting: The Fidelis Difference */}
                 The Fidelis Difference &rarr;
               </div>
             </Link>
 
-          </div>
+          </div> */}
 
           {/* <BookDemoBlock /> */}
 

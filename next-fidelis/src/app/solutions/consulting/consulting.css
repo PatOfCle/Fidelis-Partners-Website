@@ -6,8 +6,23 @@
     /* border: solid; */
 }
 
+.consulting-intro-outer-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    /* border: solid; */
+
+    justify-content: space-around;
+    
+}
+
+.consulting-intro-container {
+    /* border: solid; */
+}
+
 .consulting-description {
     font-family: 'Metropolis Regular';
+    /* border: solid; */
 }
 
 

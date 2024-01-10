@@ -1,3 +1,23 @@
+export const allModuleCategories = [
+    "Accounting",
+    "Customer Service",
+    "Engineering",
+    "Human Resources",
+    "Inventory Control",
+    "Maintenance",
+    "Manufacturing",
+    "Materials Management",
+    "Planning",
+    "Quality",
+    "Sales",
+    "Scheduling",
+    "Shipping",
+    "Shipping and Logistics",
+    "Supply Chain",
+    "Tooling",
+]
+
+
 export const svModules = [
     {
         //moduleName is the title of the module how you want it displayed
@@ -8,6 +28,13 @@ export const svModules = [
         // moduleSlug is used to drive the URL
         moduleSlug : "quoting",
         // moduleSlug : "quoting1",
+        
+        moduleCategories: [
+            "Sales",
+            "Accounting",
+            "Engineering",
+            "Purchasing",
+        ],
 
         modulePreview : "Deliver and win professional, team approved, competitive quotes based on actual costs.",
         moduleStageDescriptions : {
@@ -38,7 +65,12 @@ export const svModules = [
     
     {
         moduleName : "Engineer to Order",
-        moduleSlug : "engineer-to-order",        
+        moduleSlug : "engineer-to-order",
+        moduleCategories: [
+            "Engineering",
+            "Sales",
+            "Customer Service",
+        ],
         modulePreview : "Plan and execute product onboarding and engineering processes with resource planning, workflows, documentation, and signoffs.",
         moduleStageDescriptions : {
             initiate : [
@@ -65,6 +97,15 @@ export const svModules = [
     {
         moduleName : "Order Management",
         moduleSlug : "order-management",
+        moduleCategories: [
+            "Customer Service",
+            "Shipping",
+            "Sales",
+            "Planning",
+            "Scheduling",
+            "Shipping and Logistics",
+            "Supply Chain",
+        ],
         modulePreview : "Efficiently enter, commit to, manage, and deliver upon customer orders.",
         moduleStageDescriptions : {
             initiate : [
@@ -101,7 +142,15 @@ export const svModules = [
 
     {
         moduleName : "MRP",
-        moduleSlug : "mrp",        
+        moduleSlug : "mrp",
+        moduleCategories: [
+            "Purchasing",
+            "Planning",
+            "Inventory Control",
+            "Scheduling",
+            "Materials Management",
+            "Supply Chain",
+        ],
         modulePreview : "Take command of material planning and purchasing using interactive and intuitive tools.",
         moduleStageDescriptions : {
             initiate : [
@@ -132,6 +181,14 @@ export const svModules = [
     {
         moduleName : "Purchasing",
         moduleSlug : "purchasing",
+        moduleCategories: [
+            "Purchasing",
+            "Planning",
+            "Inventory Control",
+            "Scheduling",
+            "Materials Management",
+            "Supply Chain",
+        ],
         modulePreview : "Plan, enter, manage, and receive supplier purchase orders with full control.",
         moduleStageDescriptions : {
             initiate : [
@@ -161,7 +218,14 @@ export const svModules = [
 
     {
         moduleName : "Scheduling",
-        moduleSlug : "scheduling",        
+        moduleSlug : "scheduling",
+        moduleCategories: [
+            "Purchasing",
+            "Planning",
+            "Inventory Control",
+            "Scheduling",
+            "Supply Chain",
+        ],
         modulePreview : "Plan shop floor production proactively, with continual review and update based on changing realities.",
         moduleStageDescriptions : {
             initiate : [
@@ -193,6 +257,13 @@ export const svModules = [
     {
         moduleName : "Production",
         moduleSlug : "production",
+        moduleCategories: [
+            "Manufacturing",
+            "Inventory Control",
+            "Planning",
+            "Scheduling",
+            "Supply Chain",
+        ],
         modulePreview : "Drive employee production activity, with simplified real time data capture, inter-operational inventory controls, and full productivity and scrap reporting.",
         moduleStageDescriptions : {
             initiate : [
@@ -227,6 +298,14 @@ export const svModules = [
     {
         moduleName : "Inventory",
         moduleSlug : "inventory",
+        moduleCategories: [
+            "Purchasing",
+            "Planning",
+            "Inventory Control",
+            "Scheduling",
+            "Manufacturing",
+            "Supply Chain",
+        ],
         modulePreview : "Take full command of raw material, work in process, and finished goods inventory by lot and location, driving next operations and vendor management.",
         moduleStageDescriptions : {
             initiate : [
@@ -261,7 +340,11 @@ export const svModules = [
 
     {
         moduleName : "Shipping and Logistics",
-        moduleSlug : "shipping-and-logistics",        
+        moduleSlug : "shipping-and-logistics",
+        moduleCategories: [
+            "Shipping and Logistics",
+            "Customer Service",
+        ],
         modulePreview : "Proactively push shipping instructions, drive pick lists, increase on time delivery, and generate precise customer labeling and paperwork.",
         moduleStageDescriptions : {
             initiate : [
@@ -293,6 +376,9 @@ export const svModules = [
     {
         moduleName : "Accounting",
         moduleSlug : "accounting",
+        moduleCategories: [
+            "Accounting",
+        ],
         modulePreview : "Implement financial controls, track inventory, and manage profitability at multiple levels.",
         moduleStageDescriptions : {
             initiate : [
@@ -325,6 +411,12 @@ export const svModules = [
     {
         moduleName : "CRM",
         moduleSlug : "crm",
+        moduleCategories: [
+            "Sales",
+            "Engineering",
+            "Customer Service",
+            "Accounting",
+        ],
         modulePreview : "Connect SV with state of the market CRM software and leverage data across two platforms.",
         moduleStageDescriptions : {
             initiate : [
@@ -348,6 +440,13 @@ export const svModules = [
     {
         moduleName : "Quality",
         moduleSlug : "quality",
+        moduleCategories: [
+            "Quality",
+            "Manufacturing",
+            "Inventory Control",
+            "Shipping and Logistics",
+            "Customer Service",
+        ],
         modulePreview : "Locate, contain, communicate upon, segregate, and disposition inventory with quality issues, whether identified internally or by customer.",
         moduleStageDescriptions : {
             initiate : [
@@ -375,6 +474,13 @@ export const svModules = [
     {
         moduleName : "Capacity Planning",
         moduleSlug : "capacity-planning",
+        moduleCategories: [
+            "Planning",
+            "Inventory Control",
+            "Scheduling",
+            "Manufacturing",
+            "Supply Chain",
+        ],
         modulePreview : "Visually inform and act upon on plant capacity utilization constraints and outcomes.",
         moduleStageDescriptions : {
             initiate : [
@@ -398,6 +504,9 @@ export const svModules = [
     {
         moduleName : "Collaborative Workflows",
         moduleSlug : "collaborative-workflows",
+        moduleCategories: [
+            "ALL",
+        ],
         modulePreview : "Implement automation to shepherd module-level workstreams with accuracy, approval, and accountability.",
         moduleStageDescriptions : {
             initiate : [
@@ -433,6 +542,9 @@ export const svModules = [
     {
         moduleName : "Project Management",
         moduleSlug : "project-management",
+        moduleCategories: [
+            "ALL",
+        ],
         modulePreview : "Not available in most ERPs, plan and execute projects of all levels across the company to understand utilization of and manage valuable resources.",
         moduleStageDescriptions : {
             initiate : [
@@ -460,6 +572,11 @@ export const svModules = [
     {
         moduleName : "Time and Attendance",
         moduleSlug : "time-and-attendance",
+        moduleCategories: [
+            "Human Resources",
+            "Manufacturing",
+            "Accounting",
+        ],
         modulePreview : "Timeclock, payroll, and various HR features.",
         moduleStageDescriptions : {
             initiate : [
@@ -487,6 +604,12 @@ export const svModules = [
     {
         moduleName : "Vendor Management",
         moduleSlug : "vendor-management",
+        moduleCategories: [
+            "Materials Management",
+            "Purchasing",
+            "Planning",
+            "Supply Chain",
+        ],
         modulePreview : "Hold suppliers accountable on dates, commitments, pricing, and quality.",
         moduleStageDescriptions : {
             initiate : [
@@ -515,6 +638,12 @@ export const svModules = [
     {
         moduleName : "Shop Maintenance",
         moduleSlug : "shop-maintenance",
+        moduleCategories: [
+            "Maintenance",
+            "Manufacturing",
+            "Tooling",
+            "Purchasing",
+        ],
         modulePreview : "Proactively manage machine and tool maintenance, controlling resource costs, meeting audit requirements and protecting company assets.",
         moduleStageDescriptions : {
             initiate : [
@@ -543,6 +672,12 @@ export const svModules = [
     {
         moduleName : "Tool Room",
         moduleSlug : "tool-room",
+        moduleCategories: [
+            "Maintenance",
+            "Manufacturing",
+            "Tooling",
+            "Purchasing",
+        ],
         modulePreview : "Master the scheduling, inventory, labor, and purchasing costs of tools (dies) and components.",
         moduleStageDescriptions : {
             initiate : [
@@ -569,6 +704,9 @@ export const svModules = [
     {
         moduleName : "Mobile Solutions",
         moduleSlug : "mobile-solutions",
+        moduleCategories: [
+            "ALL",
+        ],
         modulePreview : "Mobilize employees, customers, and partners by securely connecting SV to the shop and beyond.",
         moduleStageDescriptions : {
             initiate : [
@@ -594,6 +732,9 @@ export const svModules = [
     {
         moduleName : "Bar Coding",
         moduleSlug : "bar-coding",
+        moduleCategories: [
+            "ALL",
+        ],
         modulePreview : "Unlike most ERP solutions requiring bolt-ons or extensions, SV is bar code enabledin with the core software -- across the entire shop.",
         moduleStageDescriptions : {
             initiate : [
@@ -622,6 +763,11 @@ export const svModules = [
     {
         moduleName : "EDI",
         moduleSlug : "edi",
+        moduleCategories: [
+            "Customer Service",
+            "Shipping",
+            "Accounting",
+        ],
         modulePreview : "Unlike most ERPs, full onboarding and support of Electronic Data Interchange (EDI) without the need for  additional mapping software and third party expertise.",
         moduleStageDescriptions : {
             initiate : [
@@ -650,6 +796,9 @@ export const svModules = [
     {
         moduleName : "Business Intelligence",
         moduleSlug : "business-intelligence",
+        moduleCategories: [
+            "ALL",
+        ],
         modulePreview : "Leverage data as an asset, using many SV tools to access, share, and analyze information, effecting company performance, strategy and decisions.",
         moduleStageDescriptions : {
             initiate : [
@@ -678,6 +827,12 @@ export const svModules = [
     {
         moduleName : "Machine Integration",
         moduleSlug : "machine-integration",
+        moduleCategories: [
+            "Manufacturing",
+            "Supply Chain",
+            "Engineering",
+            "Inventory Control",
+        ],
         modulePreview : "Seamlessly connect SV with shop equipment, controls, wireless devices, and third party software for real time data sharing and visualization.",
         moduleStageDescriptions : {
             initiate : [

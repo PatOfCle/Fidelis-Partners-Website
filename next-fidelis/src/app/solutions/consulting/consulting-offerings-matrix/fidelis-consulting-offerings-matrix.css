@@ -1,0 +1,18 @@
+
+.ConsultingServicesMatrixPage-container {
+    margin: 30px;
+
+    font-family: 'Metropolis Regular';
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+}
+
+.Fidelis-consulting-offerings-Matrix-img {
+    width: 80vw;
+
+    text-align: center;
+}
