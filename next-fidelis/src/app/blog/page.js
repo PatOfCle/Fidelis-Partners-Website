@@ -13,13 +13,11 @@ import LoadingComponent from '@/components/FetchBlog/LoadingComponent/LoadingCom
 // Description of this component:
 // first we get the response, which includes, at the moment, all articles. 
 // Then from that response we get the categories to filter by. We also then filter the desired category (if there is a url param) from that response.
-// Note that jsonData, searchParams, and category are all static since only generated once. Everything else is dynamic and uses useState().
+// Note that jsonData (nvm on jsonData actually), searchParams, and category are all static since only generated once. Everything else is dynamic and uses useState().
 
 function Blog() {
 
-    // const [jsonData, setJsonData] = useState([]);
-    var jsonData = []
-    // var extractedNames = []
+    const [jsonData, setJsonData] = useState([]);
     const [extractedNames, setExtractedNames] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -27,8 +25,6 @@ function Blog() {
 
     const category = searchParams.get('category') || ''
     const [dropdownValue, setDropdownValue] = useState(category);
-    // console.log(category)
-    // console.log(dropdownValue)
 
     const fetchData = async () => {
         try {
@@ -48,9 +44,8 @@ function Blog() {
                     "categories": categories[]->title
                 }`
             );
-            // setJsonData(response);
-            jsonData = response
-            setExtractedNames( Array.from(new Set(jsonData.flatMap(item => item.categories).filter(Boolean))) );
+            setJsonData(response);
+            setExtractedNames( Array.from(new Set(response.flatMap(item => item.categories).filter(Boolean))) );
 
             setFilteredData(response);
             setLoading(false);
@@ -62,23 +57,16 @@ function Blog() {
     };
 
     useEffect(() => {
-        // fetchData();
-
-        // if (category != '') {
-        //     console.log('here', category)
-        //     filterData(category)
-        // }
         fetchData()
-        .then(() => {
-            if (category !== '') {
-                // console.log('here', category);
-                filterData(category);
-            }
-        })
     }, []);
 
-    // const extractedNames = Array.from(new Set(jsonData.flatMap(item => item.categories).filter(Boolean)));
-    // console.log('extracted names: ', extractedNames)
+    useEffect(() => {
+        if (category !== '') {
+            // console.log('here', category);
+            filterData(category);
+        }
+    }, [jsonData]);
+
 
     const filterData = (event) => {
 
@@ -88,10 +76,8 @@ function Blog() {
             newValue = event.target.value;
         } catch {
             newValue = event
-            // console.log('now hereee', newValue)
         }
 
-        // setDropdownValue(event.target.value)
         setDropdownValue(newValue)
 
         if (newValue == "") {
@@ -99,9 +85,7 @@ function Blog() {
             return
         }
 
-        const filtered = jsonData.filter(item => (item.categories !== null && item.categories.includes('Industry Reports')));
-        // console.log(jsonData)
-        // console.log(filtered)
+        const filtered = jsonData.filter(item => (item.categories !== null && item.categories.includes(newValue)));
 
         setFilteredData(filtered);
     };
@@ -109,7 +93,7 @@ function Blog() {
   return (
     <div>
 
-    {loading ? (
+    {(loading ) ? (
         <div className='Blog-container'>
             <LoadingComponent />
         </div>

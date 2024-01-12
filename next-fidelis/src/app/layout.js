@@ -5,6 +5,7 @@ import './globals.css'
 import Header from '@/components/Header/Header'
 import Footer from '@/components/Footer/Footer'
 import HubspotTracker from '@/components/HubspotStuff/HubspotTracker'
+import ScrollToTop from '@/components/Misc/ScrollToTop'
 
 import { useTrackingCode } from 'react-hubspot-tracking-code-hook'
 
@@ -35,9 +36,12 @@ export default function RootLayout({ children }) {
   // var _hsq = (window._hsq = window._hsq || []);
   // _hsq.push(["setPath", "/home"]);
 
+
   return (
     <html lang="en">
       <link rel="icon" href="/favicon.ico" sizes="any" />
+
+      <ScrollToTop />
 
       {/* <Head>
         <Script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/40200420.js" />
