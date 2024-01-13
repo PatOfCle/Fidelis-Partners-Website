@@ -1,0 +1,124 @@
+
+
+.WhyChooseSvErpPage-container {
+    margin: 20px 50px;
+
+    /* border: solid; */
+    * {
+        font-family: 'Metropolis Regular';
+    }
+
+}
+
+
+.WhyChooseSvErpPage-intro-outer-container{
+
+}
+
+.WhyChooseSvErpPage-intro-container {
+
+}
+
+.WhyChooseSvErpPage-description, .WhyChooseSvErpPage-description * {
+    font-family: 'Metropolis Regular';
+}
+
+
+
+
+.sv-fit-container {
+    margin-top: 80px;
+    /* text-align: center; */
+
+    display: flex;
+
+    flex-wrap: wrap;
+}
+
+
+.sv-fit-container h1, .sv-fit-container em  {
+    width: 100%;
+
+    text-align: center;
+}
+
+.whySV-point-section {
+    /* border: solid; */
+
+    width: 49%;
+
+    padding-left: 10px;
+
+    flex: 1;
+}
+
+
+.whySV-point-list-section {
+    padding-left: 20px;
+}
+
+.whySV-point-list-section li {
+    display: flex;
+    align-items: center;
+    /* display: ; */
+
+    /* border: solid; */
+}
+
+.whySV-point-image {
+    /* width: 80px; */
+    height: 50px;
+
+    vertical-align: middle;
+    padding-right: 20px;
+}
+
+
+.whySV-point-detail-container {
+    /* border: solid; */
+    flex-grow: 1;
+}
+
+.whySV-point-description {
+    /* padding-left: 20px; */
+}
+
+
+
+
+/* @media (max-width: 1000px) {
+    .sv-fit-container * {    
+        width: 100%;
+
+        justify-content: center;
+    }
+
+
+    .whySV-point-section {
+        border: solid;
+    
+        width: 100%;
+    
+        padding-left: 10px;
+    
+        flex: 1;
+    }
+} */
+
+@media (max-width: 1000px) {
+
+    .whySV-point-section {
+        /* border: solid; */
+    
+        width: 100%;
+        flex: none;
+        
+    }
+
+}
+
+
+.whySV-points-stretch {
+    display: flex;
+  /* align-items: stretch; */
+}

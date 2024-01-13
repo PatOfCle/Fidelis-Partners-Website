@@ -6,7 +6,7 @@ export const principles = [
 
     {
         "principle" : "Integrity",
-        "principleDescription" : "Your word is the most powerful tool you have. A reputation telling the truth and doing what you say you’re going to do is often the difference between being trusted or doubted."
+        "principleDescription" : "Your word is the most powerful tool you have. A reputation telling the truth and doing what you say you’re going to do is often the difference between being trusted or doubted. Nothing else matters if you don't stand behind your word."
     },
 
     {
