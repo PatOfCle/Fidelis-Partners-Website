@@ -37,6 +37,7 @@ function LandingPageVideo() {
         </div>
         <div className='dynamic-text-container'>
         <br></br>
+        <br></br>
           <WordGenerator />
         </div>
       </div>

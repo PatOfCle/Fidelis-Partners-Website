@@ -90,13 +90,13 @@ function WhyChooseSvErpPage() {
                 Read More:
               </h2>
               <Link href='/solutions/sv-erp' className='router-link hover-color-1'>
-                <div className='consulting-detail-link'>
+                <div className='consulting-detail-link hover-grow'>
                   SV ERP Capabilities &rarr;
                 </div>
               </Link>
               {/* <br></br> */}
               <Link href="/blog/?category=Customer Wins" className='router-link hover-color-1'>
-                <div className='consulting-detail-link'>
+                <div className='consulting-detail-link hover-grow'>
                   Customer Wins &rarr;
                 </div>
               </Link>
@@ -136,18 +136,12 @@ function WhyChooseSvErpPage() {
               {/* No If... */}
             </h2>
 
-            {/* <em>
-              Fidelis only commits to a handful of new clients every year, 
-              <br></br>
-              and not all businesses should move forward on SV ERP. 
-            </em> */}
-
             <ul className='whySV-point-list-section'>
                 {/* {whySVData.map((point, index) => )} */}
                 {whyNotSVData.map((point, index) => (
                   // <TimelineItem data={data} key={idx} />
                   <li key={index}>
-                    <img src='/assets/why-choose-sv-images/why-not-sv-red-x.png' className='whySV-point-image'/>
+                    <img src='/assets/why-choose-sv-images/why-not-sv-red-x.png' className='whySV-point-image-against'/>
                     
                     <div className='whySV-point-detail-container'>
                       <h3 dangerouslySetInnerHTML={{ __html: point.point }}>
@@ -188,7 +182,9 @@ function WhyChooseSvErpPage() {
             <ul className='whySV-point-list-section'>
                 {whySVData.map((point, index) => (
                   <li key={index}>
-                    <img src='/assets/gc.png' className='whySV-point-image'/>
+                    {/* <img src='/assets/gc.png' className='whySV-point-image'/> */}
+                    <img src={point.imgLink} className='whySV-point-image'/>
+
                     
                     <div className='whySV-point-detail-container'>
                       <h3 dangerouslySetInnerHTML={{ __html: point.point }}>

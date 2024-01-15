@@ -143,6 +143,10 @@
 
 .whySV-point-list-section {
     padding-left: 10px;
+
+    /* display: flex;
+    flex-direction: column;
+    align-items: stretch; */
 }
 
 .whySV-point-list-section li {
@@ -157,12 +161,20 @@
 
 .whySV-point-image {
     /* width: 80px; */
+    height: 90px;
+
+    vertical-align: middle;
+    padding-right: 20px;
+
+    padding-top: 20px;
+}
+
+.whySV-point-image-against {
     height: 50px;
 
     vertical-align: middle;
     padding-right: 20px;
 }
-
 
 .whySV-point-detail-container {
     /* border: solid; */

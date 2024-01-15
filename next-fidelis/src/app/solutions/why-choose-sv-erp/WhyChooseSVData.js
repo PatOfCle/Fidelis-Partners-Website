@@ -1,37 +1,37 @@
 export const whySVData = [
     {
-        imgLink: "",
+        imgLink: "/assets/why-choose-sv-images/app-servers.png",
         point: "One System. Total Access to Your Data.",
         pointDescription: "No more disparate systems. Allow your company to access the information they need at every stage of operation with one central, unified system.",
     },
 
     {
-        imgLink: "",
+        imgLink: "/assets/why-choose-sv-images/factory.png",
         point: "Eliminate Redundant, Manual, Overhead Tasks.",
         pointDescription: "Operations executives frequently overestimate the number of front office personnel necessary to run a manufacturing plant. Across the entire organization, SV eliminates redundancy and constant manual data entry within every feature, so you can efficiently allocate your limited resources.",
     },
 
     {
-        imgLink: "",
+        imgLink: "/assets/why-choose-sv-images/growth-system.png",
         point: "The Flexible System, Designed For <em>Your</em>&nbsp;Operation at Scale.",
-        pointDescription: "3rd-party consultants are incapable",
+        pointDescription: "As a data-driven proprietary system, our engineers are able to make SV ERP do <em>exactly</em> what <em>you</em> want it to do. 3rd-party installation consultants are incapable of giving you exactly the information you need, including when and how you need it, which is no surprise. Ask us more about the unmatched level of flexibility SV ERP provides.",
     },
 
     {
-        imgLink: "",
+        imgLink: "/assets/why-choose-sv-images/vertical-bar-chart-1.png",
         point: "Long Track Record of Delivery.",
         // pointDescription: "For over two decades, SV ERP has delivered on its promises, having delivered on over $4 billion of manufacturing to date. ",
         pointDescription: "For over two decades, SV ERP has delivered on its promises, driving over $4 billion in manufacturing output to date, over $600 million annually, and thousands of orders on a daily basis. Don't cross your fingers for a system that will streamline production; choose one that has done so at scale.",
     },
 
     {
-        imgLink: "",
+        imgLink: "/assets/why-choose-sv-images/programmer-team-3.png",
         point: "Support From a Growing Team of Data-Driven Professionals.",
         pointDescription: "It doesn't take long to realize that 3rd-party system consultants lack the ability to truly cater to your business's unique needs, nor are they often incentivised to. The experienced, driven Fidelis team takes full ownership of every stage of SV ERP, ultimately giving you full control of your ERP system.",
     },
 
     {
-        imgLink: "",
+        imgLink: "/assets/why-choose-sv-images/floating-cash-1.png",
         point: "Low-Risk, Flexible Pricing (No Vendor Lock-In)",
         pointDescription: "You will love SV ERP⸺we'd bet on it. While the \"bad guy\" ERP providers seek to lock you in for a lifetime of suffering, our flexible pricing options allow you to avoid a large upfront commitment. Fidelis Partners delivers immense value in the short <em>and</em> in the long term; we'll let you walk away, even though you won't want to.",
     },
@@ -76,7 +76,7 @@ export const whyNotSVData = [
 
     {
         imgLink: "",
-        point: "Mid-Level Management Is Not Motivated For An ERP Change.",
+        point: "If Mid-Level Management Is Not Motivated For An ERP Change.",
         pointDescription: "To move forward confidently onto SV ERP, your business team must be on the same page on its ERP sentiment. Any new ERP implementation requires some degree of commitment from everyone within a company. Explore and compare the capabilities of SV ERP collectively with your team, and soon enough they will be eager to level up operations with SV ERP.",
     },
 
