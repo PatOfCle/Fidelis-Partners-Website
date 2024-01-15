@@ -1,6 +1,6 @@
 .SteelVikingPage-container {
     /* margin: 100px; */
-    margin: 20px 6vw;
+    margin: 20px 20px;
 
 }
 
@@ -9,6 +9,23 @@
     justify-content: space-around;
     /* width: 80%; */
     /* border: solid; */
+}
+
+.sv-logo-and-read-more {
+    /* display: block; */
+
+    /* border: solid; */
+
+    text-align: right;
+}
+
+.sv-logo-and-read-more > * {
+    flex: 1;
+
+    /* border: solid; */
+
+    display: inline-block;
+    padding-left: 50px;
 }
 
 .sv-page-logo-instance {
@@ -20,6 +37,12 @@
         display: block;
         text-align: center;
     }
+
+
+    .sv-logo-and-read-more {
+        text-align: center;
+    }
+    
 }
 
 .sv-page-section {

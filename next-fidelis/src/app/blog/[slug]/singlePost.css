@@ -4,6 +4,33 @@
     position: relative;
 }
 
+
+.sv-customer-win-button-container {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.sv-customer-win-button-container h2 {
+    line-height: 1px;
+}
+
+.sv-customer-win-sv-logo {
+    width: 90px;
+}
+
+.sv-customer-win-sv-logo:hover {
+    transform: scale(1.2); /* Adjust the scale factor as needed */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.sv-customer-win-sv-links {
+    text-align: right;
+}
+
+
 .article-title-container {
     text-align: center;
     padding: 2vh;
@@ -30,6 +57,12 @@
     font-family: var(--secondary-font);
     line-height: 1.6;
     margin-bottom: 20px;
+
+    /* background-color: aqua; */
+}
+
+.BlockContent-div img {
+    max-width: 100%;
 }
 
 

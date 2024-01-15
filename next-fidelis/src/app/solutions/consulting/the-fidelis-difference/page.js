@@ -14,18 +14,18 @@ function TheFidelisDifferencePage() {
                     Read More:
                 </h2>
                 <Link href='/about/team' className=' show-pointer'>
-                    <div className='consulting-detail-link'>
-                        The Team &rarr;
-                    </div>
-                </Link>
-                <Link href='/solutions/consulting' className=' show-pointer'>
-                    <div className='consulting-detail-link'>
-                        Consulting Home &rarr;
+                    <div className='consulting-detail-link hover-grow'>
+                        Team &rarr;
                     </div>
                 </Link>
                 <Link href='/solutions/consulting/consulting-offerings-matrix' className=' show-pointer'>
-                    <div className='consulting-detail-link'>
-                        Consulting Offerings &rarr;
+                    <div className='consulting-detail-link hover-grow'>
+                        Service Matrix &rarr;
+                    </div>
+                </Link>
+                <Link href='/solutions/consulting' className=' show-pointer'>
+                    <div className='consulting-detail-link hover-grow'>
+                        Consulting Home &rarr;
                     </div>
                 </Link>
 
@@ -35,7 +35,8 @@ function TheFidelisDifferencePage() {
 
 
         <h1 style={{textAlign: "center", width: "100%"}}>
-            Consulting: Our Differentiators
+            {/* Consulting: Our Differentiators */}
+            The Fidelis Difference
         </h1>
 
         <em>
@@ -53,12 +54,12 @@ function TheFidelisDifferencePage() {
         <br></br>
         <div>
             <h2 style={{textAlign: "center"}}>
-                The Team
+                The Firm
             </h2>
 
             <img 
                 className='TheFidelisDifferencePage-Firm-img'
-                src='/assets/consulting-images/Fidelis-Consulting-Firm.png'
+                src='/assets/consulting-images/Fidelis-Consulting-Firm-Differentiators.png'
             />
         </div>
 
@@ -67,12 +68,12 @@ function TheFidelisDifferencePage() {
 
         <div>
             <h2 style={{textAlign: "center"}}>
-                The Firm
+                The People
             </h2>
 
             <img 
                 className='TheFidelisDifferencePage-Team-img'
-                src='/assets/consulting-images/Fidelis-Consulting-Team.png'
+                src='/assets/consulting-images/Fidelis-Consulting-People-Differentiators.png'
             />
         </div>
     </div>

@@ -68,6 +68,16 @@ a {
   color: black;
 }
 
+.hover-color-1:hover {
+  color: var(--theme-color-1);
+}
+
+
+.hover-grow:hover {
+  transform: scale(1.2); /* Adjust the scale factor as needed */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
 .app-container {
   position: relative;
   min-height: calc( 100vh - var(--header-height)  - var(--footer-min-height));

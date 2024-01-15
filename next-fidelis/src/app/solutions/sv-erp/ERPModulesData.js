@@ -11,7 +11,6 @@ export const allModuleCategories = [
     "Quality",
     "Sales",
     "Scheduling",
-    "Shipping",
     "Shipping and Logistics",
     "Supply Chain",
     "Tooling",
@@ -99,7 +98,6 @@ export const svModules = [
         moduleSlug : "order-management",
         moduleCategories: [
             "Customer Service",
-            "Shipping",
             "Sales",
             "Planning",
             "Scheduling",
@@ -759,7 +757,7 @@ export const svModules = [
         moduleSlug : "edi",
         moduleCategories: [
             "Customer Service",
-            "Shipping",
+            "Shipping and Logistics",
             "Accounting",
         ],
         modulePreview : "Unlike most ERPs, full onboarding and support of Electronic Data Interchange (EDI) without the need for  additional mapping software and third party expertise.",

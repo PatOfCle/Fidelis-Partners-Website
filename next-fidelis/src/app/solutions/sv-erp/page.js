@@ -46,9 +46,36 @@ function SteelVikingPage() {
                 <br></br>
                 <Fade direction='right' triggerOnce duration={1300} delay={1900}><span>Not vice versa. </span></Fade>
               </h2>
+
               <Fade direction='right' triggerOnce duration={1000} delay={2700}>
-                <img src={'/assets/sv-logo.png'} className='sv-page-logo-instance'/> 
+                <div className='sv-logo-and-read-more'>
+                  <img src={'/assets/sv-logo.png'} className='sv-page-logo-instance'/> 
+                  <div className='consulting-read-more-section'>
+                    <h2>
+                      Read More:
+                    </h2>
+                    <Link href='/solutions/why-choose-sv-erp' className='router-link hover-color-1'>
+                      <div className='consulting-detail-link hover-grow'>
+                        Why Choose SV ERP &rarr;
+                      </div>
+                    </Link>
+                    <br></br>
+                    <Link href="/blog/?category=Customer Wins" className='router-link hover-color-1'>
+                      <div className='consulting-detail-link hover-grow'>
+                        Customer Wins &rarr;
+                      </div>
+                    </Link>
+                    {/* <br></br>
+                    <Link href='/solutions/consulting/the-fidelis-difference' className='router-link'>
+                      <div className='consulting-detail-link'>
+                        The Fidelis Difference &rarr;
+                      </div>
+                    </Link> */}
+
+                  </div>
+                </div>
               </Fade>
+
       </div>
 
 

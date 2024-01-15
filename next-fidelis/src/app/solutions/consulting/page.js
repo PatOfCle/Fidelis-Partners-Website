@@ -34,19 +34,19 @@ function ConsultingPage() {
                     Read More:
                   </h2>
                   <Link href='/about/team' className=' show-pointer'>
-                    <div className='consulting-detail-link'>
-                      The Team &rarr;
+                    <div className='consulting-detail-link hover-grow'>
+                      Team &rarr;
                     </div>
                   </Link>
                   <br></br>
                   <Link href='/solutions/consulting/consulting-offerings-matrix' className=' show-pointer'>
-                    <div className='consulting-detail-link'>
-                      Consulting Offerings &rarr;
+                    <div className='consulting-detail-link hover-grow'>
+                      Services Matrix &rarr;
                     </div>
                   </Link>
                   <br></br>
                   <Link href='/solutions/consulting/the-fidelis-difference' className=' show-pointer'>
-                    <div className='consulting-detail-link'>
+                    <div className='consulting-detail-link hover-grow'>
                       The Fidelis Difference &rarr;
                     </div>
                   </Link>

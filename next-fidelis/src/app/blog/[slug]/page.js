@@ -58,6 +58,7 @@ export default function SinglePost() {
                 body,
                 "name": author->name,
                 "authorImage": author->image,
+                "categories": categories[]->title,
                 mainImage {
                     asset -> {
                         _id,
@@ -76,7 +77,7 @@ export default function SinglePost() {
     // const singlePost = await getData(slug)[0]
 
     // console.log('herenow')
-    // console.log(singlePost)
+    console.log(singlePost)
     // console.log('past it')
     
 
@@ -85,6 +86,40 @@ export default function SinglePost() {
         {isLoading ? <h1>Loading...</h1> :
         
             <section>
+                {( singlePost.categories && singlePost.categories.includes('Customer Wins') ) 
+                ? 
+                // {(true) ? 
+                <div className='sv-customer-win-button-container'>
+                    
+                    {/* <img src={'/assets/sv-logo.png'} className='sv-customer-win-sv-logo'/> */}
+
+                    <Link href="/solutions/sv-erp" className='router-link' >
+                        <img src={'/assets/sv-logo.png'} className='sv-customer-win-sv-logo'/>
+                    </Link>
+
+                    <div className='sv-customer-win-sv-links'>
+                        <h2>
+                            Read More:
+                        </h2>
+                        <Link href="/solutions/sv-erp" className='router-link hover-color-1'>
+                            <div className='consulting-detail-link hover-grow'>
+                                SV ERP Capabilities &rarr;
+                            </div>
+                        </Link>
+                        <Link href='/solutions/why-choose-sv-erp' className='router-link hover-color-1'>
+                            <div className='consulting-detail-link hover-grow'>
+                                Why Choose SV ERP &rarr;
+                            </div>
+                        </Link>
+                    </div>
+                </div> 
+                :
+                <div>
+                    
+                </div>
+                }
+
+                <br></br>
                 <h1 className='article-title-container'>{singlePost.title}</h1>
 
                 <div className='article-image-container'>

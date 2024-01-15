@@ -32,6 +32,13 @@
     /* background-color: rgba(0, 0, 0, 0.2); */
 }
 
+.landing-video-sv-logo {
+    width: 20vw;
+
+    /* backdrop-filter: blur(2px);
+    border-radius: 5px; */
+}
+
 .dynamic-text-container {
     position: absolute;
     top: 55%;

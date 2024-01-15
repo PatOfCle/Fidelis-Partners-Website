@@ -23,19 +23,19 @@ function ConsultingServicesMatrixPage() {
             Read More:
             </h2>
             <Link href='/about/team' className=' show-pointer'>
-                <div className='consulting-detail-link'>
-                    The Team &rarr;
+                <div className='consulting-detail-link hover-grow'>
+                    Team &rarr;
                 </div>
             </Link>
             <br></br>
             <Link href='/solutions/consulting' className=' show-pointer'>
-                <div className='consulting-detail-link'>
+                <div className='consulting-detail-link hover-grow'>
                     Consulting Home &rarr;
                 </div>
             </Link>
             <br></br>
             <Link href='/solutions/consulting/the-fidelis-difference' className=' show-pointer'>
-                <div className='consulting-detail-link'>
+                <div className='consulting-detail-link hover-grow'>
                     The Fidelis Difference &rarr;
                 </div>
             </Link>
@@ -48,7 +48,8 @@ function ConsultingServicesMatrixPage() {
         
         <img 
             className='Fidelis-consulting-offerings-Matrix-img'
-            src='/assets/consulting-images/Fidelis-consulting-offerings-Matrix.png'
+            // src='/assets/consulting-images/Fidelis-consulting-offerings-Matrix.png'
+            src='/assets/consulting-images/Consulting-Services-Matrix.png'
         />
 
     </div>

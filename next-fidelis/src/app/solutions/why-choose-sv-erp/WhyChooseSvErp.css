@@ -10,29 +10,116 @@
 
 }
 
+/* .software-fit-processes {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.consulting-read-more-section * {
+    font-family: 'Metropolis Semibold';
+}
+
 
 .WhyChooseSvErpPage-intro-outer-container{
 
 }
 
 .WhyChooseSvErpPage-intro-container {
-
+    padding-bottom: 20px;
 }
 
 .WhyChooseSvErpPage-description, .WhyChooseSvErpPage-description * {
-    font-family: 'Metropolis Regular';
+
+}
+
+
+
+.sv-logo-and-read-more {
+    display: inline-block;
+}
+
+.sv-logo-and-read-more > * {
+    flex: 1;
+
+    padding-left: 50px;
+}
+
+.sv-page-logo-instance {
+    width: 180px;
+
+    max-width: 180px;
+    min-width: 180px;
+    
+} */
+
+
+.WhyChooseSvErpPage-top-section {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.WhyChooseSvErpPage-intro-container {
+    flex-grow: 1; /* Allows the first child to grow and shrink */
+    flex-shrink: 1; /* Enables shrinking for the first child */
+    flex-basis: 0;
+
+    padding-right: 30px;
+}
+
+.sv-more-options-container {
+    /* border: solid; */
+
+    display: flex;
+
+    align-items: center;
+    flex-shrink: 0; /* Disables shrinking for the second child */
+
+    padding: 0px;
+
+    /* width: 100%; */
+
+}
+
+.sv-more-options-container * {
+    /* border: solid; */
+    font-family: 'Metropolis Semibold';
+
+    padding-left: 20px;
+}
+
+.WhyChooseSvErpPage-logo {
+    max-width: 150px; /* Ensure the image doesn't exceed its original size */
+    height: auto;
 }
 
 
 
 
+
+
+
+
+.sv-fit-parent-container {
+    /* text-align: center; */
+    margin-top: 90px;
+}
+
+.sv-fit-title-container {
+    text-align: center;
+}
+
+
 .sv-fit-container {
-    margin-top: 80px;
+    /* margin-top: 80px; */
     /* text-align: center; */
 
     display: flex;
 
     flex-wrap: wrap;
+
+    justify-content: space-between;
 }
 
 
@@ -45,16 +132,17 @@
 .whySV-point-section {
     /* border: solid; */
 
-    width: 49%;
-
-    padding-left: 10px;
+    /* padding-left: 10px; */
+    padding-left: 0px;
 
     flex: 1;
+
+    max-width: 47%;
 }
 
 
 .whySV-point-list-section {
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .whySV-point-list-section li {
@@ -63,6 +151,8 @@
     /* display: ; */
 
     /* border: solid; */
+
+    padding-top: 10px;
 }
 
 .whySV-point-image {
@@ -87,38 +177,99 @@
 
 
 /* @media (max-width: 1000px) {
-    .sv-fit-container * {    
-        width: 100%;
 
-        justify-content: center;
+
+    .WhyChooseSvErpPage-container {
+        margin: 7px 20px;
+
+    }
+
+    .software-fit-processes {
+        display: inline-block;
     }
 
 
-    .whySV-point-section {
-        border: solid;
-    
-        width: 100%;
-    
-        padding-left: 10px;
-    
-        flex: 1;
+    .sv-logo-and-read-more {
+        text-align: center;
+
+        display: flex;
+        justify-content: space-around;
     }
-} */
 
-@media (max-width: 1000px) {
+    .sv-logo-and-read-more * {
+        padding: none;
+        padding-left: 0;
+    }
 
-    .whySV-point-section {
-        /* border: solid; */
-    
-        width: 100%;
-        flex: none;
+
+    .sv-page-logo-instance {
+        width: 155px;
+
+        max-width: 155px;
+        min-width: 155px;
         
     }
 
-}
+
+
+    .sv-fit-container {
+        flex-direction: column-reverse;
+    }
+
+    .whySV-point-section {    
+        width: 100%;
+
+        max-width: 100%;
+
+        flex: none;
+        
+        padding-left: 0;
+    }
+
+    
+    .whySV-point-list-section {
+        padding-left: 0px;
+    }
+
+} */
 
 
 .whySV-points-stretch {
     display: flex;
   /* align-items: stretch; */
+}
+
+
+
+@media (max-width: 900px) {
+    .WhyChooseSvErpPage-top-section {
+        display: inline-block;
+    
+        /* justify-content: space-between; */
+    }
+
+
+    .sv-more-options-container {
+        justify-content: space-around;
+    }
+    
+
+    .WhyChooseSvErpPage-logo {
+        padding-left: 0px;
+    }
+
+
+
+    .WhyChooseSvErpPage-container {
+        margin: 5px 20px;
+    }
+
+
+    .sv-fit-container {
+        flex-direction: column-reverse;
+    }
+
+    .whySV-point-section {
+        max-width: 100%;
+    }
 }

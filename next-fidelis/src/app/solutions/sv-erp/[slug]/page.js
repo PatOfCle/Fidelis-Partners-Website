@@ -16,7 +16,7 @@ function moduleDetailPage() {
 
   return (
     <div className='moduleDetailPage-container'>
-        <ERPModuleDetail moduleData={svModules[currentModuleIndex]} />
+        <ERPModuleDetail moduleData={svModules[currentModuleIndex]} moduleIndex={currentModuleIndex} />
     </div>
   )
 }

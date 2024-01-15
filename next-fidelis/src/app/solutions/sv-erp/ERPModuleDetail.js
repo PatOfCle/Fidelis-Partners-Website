@@ -1,9 +1,18 @@
+import { svModules } from './ERPModulesData'
 import React from 'react'
 import Link from 'next/link'
 
 import './ERPModuleDetail.css'
+// import { svModules } from '../../ERPModulesData'
 
 function ERPModuleDetail(props) {
+
+  // console.log('sup')
+  // console.log(props.moduleIndex)
+  // const svModLength= svModules.length
+  // console.log(svModLength)
+
+
   return (
     <div className='ERPModuleDetail-container'>
 
@@ -76,13 +85,47 @@ function ERPModuleDetail(props) {
 
       </div>
 
-      <Link href="/solutions/sv-erp" className='router-link erp-module-sv-logo-container' >
+      <Link href="/solutions/sv-erp" className='router-link erp-module-sv-logo-container hover-color-1' >
         <img src='/assets/sv-logo.png' className='erp-module-sv-logo'/>
 
         <div style={{marginTop: '20px'}}>
           &larr; Return to SV Home
         </div>
       </Link>
+
+      
+      <br></br>
+      <br></br>
+      <br></br>
+
+        
+
+      <div className='sv-module-prev-next-container'>
+        {(svModules[props.moduleIndex-1]) ? 
+
+        <h3>
+        <Link href={`/solutions/sv-erp/${svModules[props.moduleIndex-1].moduleSlug}`} className='router-link erp-module-sv-logo-container hover-color-1' >
+          &larr; Previous Module: {svModules[props.moduleIndex-1].moduleName}
+        </Link>
+        </h3>
+
+        : <div></div>
+        
+        }
+
+        {(svModules[props.moduleIndex+1]) ? 
+
+        <h3>
+        <Link href={`/solutions/sv-erp/${svModules[props.moduleIndex+1].moduleSlug}`} className='router-link erp-module-sv-logo-container hover-color-1' >
+          Next Module: {svModules[props.moduleIndex+1].moduleName} &rarr;
+        </Link>
+        </h3>
+
+        : <div></div>
+
+        }
+      </div>
+
 
     </div>
   )

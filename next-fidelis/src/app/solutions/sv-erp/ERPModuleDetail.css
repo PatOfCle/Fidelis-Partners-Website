@@ -99,3 +99,11 @@
 
     margin-top: 25px;
 }
+
+
+.sv-module-prev-next-container {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    padding: 0px 30px;
+}

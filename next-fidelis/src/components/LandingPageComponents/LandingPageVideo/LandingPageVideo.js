@@ -30,9 +30,13 @@ function LandingPageVideo() {
 
       <div className="text-container">
         <div className='static-text'>
+          {/* SV */}
+          <img src={'/assets/sv-logo.png'} className='landing-video-sv-logo'/> 
+          <br></br>
           The scalable, comprehensive ERP provider for 
         </div>
         <div className='dynamic-text-container'>
+        <br></br>
           <WordGenerator />
         </div>
       </div>
