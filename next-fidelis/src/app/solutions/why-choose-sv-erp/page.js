@@ -137,9 +137,7 @@ function WhyChooseSvErpPage() {
             </h2>
 
             <ul className='whySV-point-list-section'>
-                {/* {whySVData.map((point, index) => )} */}
                 {whyNotSVData.map((point, index) => (
-                  // <TimelineItem data={data} key={idx} />
                   <li key={index}>
                     <img src='/assets/why-choose-sv-images/why-not-sv-red-x.png' className='whySV-point-image-against'/>
                     
@@ -156,10 +154,6 @@ function WhyChooseSvErpPage() {
                   </li>
                 ))}
               </ul>
-
-            <div >
-              
-            </div>
 
           </div>
 

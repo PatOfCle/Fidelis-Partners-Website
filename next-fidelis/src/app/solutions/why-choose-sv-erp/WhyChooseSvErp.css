@@ -10,99 +10,43 @@
 
 }
 
-/* .software-fit-processes {
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.consulting-read-more-section * {
-    font-family: 'Metropolis Semibold';
-}
-
-
-.WhyChooseSvErpPage-intro-outer-container{
-
-}
-
-.WhyChooseSvErpPage-intro-container {
-    padding-bottom: 20px;
-}
-
-.WhyChooseSvErpPage-description, .WhyChooseSvErpPage-description * {
-
-}
-
-
-
-.sv-logo-and-read-more {
-    display: inline-block;
-}
-
-.sv-logo-and-read-more > * {
-    flex: 1;
-
-    padding-left: 50px;
-}
-
-.sv-page-logo-instance {
-    width: 180px;
-
-    max-width: 180px;
-    min-width: 180px;
-    
-} */
 
 
 .WhyChooseSvErpPage-top-section {
     display: flex;
-
     justify-content: space-between;
 }
 
 .WhyChooseSvErpPage-intro-container {
-    flex-grow: 1; /* Allows the first child to grow and shrink */
-    flex-shrink: 1; /* Enables shrinking for the first child */
+    flex-grow: 1;
+    flex-shrink: 1;
     flex-basis: 0;
 
     padding-right: 30px;
 }
 
 .sv-more-options-container {
-    /* border: solid; */
-
     display: flex;
-
     align-items: center;
-    flex-shrink: 0; /* Disables shrinking for the second child */
-
+    flex-shrink: 0;
     padding: 0px;
-
-    /* width: 100%; */
-
 }
 
 .sv-more-options-container * {
-    /* border: solid; */
     font-family: 'Metropolis Semibold';
 
     padding-left: 20px;
 }
 
 .WhyChooseSvErpPage-logo {
-    max-width: 150px; /* Ensure the image doesn't exceed its original size */
+    max-width: 150px;
     height: auto;
 }
 
 
 
 
-
-
-
-
 .sv-fit-parent-container {
-    /* text-align: center; */
     margin-top: 90px;
 }
 
@@ -112,13 +56,8 @@
 
 
 .sv-fit-container {
-    /* margin-top: 80px; */
-    /* text-align: center; */
-
     display: flex;
-
     flex-wrap: wrap;
-
     justify-content: space-between;
 }
 
@@ -130,42 +69,37 @@
 }
 
 .whySV-point-section {
-    /* border: solid; */
-
-    /* padding-left: 10px; */
     padding-left: 0px;
-
     flex: 1;
-
     max-width: 47%;
+}
+
+.whySV-point-section > div {
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
 }
 
 
 .whySV-point-list-section {
     padding-left: 10px;
-
-    /* display: flex;
+    flex-grow: 1;
+    display: flex;
     flex-direction: column;
-    align-items: stretch; */
 }
 
 .whySV-point-list-section li {
+    flex-grow: 1;
     display: flex;
     align-items: center;
-    /* display: ; */
-
-    /* border: solid; */
-
     padding-top: 10px;
 }
 
 .whySV-point-image {
-    /* width: 80px; */
     height: 90px;
-
     vertical-align: middle;
     padding-right: 20px;
-
     padding-top: 20px;
 }
 
@@ -177,87 +111,20 @@
 }
 
 .whySV-point-detail-container {
-    /* border: solid; */
     flex-grow: 1;
 }
 
 .whySV-point-description {
-    /* padding-left: 20px; */
-}
-
-
-
-
-/* @media (max-width: 1000px) {
-
-
-    .WhyChooseSvErpPage-container {
-        margin: 7px 20px;
-
-    }
-
-    .software-fit-processes {
-        display: inline-block;
-    }
-
-
-    .sv-logo-and-read-more {
-        text-align: center;
-
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .sv-logo-and-read-more * {
-        padding: none;
-        padding-left: 0;
-    }
-
-
-    .sv-page-logo-instance {
-        width: 155px;
-
-        max-width: 155px;
-        min-width: 155px;
-        
-    }
-
-
-
-    .sv-fit-container {
-        flex-direction: column-reverse;
-    }
-
-    .whySV-point-section {    
-        width: 100%;
-
-        max-width: 100%;
-
-        flex: none;
-        
-        padding-left: 0;
-    }
-
     
-    .whySV-point-list-section {
-        padding-left: 0px;
-    }
-
-} */
-
-
-.whySV-points-stretch {
-    display: flex;
-  /* align-items: stretch; */
 }
+
+
 
 
 
 @media (max-width: 900px) {
     .WhyChooseSvErpPage-top-section {
         display: inline-block;
-    
-        /* justify-content: space-between; */
     }
 
 
@@ -284,4 +151,9 @@
     .whySV-point-section {
         max-width: 100%;
     }
+
+    .whySV-point-list-section {
+        padding-left: 0px;
+    }
+
 }

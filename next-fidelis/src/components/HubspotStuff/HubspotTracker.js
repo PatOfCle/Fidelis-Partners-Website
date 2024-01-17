@@ -3,34 +3,35 @@
 import React, { useEffect, useRef } from 'react';
 import Script from 'next/script';
 // import { useRouter } from 'next/router';
-import { useRouter, usePathname } from 'next/navigation';
+import { useRouter, usePathname, useSearchParams } from 'next/navigation';
 
 const HubspotTracker = () => {
 
+
+    function getCookie(name) { 
+        var re = new RegExp(name + "=([^;]+)"); 
+        var value = re.exec(document.cookie); 
+        return (value != null) ? decodeURI(value[1]) : null; 
+    }
+
     // const router = useRouter();
     const pathname = usePathname()
-    // var firstLoad = true;
+    const searchParams = useSearchParams()
+    const searchParamsDict = Object.fromEntries(searchParams ? searchParams.entries() : [])
+
+    const emailAddress = searchParamsDict.email ? searchParamsDict.email : 'holderemail123@gmail.com'
+
     var firstLoad = useRef(true);
-    // var num = 1;
-
-
-    // var _hsq = window._hsq = window._hsq || [];
-    // var _hsq = window;
-
-    // console.log(window)
 
     useEffect(() => {
-        // if (typeof window !== 'undefined') {
-
-        //     console.log('-------')
-        //     console.log('num', num)
-        //     num = num + 1
-        // }
         
         if (typeof window !== 'undefined') {
-            // console.log(window);
             var _hsq = window._hsq = window._hsq || [];
-            // console.log(_hsq)
+            
+            console.log('---', getCookie('hubspotutk'))
+            console.log(pathname)
+            console.log(searchParamsDict)
+            console.log(emailAddress)
 
             if (firstLoad.current === true) {
                 // console.log('in first load')
@@ -38,8 +39,11 @@ const HubspotTracker = () => {
                 _hsq.push(['setPath', pathname]);
                 _hsq.push(['trackPageView']);
 
+                // _hsq.push(["identify",{
+                //     email: 'Test5678@gmail.com'
+                // }]);
                 _hsq.push(["identify",{
-                    email: 'Test5678@gmail.com'
+                    email: emailAddress
                 }]);
 
                 _hsq.push(['setPath', pathname]);
@@ -48,41 +52,14 @@ const HubspotTracker = () => {
                 firstLoad.current = false
             } else {
 
-                // console.log('now past it')
                 _hsq.push(['setPath', pathname]);
                 _hsq.push(['trackPageView']);
 
             }
-            // _hsq.push(['setPath', pathname]);
-            // _hsq.push(['trackPageView']);
         }
-    }, [pathname])
+    }, [pathname, searchParamsDict])
 
     
-    
-
-    // useEffect(() => {      
-    //     console.log('---------------')
-    //     console.log(window._hsq)
-
-    //     _hsq.push(['setPath', pathname]);
-    //     _hsq.push(['trackPageView']);
-
-    //     // console.log('hereee')
-    //     // console.log(window)
-    //     // console.log(window._hsq)
-    //     // console.log(window.location.search)
-
-    //     // console.log('halloooo')
-
-
-    //     console.log('whaddup')
-    //     console.log(pathname)
-    // // }, [])
-    // // }, [window.location.pathname])
-    // // }, [router.pathname])
-    // }, [pathname])
-  
     return null;
 };
 

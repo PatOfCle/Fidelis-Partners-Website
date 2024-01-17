@@ -70,7 +70,7 @@ function ConsultingPage() {
               {consultingServices.map((service, index) => (
                   // <Link href={`/solutions/sv-erp/${svModule.moduleSlug}`} className='router-link'  key={index} >
                   // <div className='service-preview-link show-pointer'>
-                  <div className='service-preview-link'>
+                  <div className='service-preview-link' key={index}>
                     <h3 className='service-preview-title'>
                       {service.serviceName}
                     </h3>

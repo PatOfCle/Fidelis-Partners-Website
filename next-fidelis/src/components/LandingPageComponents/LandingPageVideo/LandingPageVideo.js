@@ -33,7 +33,7 @@ function LandingPageVideo() {
           {/* SV */}
           <img src={'/assets/sv-logo.png'} className='landing-video-sv-logo'/> 
           <br></br>
-          The scalable, comprehensive ERP provider for 
+          The comprehensive, nimble, scalable ERP for 
         </div>
         <div className='dynamic-text-container'>
         <br></br>
