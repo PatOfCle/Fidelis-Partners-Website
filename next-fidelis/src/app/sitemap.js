@@ -81,7 +81,7 @@ export default async function sitemap() {
         routeList.forEach((route) => {
             sitemapObjects.push(
                 {
-                    url: 'https://fidelis-partners.com'+route[0],
+                    url: 'https://www.fidelis-partners.com'+route[0],
                     // lastModified: new Date(),
                     lastModified: route[1],
                     // changeFrequency: route[2],

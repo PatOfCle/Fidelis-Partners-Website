@@ -8,6 +8,7 @@ import HubspotTracker from '@/components/HubspotStuff/HubspotTracker'
 import ScrollToTop from '@/components/Misc/ScrollToTop'
 
 import { useTrackingCode } from 'react-hubspot-tracking-code-hook'
+import { Analytics } from '@vercel/analytics/react';
 
 // import Hubspot from './Hubspot'
 
@@ -52,6 +53,7 @@ export default function RootLayout({ children }) {
         <Header />
         <div className='app-container'>
           {children}
+          <Analytics />
         </div>
         <Footer />
 

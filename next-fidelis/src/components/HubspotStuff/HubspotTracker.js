@@ -19,7 +19,7 @@ const HubspotTracker = () => {
     const searchParams = useSearchParams()
     const searchParamsDict = Object.fromEntries(searchParams ? searchParams.entries() : [])
 
-    const emailAddress = searchParamsDict.email ? searchParamsDict.email : 'holderemail123@gmail.com'
+    const emailAddress = searchParamsDict.email ? searchParamsDict.email : null
 
     var firstLoad = useRef(true);
 
@@ -28,10 +28,10 @@ const HubspotTracker = () => {
         if (typeof window !== 'undefined') {
             var _hsq = window._hsq = window._hsq || [];
             
-            console.log('---', getCookie('hubspotutk'))
-            console.log(pathname)
-            console.log(searchParamsDict)
-            console.log(emailAddress)
+            // console.log('---', getCookie('hubspotutk'))
+            // console.log(pathname)
+            // console.log(searchParamsDict)
+            // console.log(emailAddress)
 
             if (firstLoad.current === true) {
                 // console.log('in first load')
@@ -39,12 +39,11 @@ const HubspotTracker = () => {
                 _hsq.push(['setPath', pathname]);
                 _hsq.push(['trackPageView']);
 
-                // _hsq.push(["identify",{
-                //     email: 'Test5678@gmail.com'
-                // }]);
-                _hsq.push(["identify",{
-                    email: emailAddress
-                }]);
+                if (emailAddress) {
+                    _hsq.push(["identify",{
+                        email: emailAddress
+                    }]);
+                }
 
                 _hsq.push(['setPath', pathname]);
                 _hsq.push(['trackPageView']);
