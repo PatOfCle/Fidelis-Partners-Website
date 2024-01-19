@@ -1,15 +1,10 @@
 'use client'
 
 import React, {useState} from 'react'
-import {AiOutlineMenu} from 'react-icons/ai'
 import {FiMenu} from 'react-icons/fi'
 import {GrClose} from 'react-icons/gr'
 import './Header.css'
-import dropdownArrow from '../../../public/assets/dropdown-arrow_thumbnail.png'
-// import { Link } from 'react-router-dom'
 import Link from 'next/link'
-
-// import Image from 'next/image'
 
 
 function Header() {
@@ -28,7 +23,6 @@ function Header() {
 
     <div className='header-container'>
         <div className='image-container'>
-            {/* <Link href="/"><img className='fidelis-logo' src="../../../public/assets/fidelis-logo.png"/></Link> */}
             <Link href="/">
                 <img className='fidelis-logo' src="/assets/fidelis-logo.png" />
             </Link>
@@ -44,6 +38,7 @@ function Header() {
                             {/* <Link href="/about/values" className='router-link'><li>Values</li></Link> */}
                             <Link href="/about/principles" className='router-link'><li>Principles</li></Link>
                             <Link href="/about/history" className='router-link'><li>History</li></Link>
+                            {/* <Link href="/solutions/why-choose-sv-erp" className='router-link'><li>Why Choose SV ERP?</li></Link> */}
                             <Link href="/about/team" className='router-link'><li>Team</li></Link>
                         </ul>
                     </div>
@@ -55,6 +50,7 @@ function Header() {
                     <div className="dropdown">
                         <ul>
                             <Link href="/solutions/sv-erp" className='router-link'><li>SV ERP</li></Link>
+                            <Link href="/solutions/why-choose-sv-erp" className='router-link'><li>Why Choose SV ERP?</li></Link>
                             <Link href="/solutions/consulting" className='router-link'><li>Consulting</li></Link>
                         </ul>
                     </div>
@@ -71,7 +67,10 @@ function Header() {
                 </li>
 
                 <li className="menu-item">
-                    <a>Careers</a>
+                    <ul>
+                        {/* <a>Careers</a> */}
+                        <Link href="https://www.linkedin.com/company/fidelis-partners-erp/jobs/" target="_blank" className='router-link'><li>Careers</li></Link>
+                    </ul>
                 </li>
 
                 <li className="menu-item book-demo-menu-item-button">
@@ -108,6 +107,7 @@ function Header() {
                             <ul>
                                 {/* <Link href="/about/values" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('about')}}><li className='submenu-option'>Values</li></Link> */}
                                 <Link href="/about/principles" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('about')}}><li className='submenu-option'>Principles</li></Link>
+                                {/* <Link href="/solutions/why-choose-sv-erp" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('about')}}><li className='submenu-option'>Why Choose SV ERP?</li></Link> */}
                                 <Link href="/about/history" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('about')}}><li className='submenu-option'>History</li></Link>
                                 <Link href="/about/team" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('about')}}><li className='submenu-option'>Team</li></Link>
                             </ul>
@@ -120,6 +120,7 @@ function Header() {
                         <div className={`submenu ${activeOption === 'solutions' ? 'open' : ''}`}>
                             <ul>
                                 <Link href="/solutions/sv-erp" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('solutions')}}><li className='submenu-option'>SV ERP</li></Link>
+                                <Link href="/solutions/why-choose-sv-erp" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('solutions')}}><li className='submenu-option'>Why Choose SV ERP?</li></Link>
                                 <Link href="/solutions/consulting" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('solutions')}}><li className='submenu-option'>Consulting</li></Link>
                                 {/* <li className='submenu-option'>Consulting Services</li> */}
                             </ul>
@@ -141,7 +142,8 @@ function Header() {
                         </div>
                         <div className={`submenu ${activeOption === 'careers' ? 'open' : ''}`}>
                             <ul>
-                                <li className='submenu-option'>Open Roles</li>
+                                {/* <li className='submenu-option'>Open Roles</li> */}
+                                <Link href="https://www.linkedin.com/company/fidelis-partners-erp/jobs/" target="_blank" className='router-link' onClick={() => {setMenuOpen(!menuOpen); toggleSubmenu('careers')}}><li className='submenu-option'>Open Roles</li></Link>
                                 {/* <li className='submenu-option'>Life at Fidelis</li> */}
                             </ul>
                         </div>

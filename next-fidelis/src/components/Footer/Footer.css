@@ -22,8 +22,8 @@
 .bottom-navigation {
     display: flex;
     justify-content: space-between;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .bottom-navigation-section {
@@ -57,12 +57,22 @@ hr {
 }
 
 .socials {
-    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 130px;
+
+    margin: auto;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .social-icon {
-    max-width: 20px;
-    filter: grayscale(100%);
+    /* max-width: 20px; */
+    width: 22px;
+    filter: grayscale(80%);
 }
 
 .social-icon:hover {
@@ -72,8 +82,20 @@ hr {
 
 .copyright-section {
     text-align: center;
+    padding-bottom: 5px;
 }
 
 /* .footer-bottom-container {
     display: block;
 } */
+
+
+
+@media (max-width: 768px) {
+    /* .socials {
+        margin: auto;
+        text-align: center;
+        padding: 0px;
+        margin-bottom: 15px;
+    } */
+}

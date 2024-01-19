@@ -1,8 +1,5 @@
 import React from 'react'
 import './Footer.css'
-// import linkedinLogo from '../../../../assets/linkedin-logo.png'
-// import xLogo from '/assets/x-logo.png'
-// import { Link } from 'react-router-dom'
 import Link from 'next/link'
 
 function Footer() {
@@ -17,6 +14,7 @@ function Footer() {
                 <div>
                     {/* <Link href="/about/values" className='footer-link'><li>Values</li></Link> */}
                     <Link href="/about/principles" className='footer-link'><li>Principles</li></Link>
+                    {/* <Link href="/solutions/why-choose-sv-erp" className='footer-link'><li>Why Choose SV ERP?</li></Link> */}
                     <Link href="/about/history" className='footer-link'><li>History</li></Link>
                     <Link href="/about/team" className='footer-link'><li>Team</li></Link>
                 </div>
@@ -27,6 +25,7 @@ function Footer() {
                 </h3>
                 <div>
                     <Link href="/solutions/sv-erp" className='footer-link'><li>SV ERP</li></Link>
+                    <Link href="/solutions/why-choose-sv-erp" className='footer-link'><li>Why Choose SV ERP?</li></Link>
                     <Link href="/solutions/consulting" className='footer-link'><li>Consulting</li></Link>
                 </div>
             </div>
@@ -48,7 +47,8 @@ function Footer() {
                     Careers
                 </h3>
                 <div>
-                    <a href="" className="footer-link"><li>Open Roles</li></a>
+                    {/* <a href="" className="footer-link"><li>Open Roles</li></a> */}
+                    <Link href="https://www.linkedin.com/company/fidelis-partners-erp/jobs/" target="_blank" className="footer-link"><li>Open Roles</li></Link>
                     {/* <a href="" className="footer-link"><li>Life at Fidelis</li></a> */}
                 </div>
             </div>
@@ -59,8 +59,10 @@ function Footer() {
 
         <div className='footer-bottom-container'>
             <div className='socials'>
-                <a href='https://www.linkedin.com/company/fidelis-partners-erp' target="_blank"><img className='social-icon' src='/assets/linkedin-logo.png' /></a>
-                {/* <a><img className='social-icon' src={xLogo}/></a> */}
+                <a href='https://www.linkedin.com/company/fidelis-partners-erp' target="_blank"><img className='social-icon' src='/assets/socialMediaLogos/linkedin-logo.png' /></a>
+                <a href='https://www.facebook.com/FidelisPartnersInc/' target="_blank"><img className='social-icon' src='/assets/socialMediaLogos/facebook-logo.png' /></a>
+                <a href='https://www.youtube.com/@fidelis-partners-inc' target="_blank"><img className='social-icon' src='/assets/socialMediaLogos/youtube-logo.png' /></a>
+                <a href='https://twitter.com/SV_ERP' target="_blank"><img className='social-icon' src='/assets/socialMediaLogos/x-logo.png' /></a>
             </div>
             
             <div className='copyright-section'>

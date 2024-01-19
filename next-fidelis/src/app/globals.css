@@ -17,21 +17,21 @@ code {
 
 @font-face {
   font-family: 'Metropolis Semibold';
-  src: url('/assets/Metropolis-SemiBold.otf') format('opentype');
+  src: url('/assets/fonts/Metropolis-SemiBold.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Metropolis Regular';
-  src: url('/assets/Metropolis-Regular.otf') format('opentype');
+  src: url('/assets/fonts/Metropolis-Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Metropolis Extra Bold';
-  src: url('/assets/metropolis.extra-bold.otf') format('opentype');
+  src: url('/assets/fonts/metropolis.extra-bold.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }

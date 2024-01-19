@@ -1,8 +1,6 @@
 "use client"
 
 import React, {useRef, useEffect} from 'react'
-// import vid from '/assets/IMG_4964.mov'
-// import backdropVideo from '../../../../public/assets/Fidelis Website Backdrop Video.mp4'
 import './LandingPageVideo.css'
 import logo from '../../../../public/assets/fidelis-logo.png';
 import WordGenerator from './WordGenerator/WordGenerator';
@@ -23,7 +21,7 @@ function LandingPageVideo() {
 
       <div className="video-container">
         <video className='video-content' ref={videoRef} autoPlay playsInline loop muted >
-          <source src="/assets/Fidelis Website Backdrop Video.mp4" type="video/mp4" />
+          <source src="/assets/videos/Fidelis Website Backdrop Video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
