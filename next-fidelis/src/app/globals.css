@@ -42,6 +42,8 @@ code {
 
   --theme-color-1: rgb(176, 176, 134);
   --theme-color-1-lighter: rgb(195, 195, 154);
+
+  --theme-color-2: #6e1622;
 }
 
 * {

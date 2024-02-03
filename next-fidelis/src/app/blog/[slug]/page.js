@@ -9,7 +9,7 @@ import client from '../client'
 import './singlePost.css'
 import BlockContent from "@sanity/block-content-to-react"
 import Link from 'next/link'
-
+import LoadingComponent from '@/components/FetchBlog/LoadingComponent/LoadingComponent'
 
 
 
@@ -83,75 +83,82 @@ export default function SinglePost() {
 
   return (
     <div className='SinglePost-container'>
-        {isLoading ? <h1>Loading...</h1> :
-        
-            <section>
-                {( singlePost.categories && singlePost.categories.includes('Customer Wins') ) 
-                ? 
-                // {(true) ? 
-                <div className='sv-customer-win-button-container'>
-                    
-                    {/* <img src={'/assets/sv-logo.png'} className='sv-customer-win-sv-logo'/> */}
+        {isLoading ? 
+        (
+            <div className='Blog-container'>
+                <LoadingComponent />
+            </div>
+        ) 
+        :
+            (
+                <section className='post-content-section'>
+                    {( singlePost.categories && singlePost.categories.includes('Customer Wins') ) 
+                    ? 
+                    // {(true) ? 
+                    <div className='sv-customer-win-button-container'>
+                        
+                        {/* <img src={'/assets/sv-logo.png'} className='sv-customer-win-sv-logo'/> */}
 
-                    <Link href="/solutions/sv-erp" className='router-link' >
-                        <img src={'/assets/sv-logo.png'} className='sv-customer-win-sv-logo'/>
-                    </Link>
-
-                    <div className='sv-customer-win-sv-links'>
-                        <h2>
-                            Read More:
-                        </h2>
-                        <Link href="/solutions/sv-erp" className='router-link hover-color-1'>
-                            <div className='consulting-detail-link hover-grow'>
-                                SV ERP Capabilities &rarr;
-                            </div>
+                        <Link href="/solutions/sv-erp" className='router-link' >
+                            <img src={'/assets/sv-logo.png'} className='sv-customer-win-sv-logo'/>
                         </Link>
-                        <Link href='/solutions/why-choose-sv-erp' className='router-link hover-color-1'>
-                            <div className='consulting-detail-link hover-grow'>
-                                Why Choose SV ERP &rarr;
-                            </div>
-                        </Link>
+
+                        <div className='sv-customer-win-sv-links'>
+                            <h2>
+                                Read More:
+                            </h2>
+                            <Link href="/solutions/sv-erp" className='router-link hover-color-1'>
+                                <div className='consulting-detail-link hover-grow'>
+                                    SV ERP Capabilities &rarr;
+                                </div>
+                            </Link>
+                            <Link href='/solutions/why-choose-sv-erp' className='router-link hover-color-1'>
+                                <div className='consulting-detail-link hover-grow'>
+                                    Why Choose SV ERP &rarr;
+                                </div>
+                            </Link>
+                        </div>
+                    </div> 
+                    :
+                    <div>
+                        
                     </div>
-                </div> 
-                :
-                <div>
-                    
-                </div>
-                }
+                    }
 
-                <br></br>
-                <h1 className='article-title-container'>{singlePost.title}</h1>
+                    <br></br>
+                    <h1 className='article-title-container'>{singlePost.title}</h1>
 
-                <div className='article-image-container'>
-                    {singlePost.mainImage && 
-                    singlePost.mainImage.asset 
-                    && (
-                        <img 
-                            src={singlePost.mainImage.asset.url} 
-                            alt={singlePost.title} 
-                            title={singlePost.title} 
-                            className='article-image'
-                        />
-                    )}
-                </div>
-
-                    <div className='BlockContent-div'>
-                        {/* <div className='post-author-section'>
-
-                            Written by {singlePost.name}
-                        </div> */}
-                        {/* <h2 style={{textAlign: 'left', lineHeight: '2'}}>
-                            {singlePost.title}
-                        </h2> */}
-                        <BlockContent 
-                            blocks={singlePost.body}
-                            projectId="k6txv6gn"
-                            dataset="production"
-                        />
-
-                        {console.log(singlePost.body)}
+                    <div className='article-image-container'>
+                        {singlePost.mainImage && 
+                        singlePost.mainImage.asset 
+                        && (
+                            <img 
+                                src={singlePost.mainImage.asset.url} 
+                                alt={singlePost.title} 
+                                title={singlePost.title} 
+                                className='article-image'
+                            />
+                        )}
                     </div>
-            </section>
+
+                        <div className='BlockContent-div'>
+                            {/* <div className='post-author-section'>
+
+                                Written by {singlePost.name}
+                            </div> */}
+                            {/* <h2 style={{textAlign: 'left', lineHeight: '2'}}>
+                                {singlePost.title}
+                            </h2> */}
+                            <BlockContent 
+                                blocks={singlePost.body}
+                                projectId="k6txv6gn"
+                                dataset="production"
+                            />
+
+                            {console.log(singlePost.body)}
+                        </div>
+                </section>
+            )
         }
 
         <div className='article-bottom-links-container'>

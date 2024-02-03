@@ -1,7 +1,11 @@
  .SinglePost-container {
-    min-height: 100vh;
+    min-height: 80vh;
     padding: 20px;    
     position: relative;
+}
+
+.post-content-section {
+    min-height: 80vh;
 }
 
 
@@ -62,7 +66,12 @@
 }
 
 .BlockContent-div img {
-    max-width: 100%;
+    max-width: 80%;
+    text-align: center;
+}
+
+img {
+    margin: 0px auto;
 }
 
 
