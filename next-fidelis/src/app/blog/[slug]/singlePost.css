@@ -70,9 +70,28 @@
     text-align: center;
 }
 
-img {
-    margin: 0px auto;
+
+
+figure {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Set the width of the container as needed */
+
 }
+img {
+    margin: 0px 0px;
+    /* text-align: center; */
+}
+/* p em {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  } */
+  p:only-child:has(em) {
+    text-align: center;
+  }
+
 
 
 @media (min-width: 1300px) {
