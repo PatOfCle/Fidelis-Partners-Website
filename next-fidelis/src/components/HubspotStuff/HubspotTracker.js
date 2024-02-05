@@ -46,8 +46,8 @@ const HubspotTracker = () => {
                 }
 
                 // I think we only need the trackPageView entry once before the identify.
-                // _hsq.push(['setPath', pathname]);
-                // _hsq.push(['trackPageView']);
+                _hsq.push(['setPath', pathname]);
+                _hsq.push(['trackPageView']);
 
                 firstLoad.current = false
             } else {
