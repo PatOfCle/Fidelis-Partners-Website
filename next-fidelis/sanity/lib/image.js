@@ -1,5 +1,3 @@
-// FIGURE OUT WHAT THIS FILE DOES?? THIS WHY IMAGES ARE SO LARGE? SAYS .FIT('MAX') ...
-
 import createImageUrlBuilder from '@sanity/image-url'
 
 import { dataset, projectId } from '../env'

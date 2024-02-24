@@ -13,6 +13,25 @@ import Footer from '../../Components/FooterSection/Footer';
 
 
 function Home() {
+
+    var _hsq = window._hsq = window._hsq || []
+    console.log(_hsq)
+
+    _hsq.push(['setPath', '/asdfpathname']);
+    _hsq.push(['trackPageView']);
+
+    _hsq.push(["identify",{
+        // email: getParameterByName("email")
+        // email: 'patofcle@gmail.com'
+        email: '34Test@gmail.com'
+    }]);
+
+    _hsq.push(['setPath', '/dsfagdsgfpathname']);
+    _hsq.push(['trackPageView']);
+
+    console.log(_hsq)
+
+
   return (
     <div className='Home-container'>
         <LandingFillinVideo />
