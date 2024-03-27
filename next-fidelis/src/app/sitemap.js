@@ -10,6 +10,10 @@ import client from './blog/client';
 const readdirAsync = promisify(fs.readdir);
 const statAsync = promisify(fs.stat);
 
+export const dynamic = 'force-dynamic'
+
+
+
 export default async function sitemap() {
     const routeList = [
         ['/', , , 1.0],

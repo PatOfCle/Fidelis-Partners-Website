@@ -17,11 +17,11 @@ import { useTrackingCode } from 'react-hubspot-tracking-code-hook'
 import { Analytics } from '@vercel/analytics/react';
 
 
-export const metadata = {
-  // title: 'Fidelis Partners ERP',
-  title: 'Fidelis Partners',
-  description: "Your ERP system should fit your processes. Not vice versa. Take control of your manufacturing today with the premier unified, flexible, comprehensive ERP system.",
-}
+// export const metadata = {
+//   // title: 'Fidelis Partners ERP',
+//   title: 'Fidelis Partners',
+//   description: "Your ERP system should fit your processes. Not vice versa. Take control of your manufacturing today with the premier unified, flexible, comprehensive ERP system.",
+// }
 
 export default function RootLayout({ children }) {
 

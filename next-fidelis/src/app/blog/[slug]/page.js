@@ -10,8 +10,33 @@ import './singlePost.css'
 import BlockContent from "@sanity/block-content-to-react"
 import Link from 'next/link'
 import LoadingComponent from '@/components/FetchBlog/LoadingComponent/LoadingComponent'
+import Head from 'next/head';
 
 
+// export const metadata = {
+//     // title: 'Fidelis Partners ERP',
+//     title: 'Fidelis Partners',
+//     description: "Your ERP system should fit your processes. Not vice versa. Take control of your manufacturing today with the premier unified, flexible, comprehensive ERP system.",
+//   }
+  
+// // export async function generateMetadata({ params, searchParams }, parent) {
+//     export async function generateMetadata() {
+//         // read route params
+//     // const id = params.id
+   
+//     // fetch data
+//     // const product = await fetch(`https://.../${id}`).then((res) => res.json())
+
+//     // optionally access and extend (rather than replace) parent metadata
+//     // const previousImages = (await parent).openGraph?.images || []
+   
+//     return {
+//       title: "hellooo",
+//     //   openGraph: {
+//     //     images: ['/some-specific-page-image.jpg', ...previousImages],
+//     //   },
+//     }
+//   }
 
 // async function getData(slug) {
 //     console.log('in first func')
@@ -40,10 +65,12 @@ import LoadingComponent from '@/components/FetchBlog/LoadingComponent/LoadingCom
 
 
 // export default async function SinglePost() {
-export default function SinglePost() {
-    const [singlePost, setSinglePost] = useState([])
-    const [isLoading, setIsLoading] = useState(true)
-    const { slug } = useParams()
+// export default function SinglePost() {
+export default async function SinglePost({ params }) {
+    const { slug } = params;
+    // const [singlePost, setSinglePost] = useState([])
+    // const [isLoading, setIsLoading] = useState(true)
+    // const { slug } = useParams()
     // const navigate = useNavigate();
     
     // console.log('slug', slug)
@@ -51,26 +78,44 @@ export default function SinglePost() {
     
     // console.log(isLoading)
 
-    useEffect(() => {
-        client.fetch(
-            `*[slug.current == "${slug}"] {
-                title,
-                body,
-                "name": author->name,
-                "authorImage": author->image,
-                "categories": categories[]->title,
-                mainImage {
-                    asset -> {
-                        _id,
-                        url
-                    },
-                    alt
-                }
-            }`
-        ).then((data) => setSinglePost(data[0]))
+    // useEffect(() => {
+    //     client.fetch(
+    //         `*[slug.current == "${slug}"] {
+    //             title,
+    //             body,
+    //             "name": author->name,
+    //             "authorImage": author->image,
+    //             "categories": categories[]->title,
+    //             mainImage {
+    //                 asset -> {
+    //                     _id,
+    //                     url
+    //                 },
+    //                 alt
+    //             }
+    //         }`
+    //     ).then((data) => setSinglePost(data[0]))
         
-        setIsLoading(false)
-    }, [slug])
+    //     setIsLoading(false)
+    // }, [slug])
+    const post = await client.fetch(
+        `*[slug.current == "${slug}"] {
+            title,
+            body,
+            "name": author->name,
+            "authorImage": author->image,
+            "categories": categories[]->title,
+            mainImage {
+                asset -> {
+                    _id,
+                    url
+                },
+                alt
+            }
+        }`
+    )
+
+    const singlePost = post[0]
 
 
     // console.log('before call')
@@ -83,7 +128,10 @@ export default function SinglePost() {
 
   return (
     <div className='SinglePost-container'>
-        {isLoading ? 
+        {/* <Head>
+                        <title>asdf</title>
+                    </Head> */}
+        {!post ? 
         (
             <div className='Blog-container'>
                 <LoadingComponent />
@@ -92,6 +140,13 @@ export default function SinglePost() {
         :
             (
                 <section className='post-content-section'>
+
+                    {/* <meta></meta> */}
+                    {/* <Head>
+                        <title>asdf</title>
+                    </Head> */}
+                    
+
                     {( singlePost.categories && singlePost.categories.includes('Customer Wins') ) 
                         ? 
                         // {(true) ? 
