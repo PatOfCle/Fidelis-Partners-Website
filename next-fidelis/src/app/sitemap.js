@@ -11,7 +11,7 @@ const readdirAsync = promisify(fs.readdir);
 const statAsync = promisify(fs.stat);
 
 // export const dynamic = 'force-dynamic'
-export const revalidate = false
+export const revalidate = 0
 
 
 const routesToHide = {
@@ -88,6 +88,8 @@ export default async function sitemap() {
     await scanDirectory(projectPath);
     addModules();
     await fetchBlogPosts();
+
+    await sleep(1000);
 
     function buildSitemap() {
         const sitemapObjects = []
