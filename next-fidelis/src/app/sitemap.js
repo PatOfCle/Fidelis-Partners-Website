@@ -89,8 +89,8 @@ export default async function sitemap() {
     addModules();
     await fetchBlogPosts();
 
-    await sleep(1000);
 
+    
     function buildSitemap() {
         const sitemapObjects = []
         routeList.forEach((route) => {
