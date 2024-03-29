@@ -11,6 +11,8 @@ const readdirAsync = promisify(fs.readdir);
 const statAsync = promisify(fs.stat);
 
 // export const dynamic = 'force-dynamic'
+export const revalidate = false
+
 
 const routesToHide = {
     "":"",
