@@ -10,9 +10,13 @@ import client from './blog/client';
 const readdirAsync = promisify(fs.readdir);
 const statAsync = promisify(fs.stat);
 
-export const dynamic = 'force-dynamic'
+// export const dynamic = 'force-dynamic'
 
-
+const routesToHide = {
+    "":"",
+    "":"",
+    
+}
 
 export default async function sitemap() {
     const routeList = [
@@ -22,13 +26,16 @@ export default async function sitemap() {
     var specificDate = new Date(2023, 11, 21);
 
     async function scanDirectory(directoryPath) {
-
+        console.log('----- top: ' + directoryPath)
         try {
+            console.log('in here...')
             const files = await readdirAsync(directoryPath);
 
             for (const file of files) {
                 const filePath = path.join(directoryPath, file);
                 const stats = await statAsync(filePath);
+                
+                console.log('filepath ' + filePath)
 
                 if (stats.isDirectory()) {
                     if (filePath.endsWith(']')) {
