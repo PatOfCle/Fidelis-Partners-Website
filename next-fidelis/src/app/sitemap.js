@@ -2,17 +2,10 @@
 
 
 import { svModules } from './solutions/sv-erp/ERPModulesData';
-import { promisify } from 'util';
-import fs from 'fs';
-import path from 'path';
 import client from './blog/client';
 
-const readdirAsync = promisify(fs.readdir);
-const statAsync = promisify(fs.stat);
-
-// export const dynamic = 'force-dynamic'
-export const revalidate = 0
-
+export const dynamic = 'force-dynamic'
+// export const revalidate = 0
 
 const routesToHide = {
     "":"",
@@ -21,42 +14,17 @@ const routesToHide = {
 }
 
 export default async function sitemap() {
+
     const routeList = [
         ['/', , , 1.0],
     ];
+    const staticRoutes = require('./staticRouteList.json');
+    var specificDate = staticRoutes[0][1];
 
-    var specificDate = new Date(2023, 11, 21);
-
-    async function scanDirectory(directoryPath) {
-        console.log('----- top: ' + directoryPath)
-        try {
-            console.log('in here...')
-            const files = await readdirAsync(directoryPath);
-
-            for (const file of files) {
-                const filePath = path.join(directoryPath, file);
-                const stats = await statAsync(filePath);
-                
-                console.log('filepath ' + filePath)
-
-                if (stats.isDirectory()) {
-                    if (filePath.endsWith(']')) {
-                        continue; // Skip directories ending with ']'
-                    } else {
-                        const subFiles = await readdirAsync(filePath);
-                        if (subFiles.includes('page.js')) {
-                            routeList.push( [filePath.substring(7), new Date(specificDate), 'monthly', 0.6] );
-                            // console.log(routeList);
-                        }
-                        await scanDirectory(filePath);
-                    }
-                } else {
-                    // Perform actions on individual files here
-                }
-            }
-        } catch (err) {
-            console.error(err);
-        }
+    function addStaticPaths() {
+        staticRoutes.forEach((route) => {
+            routeList.push([route[0], route[1], 'monthly', 0.6]);
+        });
     }
 
     function addModules() {
@@ -85,12 +53,11 @@ export default async function sitemap() {
     };
 
     const projectPath = './src/app';
-    await scanDirectory(projectPath);
+    addStaticPaths();
     addModules();
     await fetchBlogPosts();
 
 
-    
     function buildSitemap() {
         const sitemapObjects = []
         routeList.forEach((route) => {
@@ -109,6 +76,5 @@ export default async function sitemap() {
         return sitemapObjects
     }
 
-    // console.log(buildSitemap())
     return buildSitemap()
 }

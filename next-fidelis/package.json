@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node ./src/app/sitemapStaticPages.js",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "add-paths-to-sitemap":"node ./src/app/sitemapStaticPages.js"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",

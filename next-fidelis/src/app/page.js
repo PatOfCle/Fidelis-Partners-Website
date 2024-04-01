@@ -6,7 +6,7 @@ import {Fade, Reveal} from 'react-awesome-reveal';
 import LandingPageVideo from '@/components/LandingPageComponents/LandingPageVideo/LandingPageVideo';
 // import ProblemSectionHomepage from '../../Components/ProblemSectionHomepage/ProblemSectionHomepage';
 import ProblemSectionHomepage from '@/components/LandingPageComponents/ProblemSection/ProblemSectionHomepage';
-// import ClientSlider from '@/components/LandingPageComponents/ClientSlider/ClientSlider';
+import ClientSlider from '@/components/LandingPageComponents/ClientSlider/ClientSlider';
 import StatisticsSection from '@/components/LandingPageComponents/StatisticsSection/StatisticsSection';
 import BookDemoBlock from '@/components/LandingPageComponents/BookDemoBlock/BookDemoBlock';
 import CompanySnapshotHomepage from '@/components/LandingPageComponents/FidelisOverview/FidelisOverview';
@@ -27,9 +27,9 @@ export default function Home() {
           <SVButtonsSection />
       </Fade>
 
-      {/* <Fade delay={500} triggerOnce>
+      <Fade delay={500} triggerOnce>
         <ClientSlider />
-      </Fade> */}
+      </Fade>
 
       {/* <Fade delay={500} triggerOnce>
           <StatisticsSection />

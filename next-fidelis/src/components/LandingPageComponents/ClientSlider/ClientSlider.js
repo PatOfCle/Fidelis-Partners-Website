@@ -8,7 +8,8 @@ import path from 'path';
 
 function ClientSlider() {
 
-    const images = require.context('public/assets/client-logos-improved', true);
+    const images = require.context('/public/assets/client-logos-improved', true);
+    // const images = require.context('../../../../public/assets/client-logos-improved', true);
     const imageList = images.keys().map(image => images(image));
     
     return (
@@ -38,6 +39,11 @@ function ClientSlider() {
             </div>
         </div>
     )
+    // return (
+    //     <div>
+    //         hello
+    //     </div>
+    // )
 }
 
 export default ClientSlider
