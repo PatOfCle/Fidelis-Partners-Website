@@ -12,7 +12,7 @@ import { Suspense } from 'react'
 
 
 import { Analytics } from '@vercel/analytics/react';
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function RootLayout({ children }) {
 
@@ -31,6 +31,7 @@ export default function RootLayout({ children }) {
           <div className='app-container'>
             {children}
             <Analytics />
+            <SpeedInsights />
           </div>
           <Footer />
 

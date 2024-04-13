@@ -25,7 +25,12 @@ export async function generateMetadata({ params }) {
         }`
     )
     const results = post[0]
-    const pattern = /(\d+)x(\d+)(?=\.png)/;
+    const pattern = /(\d+)x(\d+)(?=\.[^.]*$)/;
+
+    console.log(results.mainImage.asset.url)
+
+    const width = results.mainImage.asset.url.match(pattern)[1]
+    const height = results.mainImage.asset.url.match(pattern)[2]
 
     return {
       title: results.title,
@@ -34,8 +39,8 @@ export async function generateMetadata({ params }) {
         images: [
             {
                 url: results.mainImage.asset.url,
-                width: results.mainImage.asset.url.match(pattern)[1],
-                height: results.mainImage.asset.url.match(pattern)[2],
+                width: width,
+                height: height,
                 alt: results.mainImage.alt,
             },
         ],
@@ -168,7 +173,7 @@ export default async function SinglePost({ params }) {
 
                 <div className="blog-post-footer-button">
                     <Link href="/contact/book-introduction" className='router-link'>
-                        <li>Book Introduction 
+                        <li>Contact
                             <span className='double-arrow'> &#xbb;</span>
                         </li>
                     </Link>

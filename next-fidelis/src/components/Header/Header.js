@@ -74,7 +74,7 @@ function Header() {
                 </li>
 
                 <li className="menu-item book-demo-menu-item-button">
-                    <Link href="/contact/book-introduction" className='router-link'>Book Introduction</Link>
+                    <Link href="/contact/book-introduction" className='router-link'>Contact</Link>
                 </li>
             </ul>
         </nav>
@@ -94,7 +94,7 @@ function Header() {
 
                     {/* problem here */}
                     <li className="menu-item book-demo-menu-item-button" style={{marginBottom: 30}}>
-                        <Link href="/contact/book-introduction" className='router-link' onClick={() => {setMenuOpen(!menuOpen)}}>Book Introduction <span className='double-arrow'>&#xbb;</span></Link>
+                        <Link href="/contact/book-introduction" className='router-link' onClick={() => {setMenuOpen(!menuOpen)}}>Contact <span className='double-arrow'>&#xbb;</span></Link>
 
                     </li>
 
