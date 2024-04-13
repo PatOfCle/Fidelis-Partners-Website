@@ -1,7 +1,6 @@
 "use client"
 
 import React, { useState, useEffect } from 'react';
-// import { useParams } from 'next/navigation';
 import { useSearchParams } from 'next/navigation'
 
 import client from './client'
@@ -62,7 +61,6 @@ function Blog() {
 
     useEffect(() => {
         if (category !== '') {
-            // console.log('here', category);
             filterData(category);
         }
     }, [jsonData]);

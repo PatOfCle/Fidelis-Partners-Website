@@ -1,6 +1,9 @@
+"use client"
+
 import React from 'react'
 import TimelineItem from './TimelineItem';
 import './Timeline.css'
+import { Fade } from 'react-awesome-reveal';
 
 const timelineData = [
     {
@@ -60,11 +63,15 @@ const timelineData = [
 const Timeline = () =>
 
     timelineData.length > 0 && (
-        <div className="timeline-container">
-            {timelineData.map((data, idx) => (
-                <TimelineItem data={data} key={idx} />
-            ))}
-        </div>
+        <Fade delay={1200} triggerOnce>
+
+            <div className="timeline-container">
+                    {timelineData.map((data, idx) => (
+                        <TimelineItem data={data} key={idx} />
+                    ))}
+            </div>
+        </Fade>
+
     );
 
 export default Timeline

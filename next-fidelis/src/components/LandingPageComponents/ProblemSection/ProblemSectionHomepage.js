@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import './ProblemSectionHomepage.css'
 // import dottedWorldMap from '../../assets/dotted-world-map.jpeg'

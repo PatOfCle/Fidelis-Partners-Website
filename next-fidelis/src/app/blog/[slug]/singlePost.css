@@ -60,9 +60,25 @@
 .BlockContent-div * {
     font-family: var(--secondary-font);
     line-height: 1.6;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 
     /* background-color: aqua; */
+}
+
+.article-preview-details {
+    display: flex;
+    align-items: center;
+
+    color: gray;
+
+    font-size: 14px;
+}
+
+.read-time-icon {
+    width: 22px;
+    height: auto;
+
+    color: gray;
 }
 
 .BlockContent-div img {
@@ -97,13 +113,13 @@ img {
 @media (min-width: 1300px) {
     .BlockContent-div {
         margin-bottom: 80px;
-        margin: 80px 100px;
+        margin: 50px 100px;
     }
 }
 
 @media (max-width: 1300px) {
     .BlockContent-div {
-        margin: 50px 20px;
+        margin: 30px 20px;
     }
 }
 

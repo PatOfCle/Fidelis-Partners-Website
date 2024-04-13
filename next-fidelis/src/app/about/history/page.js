@@ -1,37 +1,29 @@
-"use client"
-
-// import React from 'react'
-import { useState, useEffect } from 'react';
-
 import './HistoryPage.css'
 import Timeline from './Timeline';
-import {Fade, Reveal} from 'react-awesome-reveal';
 
-// var topVar = '1234'
+export const metadata = {
+  title: 'History',
+  description: 'Fidelis has a history rich with solving problems for our clients. ',
+}
 
 function History() {
 
   return (
-    <div className='history-container'>
+    <div className='history-container'>      
+      <div className='history-intro-outer-container'>
+          <div className='history-intro-container'>
+              <h1>
+                  Our History
+              </h1>
+              <div>
+                  The Fidelis Team has a record rich with solving challenges for our clients. 
+                  <br></br>
+                  Take a glimpse at our story.
+              </div>
+          </div>
+      </div>
 
-      <Fade delay={500} triggerOnce>
-        <div className='history-intro-outer-container'>
-            <div className='history-intro-container'>
-                <h2>
-                    Our History
-                </h2>
-                <div>
-                    The Fidelis Team has a record rich with solving challenges for our clients. 
-                    <br></br>
-                    Take a glimpse at our story.
-                </div>
-            </div>
-        </div>
-        </Fade>
-
-      <Fade delay={1500} triggerOnce>
-        <Timeline />
-      </Fade>
+      <Timeline />
 
     </div>
   )

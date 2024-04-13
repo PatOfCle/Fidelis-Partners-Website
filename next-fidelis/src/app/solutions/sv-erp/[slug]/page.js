@@ -1,18 +1,29 @@
-"use client"
 
-import React, {useState, useEffect} from 'react'
-import { useParams } from 'next/navigation'
-import Link from 'next/link'
+import React from 'react'
 import ERPModuleDetail from '../ERPModuleDetail'
 import { svModules } from '../ERPModulesData'
 
 
-function moduleDetailPage() {
+export async function generateMetadata({ params }) {
+  const { slug } = params;
+  const currentModuleIndex = svModules.findIndex(moduleItem => moduleItem["moduleSlug"] === slug);
+  
+  return {
+    // title: product.title,
+    title: svModules[currentModuleIndex].moduleName,
+    description: svModules[currentModuleIndex].modulePreview,
+    // openGraph: {
+    //   images: ['/some-specific-page-image.jpg', ...previousImages],
+    // },
+  }
+}
 
-    const { slug } = useParams()
 
-    const currentModuleIndex = svModules.findIndex(moduleItem => moduleItem["moduleSlug"] === slug);
 
+function moduleDetailPage({ params }) {
+
+  const { slug } = params;
+  const currentModuleIndex = svModules.findIndex(moduleItem => moduleItem["moduleSlug"] === slug);
 
   return (
     <div className='moduleDetailPage-container'>

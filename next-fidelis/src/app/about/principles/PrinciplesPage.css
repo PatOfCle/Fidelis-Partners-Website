@@ -12,6 +12,7 @@
 
 .principles-list-div {
     margin-top: 50px;
+    margin-left: 20px;
 
     font-family: 'Metropolis Regular';
 }
@@ -27,4 +28,5 @@
 
 .principleDescription-div {
     font-family: 'Metropolis Regular';
+    color: rgb(127, 127, 127);
 }

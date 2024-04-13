@@ -1,8 +1,13 @@
 import React from 'react'
-
 import Link from 'next/link'
 
 import './the-fidelis-difference.css'
+
+
+export const metadata = {
+    title: 'The Fidelis Difference',
+    description: 'See how Fidelis is different. We bring capable, experienced, yet grounded consultants to organizations to partner on, own, and solve challenges together.',
+}
 
 function TheFidelisDifferencePage() {
   return (
