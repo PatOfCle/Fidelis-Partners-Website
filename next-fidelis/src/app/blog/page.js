@@ -7,7 +7,7 @@ import client from './client'
 import './blog.css'
 import Link from 'next/link'
 import LoadingComponent from '@/components/FetchBlog/LoadingComponent/LoadingComponent';
-
+import HubspotBlogEmailSignupForm from '@/components/HubspotStuff/HubspotBlogEmailSignupForm';
 
 // Description of this component:
 // first we get the response, which includes, at the moment, all articles. 
@@ -130,6 +130,12 @@ function Blog() {
                     </div>
 
                 </div>
+
+                <div className='postEmailSignUpContainer'>
+                    <HubspotBlogEmailSignupForm />
+                </div>
+                <br></br>
+                <br></br>
 
             </div>
       )}

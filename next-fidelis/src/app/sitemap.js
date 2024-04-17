@@ -39,12 +39,13 @@ export default async function sitemap() {
                 `*[_type == "post"] | order(_createdAt desc) {
                     title,
                     publishedAt,
+                    _updatedAt,
                     slug
                 }`
             );
             // console.log(response)
             response.forEach((post) => {
-                routeList.push(['/blog/'+post.slug.current, post.publishedAt, 'monthly', 0.4])
+                routeList.push(['/blog/'+post.slug.current, post._updatedAt, 'monthly', 0.4])
             })
             // console.log(routeList)
         } catch (error) {

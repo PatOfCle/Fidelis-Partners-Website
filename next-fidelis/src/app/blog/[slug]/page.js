@@ -6,7 +6,7 @@ import BlockContent from "@sanity/block-content-to-react"
 import Link from 'next/link'
 import LoadingComponent from '@/components/FetchBlog/LoadingComponent/LoadingComponent'
 import { PiTimerBold } from "react-icons/pi";
-
+import HubspotBlogEmailSignupForm from '@/components/HubspotStuff/HubspotBlogEmailSignupForm'
 
 export async function generateMetadata({ params }) {
     const { slug } = params;
@@ -136,7 +136,7 @@ export default async function SinglePost({ params }) {
                             <div className='BlockContent-div'>
 
                                 <div className='article-preview-details'>
-                                    <PiTimerBold className='read-time-icon'/> <span>&#20;{singlePost.estimatedReadingTime} Minutes</span>
+                                    <PiTimerBold className='read-time-icon'/> <span style={{paddingLeft: "4px"}}>{singlePost.estimatedReadingTime} {singlePost.estimatedReadingTime === 1 ? "Minute" : "Minutes"}</span>
                                 </div>
                                 <br></br>
                                 <BlockContent 
@@ -150,6 +150,16 @@ export default async function SinglePost({ params }) {
                 )
             }
 
+            <br></br>
+            <br></br>
+            <div className='postEmailSignUpContainer'>
+                
+                <HubspotBlogEmailSignupForm />
+            </div>
+
+            <br></br>
+            <br></br>
+            
             <div className='article-bottom-links-container'>
 
                 <div className="blog-post-footer-button">

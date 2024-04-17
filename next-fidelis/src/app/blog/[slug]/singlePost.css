@@ -165,9 +165,22 @@ img {
     border-width: 1px;
 }
 
+.postEmailSignUpContainer {
+    width: 50%;
+
+    margin: 0px auto;
+}
 
 
 @media (max-width: 1000px) {
+
+
+    .postEmailSignUpContainer {
+        width: 90%;
+
+        margin: 0px auto;
+    }
+
     .article-bottom-links-container {
         /* display: inline-block; */
         flex-direction: column;
